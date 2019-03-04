@@ -1,0 +1,406 @@
+EESchema Schematic File Version 4
+LIBS:waf-cache
+EELAYER 29 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 6 8
+Title "WAF WAF Howling badge"
+Date ""
+Rev "1.0"
+Comp "Kaizen tech"
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L RF_Module:ESP32-WROOM-32 U?
+U 1 1 5C669996
+P 2300 3600
+AR Path="/5C669996" Ref="U?"  Part="1" 
+AR Path="/5C65C087/5C669996" Ref="U?"  Part="1" 
+F 0 "U?" H 1800 4950 50  0000 L CNN
+F 1 "ESP32-WROOM-32" H 2350 4950 50  0000 L CNN
+F 2 "RF_Module:ESP32-WROOM-32" H 2300 2100 50  0001 C CNN
+F 3 "https://www.espressif.com/sites/default/files/documentation/esp32-wroom-32_datasheet_en.pdf" H 2000 3650 50  0001 C CNN
+	1    2300 3600
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3V3 #PWR?
+U 1 1 5C66999C
+P 2300 2000
+AR Path="/5C66999C" Ref="#PWR?"  Part="1" 
+AR Path="/5C65C087/5C66999C" Ref="#PWR0101"  Part="1" 
+F 0 "#PWR0101" H 2300 1850 50  0001 C CNN
+F 1 "+3V3" H 2300 2140 50  0000 C CNN
+F 2 "" H 2300 2000 50  0001 C CNN
+F 3 "" H 2300 2000 50  0001 C CNN
+	1    2300 2000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5C6699A2
+P 2800 1400
+AR Path="/5C6699A2" Ref="C?"  Part="1" 
+AR Path="/5C65C087/5C6699A2" Ref="C?"  Part="1" 
+F 0 "C?" H 2825 1500 50  0000 L CNN
+F 1 "0.1uF" H 2825 1300 50  0000 L CNN
+F 2 "" H 2838 1250 50  0001 C CNN
+F 3 "~" H 2800 1400 50  0001 C CNN
+	1    2800 1400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5C6699A8
+P 3200 1400
+AR Path="/5C6699A8" Ref="C?"  Part="1" 
+AR Path="/5C65C087/5C6699A8" Ref="C?"  Part="1" 
+F 0 "C?" H 3225 1500 50  0000 L CNN
+F 1 "0.1uF" H 3225 1300 50  0000 L CNN
+F 2 "" H 3238 1250 50  0001 C CNN
+F 3 "~" H 3200 1400 50  0001 C CNN
+	1    3200 1400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2800 1200 2800 1250
+Wire Wire Line
+	2800 1200 3000 1200
+Wire Wire Line
+	3200 1200 3200 1250
+Wire Wire Line
+	2800 1600 2800 1550
+Wire Wire Line
+	3200 1550 3200 1600
+$Comp
+L power:GND #PWR?
+U 1 1 5C6699B3
+P 3000 1700
+AR Path="/5C6699B3" Ref="#PWR?"  Part="1" 
+AR Path="/5C65C087/5C6699B3" Ref="#PWR0102"  Part="1" 
+F 0 "#PWR0102" H 3000 1450 50  0001 C CNN
+F 1 "GND" H 3000 1550 50  0000 C CNN
+F 2 "" H 3000 1700 50  0001 C CNN
+F 3 "" H 3000 1700 50  0001 C CNN
+	1    3000 1700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5C6699B9
+P 1000 2600
+AR Path="/5C6699B9" Ref="C?"  Part="1" 
+AR Path="/5C65C087/5C6699B9" Ref="C?"  Part="1" 
+F 0 "C?" H 1025 2700 50  0000 L CNN
+F 1 "0.1uF" H 1025 2500 50  0000 L CNN
+F 2 "" H 1038 2450 50  0001 C CNN
+F 3 "~" H 1000 2600 50  0001 C CNN
+	1    1000 2600
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3V3 #PWR?
+U 1 1 5C6699BF
+P 1000 1950
+AR Path="/5C6699BF" Ref="#PWR?"  Part="1" 
+AR Path="/5C65C087/5C6699BF" Ref="#PWR0103"  Part="1" 
+F 0 "#PWR0103" H 1000 1800 50  0001 C CNN
+F 1 "+3V3" H 1000 2090 50  0000 C CNN
+F 2 "" H 1000 1950 50  0001 C CNN
+F 3 "" H 1000 1950 50  0001 C CNN
+	1    1000 1950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1000 1950 1000 2050
+Wire Wire Line
+	1000 2350 1000 2400
+$Comp
+L power:GND #PWR?
+U 1 1 5C6699C7
+P 1000 2800
+AR Path="/5C6699C7" Ref="#PWR?"  Part="1" 
+AR Path="/5C65C087/5C6699C7" Ref="#PWR0104"  Part="1" 
+F 0 "#PWR0104" H 1000 2550 50  0001 C CNN
+F 1 "GND" H 1000 2650 50  0000 C CNN
+F 2 "" H 1000 2800 50  0001 C CNN
+F 3 "" H 1000 2800 50  0001 C CNN
+	1    1000 2800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1000 2750 1000 2800
+Connection ~ 1000 2400
+Wire Wire Line
+	1000 2400 1000 2450
+$Comp
+L Device:R R?
+U 1 1 5C6699D3
+P 1000 2200
+AR Path="/5C6699D3" Ref="R?"  Part="1" 
+AR Path="/5C65C087/5C6699D3" Ref="R?"  Part="1" 
+F 0 "R?" V 1080 2200 50  0000 C CNN
+F 1 "1K" V 1000 2200 50  0000 C CNN
+F 2 "" V 930 2200 50  0001 C CNN
+F 3 "~" H 1000 2200 50  0001 C CNN
+	1    1000 2200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2300 2000 2300 2200
+Wire Wire Line
+	2800 1600 3000 1600
+Connection ~ 3000 1600
+Wire Wire Line
+	3000 1600 3200 1600
+$Comp
+L power:+3V3 #PWR?
+U 1 1 5C6699DD
+P 3000 1100
+AR Path="/5C6699DD" Ref="#PWR?"  Part="1" 
+AR Path="/5C65C087/5C6699DD" Ref="#PWR0105"  Part="1" 
+F 0 "#PWR0105" H 3000 950 50  0001 C CNN
+F 1 "+3V3" H 3000 1240 50  0000 C CNN
+F 2 "" H 3000 1100 50  0001 C CNN
+F 3 "" H 3000 1100 50  0001 C CNN
+	1    3000 1100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3000 1200 3000 1100
+Connection ~ 3000 1200
+Wire Wire Line
+	3000 1200 3200 1200
+Wire Wire Line
+	3000 1600 3000 1700
+Wire Wire Line
+	2300 5000 2300 5200
+$Comp
+L power:GND #PWR?
+U 1 1 5C6699E8
+P 2300 5200
+AR Path="/5C6699E8" Ref="#PWR?"  Part="1" 
+AR Path="/5C65C087/5C6699E8" Ref="#PWR0106"  Part="1" 
+F 0 "#PWR0106" H 2300 4950 50  0001 C CNN
+F 1 "GND" H 2300 5050 50  0000 C CNN
+F 2 "" H 2300 5200 50  0001 C CNN
+F 3 "" H 2300 5200 50  0001 C CNN
+	1    2300 5200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1000 2400 1700 2400
+$Comp
+L Interface_USB:CP2102N-A01-GQFN28 U?
+U 1 1 5C689AFA
+P 8200 4200
+AR Path="/5C689AFA" Ref="U?"  Part="1" 
+AR Path="/5C65C087/5C689AFA" Ref="U?"  Part="1" 
+F 0 "U?" H 7900 5450 50  0000 R CNN
+F 1 "CP2102N-A01-GQFN28" H 9250 5450 50  0000 R CNN
+F 2 "Package_DFN_QFN:QFN-28-1EP_5x5mm_P0.5mm_EP3.35x3.35mm" H 8650 3000 50  0001 L CNN
+F 3 "https://www.silabs.com/documents/public/data-sheets/cp2102n-datasheet.pdf" H 8250 3450 50  0001 C CNN
+	1    8200 4200
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5C689B2A
+P 8200 5700
+AR Path="/5C689B2A" Ref="#PWR?"  Part="1" 
+AR Path="/5C65C087/5C689B2A" Ref="#PWR0107"  Part="1" 
+F 0 "#PWR0107" H 8200 5450 50  0001 C CNN
+F 1 "GND" H 8200 5550 50  0000 C CNN
+F 2 "" H 8200 5700 50  0001 C CNN
+F 3 "" H 8200 5700 50  0001 C CNN
+	1    8200 5700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8200 5500 8200 5700
+Wire Wire Line
+	8700 3100 9400 3100
+Wire Wire Line
+	8700 3200 9400 3200
+Wire Wire Line
+	8700 3300 9400 3300
+Wire Wire Line
+	8700 3400 9400 3400
+Wire Wire Line
+	8700 3600 9400 3600
+Wire Wire Line
+	8700 3800 9400 3800
+Wire Wire Line
+	8700 4000 9400 4000
+Wire Wire Line
+	7700 3500 7000 3500
+Wire Wire Line
+	7700 3600 7000 3600
+Wire Wire Line
+	7700 3700 7000 3700
+Text Label 7000 3500 0    50   ~ 10
+USB_VBUS
+Text Label 7000 3600 0    50   ~ 10
+USB_DP
+Text Label 7000 3700 0    50   ~ 10
+USB_DM
+$Comp
+L Device:C C?
+U 1 1 5C6A5A36
+P 8600 2050
+AR Path="/5C6A5A36" Ref="C?"  Part="1" 
+AR Path="/5C65C087/5C6A5A36" Ref="C?"  Part="1" 
+F 0 "C?" H 8625 2150 50  0000 L CNN
+F 1 "0.1uF" H 8625 1950 50  0000 L CNN
+F 2 "" H 8638 1900 50  0001 C CNN
+F 3 "~" H 8600 2050 50  0001 C CNN
+	1    8600 2050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5C6A5A3C
+P 9000 2050
+AR Path="/5C6A5A3C" Ref="C?"  Part="1" 
+AR Path="/5C65C087/5C6A5A3C" Ref="C?"  Part="1" 
+F 0 "C?" H 9025 2150 50  0000 L CNN
+F 1 "10uF" H 9025 1950 50  0000 L CNN
+F 2 "" H 9038 1900 50  0001 C CNN
+F 3 "~" H 9000 2050 50  0001 C CNN
+	1    9000 2050
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3V3 #PWR?
+U 1 1 5C6A5A42
+P 8800 1700
+AR Path="/5C6A5A42" Ref="#PWR?"  Part="1" 
+AR Path="/5C65C087/5C6A5A42" Ref="#PWR0108"  Part="1" 
+F 0 "#PWR0108" H 8800 1550 50  0001 C CNN
+F 1 "+3V3" H 8800 1840 50  0000 C CNN
+F 2 "" H 8800 1700 50  0001 C CNN
+F 3 "" H 8800 1700 50  0001 C CNN
+	1    8800 1700
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5C6A5A48
+P 8800 2400
+AR Path="/5C6A5A48" Ref="#PWR?"  Part="1" 
+AR Path="/5C65C087/5C6A5A48" Ref="#PWR0109"  Part="1" 
+F 0 "#PWR0109" H 8800 2150 50  0001 C CNN
+F 1 "GND" H 8800 2250 50  0000 C CNN
+F 2 "" H 8800 2400 50  0001 C CNN
+F 3 "" H 8800 2400 50  0001 C CNN
+	1    8800 2400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8600 1700 8800 1700
+Wire Wire Line
+	8800 1700 9000 1700
+Connection ~ 8800 1700
+Wire Wire Line
+	8600 1700 8600 1900
+Wire Wire Line
+	9000 1700 9000 1900
+Wire Wire Line
+	8600 2200 8600 2400
+Wire Wire Line
+	8600 2400 8800 2400
+Wire Wire Line
+	8800 2400 9000 2400
+Wire Wire Line
+	9000 2400 9000 2200
+Connection ~ 8800 2400
+$Comp
+L power:+3V3 #PWR?
+U 1 1 5C6B02D2
+P 8200 2600
+AR Path="/5C6B02D2" Ref="#PWR?"  Part="1" 
+AR Path="/5C65C087/5C6B02D2" Ref="#PWR0110"  Part="1" 
+F 0 "#PWR0110" H 8200 2450 50  0001 C CNN
+F 1 "+3V3" H 8200 2740 50  0000 C CNN
+F 2 "" H 8200 2600 50  0001 C CNN
+F 3 "" H 8200 2600 50  0001 C CNN
+	1    8200 2600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8100 2900 8100 2800
+Wire Wire Line
+	8100 2800 8200 2800
+Wire Wire Line
+	8200 2800 8200 2900
+Wire Wire Line
+	8200 2800 8200 2600
+Connection ~ 8200 2800
+$Comp
+L Device:C C?
+U 1 1 5C6C8033
+P 6900 2650
+AR Path="/5C6C8033" Ref="C?"  Part="1" 
+AR Path="/5C65C087/5C6C8033" Ref="C?"  Part="1" 
+F 0 "C?" H 6925 2750 50  0000 L CNN
+F 1 "0.1uF" H 6925 2550 50  0000 L CNN
+F 2 "" H 6938 2500 50  0001 C CNN
+F 3 "~" H 6900 2650 50  0001 C CNN
+	1    6900 2650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5C6C8039
+P 7300 2650
+AR Path="/5C6C8039" Ref="C?"  Part="1" 
+AR Path="/5C65C087/5C6C8039" Ref="C?"  Part="1" 
+F 0 "C?" H 7325 2750 50  0000 L CNN
+F 1 "10uF" H 7325 2550 50  0000 L CNN
+F 2 "" H 7338 2500 50  0001 C CNN
+F 3 "~" H 7300 2650 50  0001 C CNN
+	1    7300 2650
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5C6C8045
+P 7100 3000
+AR Path="/5C6C8045" Ref="#PWR?"  Part="1" 
+AR Path="/5C65C087/5C6C8045" Ref="#PWR0111"  Part="1" 
+F 0 "#PWR0111" H 7100 2750 50  0001 C CNN
+F 1 "GND" H 7100 2850 50  0000 C CNN
+F 2 "" H 7100 3000 50  0001 C CNN
+F 3 "" H 7100 3000 50  0001 C CNN
+	1    7100 3000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6900 2300 6900 2500
+Wire Wire Line
+	7300 2300 7300 2500
+Wire Wire Line
+	6900 2800 6900 3000
+Wire Wire Line
+	6900 3000 7100 3000
+Wire Wire Line
+	7100 3000 7300 3000
+Wire Wire Line
+	7300 3000 7300 2800
+Connection ~ 7100 3000
+Wire Wire Line
+	6900 2300 7100 2300
+Wire Wire Line
+	7100 2300 7100 2200
+Connection ~ 7100 2300
+Wire Wire Line
+	7100 2300 7300 2300
+Text Label 7100 2200 0    50   ~ 10
+USB_VBUS
+Text Notes 8325 7525 0    93   ~ 19
+WAF WAF Awoooing badge
+$EndSCHEMATC
