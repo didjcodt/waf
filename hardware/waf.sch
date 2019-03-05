@@ -4,7 +4,7 @@ EELAYER 29 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 8
+Sheet 1 40
 Title "WAF WAF Howling badge"
 Date ""
 Rev "1.0"
@@ -59,7 +59,7 @@ TODO
 Text Notes 4500 1200 0    240  ~ 0
 IN PROGRESS
 $Sheet
-S 4800 2000 2000 1300
+S 700  5100 2000 1300
 U 5C65C087
 F0 "ESP32" 50
 F1 "ESP32.sch" 50
@@ -79,7 +79,7 @@ F8 "EN_OTG" I L 4800 5100 50
 F9 "CMPOUT" O L 4800 4500 50 
 $EndSheet
 $Sheet
-S 700  4900 2200 1400
+S 4800 1800 2200 1400
 U 5CC10402
 F0 "Front Leds" 50
 F1 "LEDS.sch" 50

@@ -2,9 +2,9 @@ EESchema Schematic File Version 4
 LIBS:waf-cache
 EELAYER 29 0
 EELAYER END
-$Descr A4 11693 8268
+$Descr A2 23386 16535
 encoding utf-8
-Sheet 8 8
+Sheet 8 40
 Title ""
 Date ""
 Rev ""
@@ -14,6 +14,8423 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-Text Notes 4200 3700 0    50   ~ 0
-https://www.mouser.fr/ProductDetail/Inolux/IN-B101FCH
+$Comp
+L waf:TLC59581 U?
+U 1 1 5C7FE727
+P 2100 8600
+F 0 "U?" H 1800 11300 50  0000 C CNN
+F 1 "TLC59581" H 2400 11300 50  0000 C CNN
+F 2 "Package_DFN_QFN:QFN-56-1EP_8x8mm_P0.5mm_EP5.6x5.6mm_ThermalVias" H 3700 5800 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/tlc59581.pdf" H 2100 5500 50  0001 C CNN
+	1    2100 8600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5C807424
+P 1700 4450
+F 0 "C?" H 1815 4496 50  0000 L CNN
+F 1 "100n" H 1815 4405 50  0000 L CNN
+F 2 "" H 1738 4300 50  0001 C CNN
+F 3 "~" H 1700 4450 50  0001 C CNN
+	1    1700 4450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5C818C7F
+P 1300 4450
+F 0 "C?" H 1415 4496 50  0000 L CNN
+F 1 "47u" H 1415 4405 50  0000 L CNN
+F 2 "" H 1338 4300 50  0001 C CNN
+F 3 "~" H 1300 4450 50  0001 C CNN
+	1    1300 4450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1300 4700 1300 4600
+Wire Wire Line
+	1300 4700 1500 4700
+Wire Wire Line
+	1700 4700 1700 4600
+$Comp
+L power:GND #PWR?
+U 1 1 5C81AEEE
+P 1500 4800
+F 0 "#PWR?" H 1500 4550 50  0001 C CNN
+F 1 "GND" H 1505 4627 50  0000 C CNN
+F 2 "" H 1500 4800 50  0001 C CNN
+F 3 "" H 1500 4800 50  0001 C CNN
+	1    1500 4800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1500 4700 1500 4800
+Connection ~ 1500 4700
+Wire Wire Line
+	1500 4700 1700 4700
+Wire Wire Line
+	1300 4300 1300 4200
+Wire Wire Line
+	1300 4200 1500 4200
+Wire Wire Line
+	1700 4200 1700 4300
+Wire Wire Line
+	1500 4200 1500 4100
+Connection ~ 1500 4200
+Wire Wire Line
+	1500 4200 1700 4200
+$Comp
+L power:+BATT #PWR?
+U 1 1 5C81C613
+P 1500 4100
+F 0 "#PWR?" H 1500 3950 50  0001 C CNN
+F 1 "+BATT" H 1515 4273 50  0000 C CNN
+F 2 "" H 1500 4100 50  0001 C CNN
+F 3 "" H 1500 4100 50  0001 C CNN
+	1    1500 4100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5C82B9B8
+P 900 4450
+F 0 "C?" H 1015 4496 50  0000 L CNN
+F 1 "470u" H 1015 4405 50  0000 L CNN
+F 2 "" H 938 4300 50  0001 C CNN
+F 3 "~" H 900 4450 50  0001 C CNN
+	1    900  4450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	900  4700 900  4600
+Wire Wire Line
+	900  4300 900  4200
+Wire Wire Line
+	900  4200 1300 4200
+Connection ~ 1300 4200
+Wire Wire Line
+	900  4700 1300 4700
+Connection ~ 1300 4700
+Wire Wire Line
+	2100 5900 2100 5800
+$Comp
+L power:+BATT #PWR?
+U 1 1 5C832749
+P 2100 5800
+F 0 "#PWR?" H 2100 5650 50  0001 C CNN
+F 1 "+BATT" H 2115 5973 50  0000 C CNN
+F 2 "" H 2100 5800 50  0001 C CNN
+F 3 "" H 2100 5800 50  0001 C CNN
+	1    2100 5800
+	1    0    0    -1  
+$EndComp
+$Sheet
+S 4500 900  700  3400
+U 5D42DB45
+F0 "LED Column" 50
+F1 "LED_COL.sch" 50
+F2 "G0" I L 4500 1100 50 
+F3 "B0" I L 4500 1200 50 
+F4 "R1" I L 4500 1400 50 
+F5 "G1" I L 4500 1500 50 
+F6 "B1" I L 4500 1600 50 
+F7 "R2" I L 4500 1800 50 
+F8 "G2" I L 4500 1900 50 
+F9 "B2" I L 4500 2000 50 
+F10 "R4" I L 4500 2600 50 
+F11 "R5" I L 4500 3000 50 
+F12 "R6" I L 4500 3400 50 
+F13 "R7" I L 4500 3800 50 
+F14 "R8" I R 5200 1000 50 
+F15 "R9" I R 5200 1400 50 
+F16 "R10" I R 5200 1800 50 
+F17 "R11" I R 5200 2200 50 
+F18 "R12" I R 5200 2600 50 
+F19 "R13" I R 5200 3000 50 
+F20 "R14" I R 5200 3400 50 
+F21 "R15" I R 5200 3800 50 
+F22 "G4" I L 4500 2700 50 
+F23 "G5" I L 4500 3100 50 
+F24 "G6" I L 4500 3500 50 
+F25 "G7" I L 4500 3900 50 
+F26 "G8" I R 5200 1100 50 
+F27 "G9" I R 5200 1500 50 
+F28 "G10" I R 5200 1900 50 
+F29 "G11" I R 5200 2300 50 
+F30 "G12" I R 5200 2700 50 
+F31 "G13" I R 5200 3100 50 
+F32 "G14" I R 5200 3500 50 
+F33 "G15" I R 5200 3900 50 
+F34 "B4" I L 4500 2800 50 
+F35 "B5" I L 4500 3200 50 
+F36 "B6" I L 4500 3600 50 
+F37 "B7" I L 4500 4000 50 
+F38 "B8" I R 5200 1200 50 
+F39 "B9" I R 5200 1600 50 
+F40 "B10" I R 5200 2000 50 
+F41 "B11" I R 5200 2400 50 
+F42 "B12" I R 5200 2800 50 
+F43 "B13" I R 5200 3200 50 
+F44 "B14" I R 5200 3600 50 
+F45 "B3" I L 4500 2400 50 
+F46 "G3" I L 4500 2300 50 
+F47 "R3" I L 4500 2200 50 
+F48 "B15" I R 5200 4000 50 
+F49 "R0" I L 4500 1000 50 
+F50 "C" I R 5200 4200 50 
+$EndSheet
+Wire Wire Line
+	4500 1000 4200 1000
+Wire Wire Line
+	4500 1100 4200 1100
+Wire Wire Line
+	4500 1200 4200 1200
+Wire Wire Line
+	4500 1400 4200 1400
+Wire Wire Line
+	4500 1500 4200 1500
+Wire Wire Line
+	4500 1600 4200 1600
+Wire Wire Line
+	4500 1800 4200 1800
+Wire Wire Line
+	4500 1900 4200 1900
+Wire Wire Line
+	4500 2000 4200 2000
+Wire Wire Line
+	4500 2200 4200 2200
+Wire Wire Line
+	4500 2300 4200 2300
+Wire Wire Line
+	4500 2400 4200 2400
+Wire Wire Line
+	4500 2600 4200 2600
+Wire Wire Line
+	4500 2700 4200 2700
+Wire Wire Line
+	4500 2800 4200 2800
+Wire Wire Line
+	4500 3000 4200 3000
+Wire Wire Line
+	4500 3100 4200 3100
+Wire Wire Line
+	4500 3200 4200 3200
+Wire Wire Line
+	4500 3400 4200 3400
+Wire Wire Line
+	4500 3500 4200 3500
+Wire Wire Line
+	4500 3600 4200 3600
+Wire Wire Line
+	4500 3800 4200 3800
+Wire Wire Line
+	4500 3900 4200 3900
+Wire Wire Line
+	4500 4000 4200 4000
+Wire Wire Line
+	5500 1000 5200 1000
+Wire Wire Line
+	5500 1100 5200 1100
+Wire Wire Line
+	5500 1200 5200 1200
+Wire Wire Line
+	5500 1400 5200 1400
+Wire Wire Line
+	5500 1500 5200 1500
+Wire Wire Line
+	5500 1600 5200 1600
+Wire Wire Line
+	5500 1800 5200 1800
+Wire Wire Line
+	5500 1900 5200 1900
+Wire Wire Line
+	5500 2000 5200 2000
+Wire Wire Line
+	5500 2200 5200 2200
+Wire Wire Line
+	5500 2300 5200 2300
+Wire Wire Line
+	5500 2400 5200 2400
+Wire Wire Line
+	5500 2600 5200 2600
+Wire Wire Line
+	5500 2700 5200 2700
+Wire Wire Line
+	5500 2800 5200 2800
+Wire Wire Line
+	5500 3000 5200 3000
+Wire Wire Line
+	5500 3100 5200 3100
+Wire Wire Line
+	5500 3200 5200 3200
+Wire Wire Line
+	5500 3400 5200 3400
+Wire Wire Line
+	5500 3500 5200 3500
+Wire Wire Line
+	5500 3600 5200 3600
+Wire Wire Line
+	5500 3800 5200 3800
+Wire Wire Line
+	5500 3900 5200 3900
+Wire Wire Line
+	5500 4000 5200 4000
+Text Label 4200 1000 0    50   ~ 0
+R0
+Text Label 4200 1100 0    50   ~ 0
+G0
+Text Label 4200 1200 0    50   ~ 0
+B0
+Text Label 4200 1800 0    50   ~ 0
+R2
+Text Label 4200 2200 0    50   ~ 0
+R3
+Text Label 4200 2600 0    50   ~ 0
+R4
+Text Label 4200 3000 0    50   ~ 0
+R5
+Text Label 4200 3400 0    50   ~ 0
+R6
+Text Label 4200 3800 0    50   ~ 0
+R7
+Text Label 5500 1000 2    50   ~ 0
+R8
+Text Label 5500 1400 2    50   ~ 0
+R9
+Text Label 5500 1800 2    50   ~ 0
+R10
+Text Label 5500 2200 2    50   ~ 0
+R11
+Text Label 5500 2600 2    50   ~ 0
+R12
+Text Label 5500 3000 2    50   ~ 0
+R13
+Text Label 5500 3400 2    50   ~ 0
+R14
+Text Label 5500 3800 2    50   ~ 0
+R15
+Text Label 4200 1400 0    50   ~ 0
+R1
+Text Label 4200 1500 0    50   ~ 0
+G1
+Text Label 4200 1900 0    50   ~ 0
+G2
+Text Label 4200 2300 0    50   ~ 0
+G3
+Text Label 4200 2700 0    50   ~ 0
+G4
+Text Label 4200 3100 0    50   ~ 0
+G5
+Text Label 4200 3500 0    50   ~ 0
+G6
+Text Label 4200 3900 0    50   ~ 0
+G7
+Text Label 5500 1100 2    50   ~ 0
+G8
+Text Label 5500 1500 2    50   ~ 0
+G9
+Text Label 5500 1900 2    50   ~ 0
+G10
+Text Label 5500 2300 2    50   ~ 0
+G11
+Text Label 5500 2700 2    50   ~ 0
+G12
+Text Label 5500 3100 2    50   ~ 0
+G13
+Text Label 5500 3500 2    50   ~ 0
+G14
+Text Label 5500 3900 2    50   ~ 0
+G15
+Text Label 4200 1600 0    50   ~ 0
+B1
+Text Label 4200 2000 0    50   ~ 0
+B2
+Text Label 4200 2400 0    50   ~ 0
+B3
+Text Label 4200 2800 0    50   ~ 0
+B4
+Text Label 4200 3200 0    50   ~ 0
+B5
+Text Label 4200 3600 0    50   ~ 0
+B6
+Text Label 4200 4000 0    50   ~ 0
+B7
+Text Label 5500 1200 2    50   ~ 0
+B8
+Text Label 5500 1600 2    50   ~ 0
+B9
+Text Label 5500 2000 2    50   ~ 0
+B10
+Text Label 5500 2400 2    50   ~ 0
+B11
+Text Label 5500 2800 2    50   ~ 0
+B12
+Text Label 5500 3200 2    50   ~ 0
+B13
+Text Label 5500 3600 2    50   ~ 0
+B14
+Text Label 5500 4000 2    50   ~ 0
+B15
+Text Label 5500 4200 2    50   ~ 0
+C0
+Wire Wire Line
+	5200 4200 5500 4200
+$Sheet
+S 6100 900  700  3400
+U 5D56EDBE
+F0 "sheet5D56ED8B" 50
+F1 "LED_COL.sch" 50
+F2 "G0" I L 6100 1100 50 
+F3 "B0" I L 6100 1200 50 
+F4 "R1" I L 6100 1400 50 
+F5 "G1" I L 6100 1500 50 
+F6 "B1" I L 6100 1600 50 
+F7 "R2" I L 6100 1800 50 
+F8 "G2" I L 6100 1900 50 
+F9 "B2" I L 6100 2000 50 
+F10 "R4" I L 6100 2600 50 
+F11 "R5" I L 6100 3000 50 
+F12 "R6" I L 6100 3400 50 
+F13 "R7" I L 6100 3800 50 
+F14 "R8" I R 6800 1000 50 
+F15 "R9" I R 6800 1400 50 
+F16 "R10" I R 6800 1800 50 
+F17 "R11" I R 6800 2200 50 
+F18 "R12" I R 6800 2600 50 
+F19 "R13" I R 6800 3000 50 
+F20 "R14" I R 6800 3400 50 
+F21 "R15" I R 6800 3800 50 
+F22 "G4" I L 6100 2700 50 
+F23 "G5" I L 6100 3100 50 
+F24 "G6" I L 6100 3500 50 
+F25 "G7" I L 6100 3900 50 
+F26 "G8" I R 6800 1100 50 
+F27 "G9" I R 6800 1500 50 
+F28 "G10" I R 6800 1900 50 
+F29 "G11" I R 6800 2300 50 
+F30 "G12" I R 6800 2700 50 
+F31 "G13" I R 6800 3100 50 
+F32 "G14" I R 6800 3500 50 
+F33 "G15" I R 6800 3900 50 
+F34 "B4" I L 6100 2800 50 
+F35 "B5" I L 6100 3200 50 
+F36 "B6" I L 6100 3600 50 
+F37 "B7" I L 6100 4000 50 
+F38 "B8" I R 6800 1200 50 
+F39 "B9" I R 6800 1600 50 
+F40 "B10" I R 6800 2000 50 
+F41 "B11" I R 6800 2400 50 
+F42 "B12" I R 6800 2800 50 
+F43 "B13" I R 6800 3200 50 
+F44 "B14" I R 6800 3600 50 
+F45 "B3" I L 6100 2400 50 
+F46 "G3" I L 6100 2300 50 
+F47 "R3" I L 6100 2200 50 
+F48 "B15" I R 6800 4000 50 
+F49 "R0" I L 6100 1000 50 
+F50 "C" I R 6800 4200 50 
+$EndSheet
+Wire Wire Line
+	6100 1000 5800 1000
+Wire Wire Line
+	6100 1100 5800 1100
+Wire Wire Line
+	6100 1200 5800 1200
+Wire Wire Line
+	6100 1400 5800 1400
+Wire Wire Line
+	6100 1500 5800 1500
+Wire Wire Line
+	6100 1600 5800 1600
+Wire Wire Line
+	6100 1800 5800 1800
+Wire Wire Line
+	6100 1900 5800 1900
+Wire Wire Line
+	6100 2000 5800 2000
+Wire Wire Line
+	6100 2200 5800 2200
+Wire Wire Line
+	6100 2300 5800 2300
+Wire Wire Line
+	6100 2400 5800 2400
+Wire Wire Line
+	6100 2600 5800 2600
+Wire Wire Line
+	6100 2700 5800 2700
+Wire Wire Line
+	6100 2800 5800 2800
+Wire Wire Line
+	6100 3000 5800 3000
+Wire Wire Line
+	6100 3100 5800 3100
+Wire Wire Line
+	6100 3200 5800 3200
+Wire Wire Line
+	6100 3400 5800 3400
+Wire Wire Line
+	6100 3500 5800 3500
+Wire Wire Line
+	6100 3600 5800 3600
+Wire Wire Line
+	6100 3800 5800 3800
+Wire Wire Line
+	6100 3900 5800 3900
+Wire Wire Line
+	6100 4000 5800 4000
+Text Label 5800 1000 0    50   ~ 0
+R0
+Text Label 5800 1100 0    50   ~ 0
+G0
+Text Label 5800 1200 0    50   ~ 0
+B0
+Text Label 5800 1800 0    50   ~ 0
+R2
+Text Label 5800 2200 0    50   ~ 0
+R3
+Text Label 5800 2600 0    50   ~ 0
+R4
+Text Label 5800 3000 0    50   ~ 0
+R5
+Text Label 5800 3400 0    50   ~ 0
+R6
+Text Label 5800 3800 0    50   ~ 0
+R7
+Text Label 5800 1400 0    50   ~ 0
+R1
+Text Label 5800 1500 0    50   ~ 0
+G1
+Text Label 5800 1900 0    50   ~ 0
+G2
+Text Label 5800 2300 0    50   ~ 0
+G3
+Text Label 5800 2700 0    50   ~ 0
+G4
+Text Label 5800 3100 0    50   ~ 0
+G5
+Text Label 5800 3500 0    50   ~ 0
+G6
+Text Label 5800 3900 0    50   ~ 0
+G7
+Text Label 5800 1600 0    50   ~ 0
+B1
+Text Label 5800 2000 0    50   ~ 0
+B2
+Text Label 5800 2400 0    50   ~ 0
+B3
+Text Label 5800 2800 0    50   ~ 0
+B4
+Text Label 5800 3200 0    50   ~ 0
+B5
+Text Label 5800 3600 0    50   ~ 0
+B6
+Text Label 5800 4000 0    50   ~ 0
+B7
+Wire Wire Line
+	2600 6100 3000 6100
+Wire Wire Line
+	2600 6200 3000 6200
+Wire Wire Line
+	2600 6300 3000 6300
+Wire Wire Line
+	2600 6400 3000 6400
+Wire Wire Line
+	2600 6500 3000 6500
+Wire Wire Line
+	2600 6600 3000 6600
+Wire Wire Line
+	2600 6700 3000 6700
+Wire Wire Line
+	2600 6800 3000 6800
+Wire Wire Line
+	2600 6900 3000 6900
+Wire Wire Line
+	2600 7000 3000 7000
+Wire Wire Line
+	2600 7100 3000 7100
+Wire Wire Line
+	2600 7200 3000 7200
+Wire Wire Line
+	2600 7400 3000 7400
+Wire Wire Line
+	2600 7500 3000 7500
+Wire Wire Line
+	2600 7600 3000 7600
+Wire Wire Line
+	2600 7700 3000 7700
+Wire Wire Line
+	2600 7800 3000 7800
+Wire Wire Line
+	2600 7900 3000 7900
+Wire Wire Line
+	2600 8000 3000 8000
+Wire Wire Line
+	2600 8100 3000 8100
+Wire Wire Line
+	2600 8200 3000 8200
+Wire Wire Line
+	2600 8300 3000 8300
+Wire Wire Line
+	2600 8400 3000 8400
+Wire Wire Line
+	2600 8500 3000 8500
+Wire Wire Line
+	2600 8700 3000 8700
+Wire Wire Line
+	2600 8800 3000 8800
+Wire Wire Line
+	2600 8900 3000 8900
+Wire Wire Line
+	2600 9000 3000 9000
+Wire Wire Line
+	2600 9100 3000 9100
+Wire Wire Line
+	2600 9200 3000 9200
+Wire Wire Line
+	2600 9300 3000 9300
+Wire Wire Line
+	2600 9400 3000 9400
+Wire Wire Line
+	2600 9500 3000 9500
+Wire Wire Line
+	2600 9600 3000 9600
+Wire Wire Line
+	2600 9700 3000 9700
+Wire Wire Line
+	2600 9800 3000 9800
+Wire Wire Line
+	2600 10000 3000 10000
+Wire Wire Line
+	2600 10100 3000 10100
+Wire Wire Line
+	2600 10200 3000 10200
+Wire Wire Line
+	2600 10300 3000 10300
+Wire Wire Line
+	2600 10400 3000 10400
+Wire Wire Line
+	2600 10500 3000 10500
+Wire Wire Line
+	2600 10600 3000 10600
+Wire Wire Line
+	2600 10700 3000 10700
+Wire Wire Line
+	2600 10800 3000 10800
+Wire Wire Line
+	2600 10900 3000 10900
+Wire Wire Line
+	2600 11000 3000 11000
+Wire Wire Line
+	2600 11100 3000 11100
+Text Label 3000 6100 2    50   ~ 0
+R0
+Text Label 3000 6400 2    50   ~ 0
+R1
+Text Label 3000 6700 2    50   ~ 0
+R2
+Text Label 3000 7000 2    50   ~ 0
+R3
+Text Label 3000 7400 2    50   ~ 0
+R4
+Text Label 3000 7700 2    50   ~ 0
+R5
+Text Label 3000 8000 2    50   ~ 0
+R6
+Text Label 3000 8300 2    50   ~ 0
+R7
+Text Label 3000 8700 2    50   ~ 0
+R8
+Text Label 3000 9000 2    50   ~ 0
+R9
+Text Label 3000 9300 2    50   ~ 0
+R10
+Text Label 3000 9600 2    50   ~ 0
+R11
+Text Label 3000 10000 2    50   ~ 0
+R12
+Text Label 3000 10300 2    50   ~ 0
+R13
+Text Label 3000 10600 2    50   ~ 0
+R14
+Text Label 3000 10900 2    50   ~ 0
+R15
+Text Label 3000 6200 2    50   ~ 0
+G0
+Text Label 3000 6500 2    50   ~ 0
+G1
+Text Label 3000 6800 2    50   ~ 0
+G2
+Text Label 3000 7100 2    50   ~ 0
+G3
+Text Label 3000 7800 2    50   ~ 0
+G5
+Text Label 3000 8100 2    50   ~ 0
+G6
+Text Label 3000 8400 2    50   ~ 0
+G7
+Text Label 3000 8800 2    50   ~ 0
+G8
+Text Label 3000 9100 2    50   ~ 0
+G9
+Text Label 3000 9400 2    50   ~ 0
+G10
+Text Label 3000 9700 2    50   ~ 0
+G11
+Text Label 3000 10100 2    50   ~ 0
+G12
+Text Label 3000 10400 2    50   ~ 0
+G13
+Text Label 3000 10700 2    50   ~ 0
+G14
+Text Label 3000 11000 2    50   ~ 0
+G15
+Text Label 3000 7500 2    50   ~ 0
+G4
+Text Label 3000 6300 2    50   ~ 0
+B0
+Text Label 3000 6600 2    50   ~ 0
+B1
+Text Label 3000 6900 2    50   ~ 0
+B2
+Text Label 3000 7200 2    50   ~ 0
+B3
+Text Label 3000 7600 2    50   ~ 0
+B4
+Text Label 3000 7900 2    50   ~ 0
+B5
+Text Label 3000 8200 2    50   ~ 0
+B6
+Text Label 3000 8500 2    50   ~ 0
+B7
+Text Label 3000 8900 2    50   ~ 0
+B8
+Text Label 3000 9200 2    50   ~ 0
+B9
+Text Label 3000 9500 2    50   ~ 0
+B10
+Text Label 3000 9800 2    50   ~ 0
+B11
+Text Label 3000 10200 2    50   ~ 0
+B12
+Text Label 3000 10500 2    50   ~ 0
+B13
+Text Label 3000 10800 2    50   ~ 0
+B14
+Text Label 3000 11100 2    50   ~ 0
+B15
+Wire Wire Line
+	1600 8300 1300 8300
+Wire Wire Line
+	1600 8500 1300 8500
+Wire Wire Line
+	1600 8600 1300 8600
+Wire Wire Line
+	1600 8700 1300 8700
+Wire Wire Line
+	1600 8900 1300 8900
+Wire Wire Line
+	900  700  1900 700 
+Wire Wire Line
+	900  900  1900 900 
+Wire Wire Line
+	900  1100 1900 1100
+Wire Wire Line
+	900  1300 1900 1300
+Wire Wire Line
+	900  1500 1900 1500
+Text Label 1300 8300 0    50   ~ 0
+GCLK
+Text Label 1300 8500 0    50   ~ 0
+LAT
+Text Label 1300 8600 0    50   ~ 0
+SCLK
+Text Label 1300 8700 0    50   ~ 0
+SIN
+Text Label 1300 8900 0    50   ~ 0
+SOUT
+Text Label 1900 700  2    50   ~ 0
+GCLK
+Text Label 1900 900  2    50   ~ 0
+LAT
+Text Label 1900 1100 2    50   ~ 0
+SCLK
+Text Label 1900 1300 2    50   ~ 0
+SIN
+Text Label 1900 1500 2    50   ~ 0
+SOUT
+Text HLabel 900  700  0    50   Input ~ 0
+GCLK
+Text HLabel 900  900  0    50   Input ~ 0
+LAT
+Text HLabel 900  1100 0    50   Input ~ 0
+SCLK
+Text HLabel 900  1300 0    50   Input ~ 0
+SIN
+Text HLabel 900  1500 0    50   Output ~ 0
+SOUT
+Wire Wire Line
+	1900 11300 1900 11400
+$Comp
+L power:GND #PWR?
+U 1 1 601C7944
+P 2100 11500
+F 0 "#PWR?" H 2100 11250 50  0001 C CNN
+F 1 "GND" H 2105 11327 50  0000 C CNN
+F 2 "" H 2100 11500 50  0001 C CNN
+F 3 "" H 2100 11500 50  0001 C CNN
+	1    2100 11500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 601C880A
+P 1400 11050
+F 0 "R?" H 1470 11096 50  0000 L CNN
+F 1 "R" H 1470 11005 50  0000 L CNN
+F 2 "" V 1330 11050 50  0001 C CNN
+F 3 "~" H 1400 11050 50  0001 C CNN
+	1    1400 11050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1600 10700 1400 10700
+Wire Wire Line
+	1400 10700 1400 10900
+Wire Wire Line
+	2100 11300 2100 11500
+Wire Wire Line
+	1400 11400 1900 11400
+Wire Wire Line
+	1400 11200 1400 11400
+Text Label 8700 4200 2    50   ~ 0
+C2
+Text Label 10600 4000 0    50   ~ 0
+B7
+Text Label 10600 3600 0    50   ~ 0
+B6
+Text Label 10600 3200 0    50   ~ 0
+B5
+Text Label 10600 2800 0    50   ~ 0
+B4
+Text Label 10600 2400 0    50   ~ 0
+B3
+Text Label 10600 2000 0    50   ~ 0
+B2
+Text Label 10600 1600 0    50   ~ 0
+B1
+Text Label 10600 3900 0    50   ~ 0
+G7
+Text Label 10600 3500 0    50   ~ 0
+G6
+Text Label 10600 3100 0    50   ~ 0
+G5
+Text Label 10600 2700 0    50   ~ 0
+G4
+Text Label 10600 2300 0    50   ~ 0
+G3
+Text Label 10600 1900 0    50   ~ 0
+G2
+Text Label 10600 1500 0    50   ~ 0
+G1
+Text Label 10600 1400 0    50   ~ 0
+R1
+Text Label 10600 3800 0    50   ~ 0
+R7
+Text Label 10600 3400 0    50   ~ 0
+R6
+Text Label 10600 3000 0    50   ~ 0
+R5
+Text Label 10600 2600 0    50   ~ 0
+R4
+Text Label 10600 2200 0    50   ~ 0
+R3
+Text Label 10600 1800 0    50   ~ 0
+R2
+Text Label 10600 1200 0    50   ~ 0
+B0
+Text Label 10600 1100 0    50   ~ 0
+G0
+Text Label 10600 1000 0    50   ~ 0
+R0
+Text Label 10300 4200 2    50   ~ 0
+C3
+Wire Wire Line
+	10000 4200 10300 4200
+Text Label 10300 4000 2    50   ~ 0
+B15
+Text Label 10300 3600 2    50   ~ 0
+B14
+Text Label 10300 3200 2    50   ~ 0
+B13
+Text Label 10300 2800 2    50   ~ 0
+B12
+Text Label 10300 2400 2    50   ~ 0
+B11
+Text Label 10300 2000 2    50   ~ 0
+B10
+Text Label 10300 1600 2    50   ~ 0
+B9
+Text Label 10300 1200 2    50   ~ 0
+B8
+Text Label 9000 4000 0    50   ~ 0
+B7
+Text Label 9000 3600 0    50   ~ 0
+B6
+Text Label 9000 3200 0    50   ~ 0
+B5
+Text Label 9000 2800 0    50   ~ 0
+B4
+Text Label 9000 2400 0    50   ~ 0
+B3
+Text Label 9000 2000 0    50   ~ 0
+B2
+Text Label 9000 1600 0    50   ~ 0
+B1
+Text Label 10300 3900 2    50   ~ 0
+G15
+Text Label 10300 3500 2    50   ~ 0
+G14
+Text Label 10300 3100 2    50   ~ 0
+G13
+Text Label 10300 2700 2    50   ~ 0
+G12
+Text Label 10300 2300 2    50   ~ 0
+G11
+Text Label 10300 1900 2    50   ~ 0
+G10
+Text Label 10300 1500 2    50   ~ 0
+G9
+Text Label 10300 1100 2    50   ~ 0
+G8
+Text Label 9000 3900 0    50   ~ 0
+G7
+Text Label 9000 3500 0    50   ~ 0
+G6
+Text Label 9000 3100 0    50   ~ 0
+G5
+Text Label 9000 2700 0    50   ~ 0
+G4
+Text Label 9000 2300 0    50   ~ 0
+G3
+Text Label 9000 1900 0    50   ~ 0
+G2
+Text Label 9000 1500 0    50   ~ 0
+G1
+Text Label 9000 1400 0    50   ~ 0
+R1
+Text Label 10300 3800 2    50   ~ 0
+R15
+Text Label 10300 3400 2    50   ~ 0
+R14
+Text Label 10300 3000 2    50   ~ 0
+R13
+Text Label 10300 2600 2    50   ~ 0
+R12
+Text Label 10300 2200 2    50   ~ 0
+R11
+Text Label 10300 1800 2    50   ~ 0
+R10
+Text Label 10300 1400 2    50   ~ 0
+R9
+Text Label 10300 1000 2    50   ~ 0
+R8
+Text Label 9000 3800 0    50   ~ 0
+R7
+Text Label 9000 3400 0    50   ~ 0
+R6
+Text Label 9000 3000 0    50   ~ 0
+R5
+Text Label 9000 2600 0    50   ~ 0
+R4
+Text Label 9000 2200 0    50   ~ 0
+R3
+Text Label 9000 1800 0    50   ~ 0
+R2
+Text Label 9000 1200 0    50   ~ 0
+B0
+Text Label 9000 1100 0    50   ~ 0
+G0
+Text Label 9000 1000 0    50   ~ 0
+R0
+Wire Wire Line
+	10300 4000 10000 4000
+Wire Wire Line
+	10300 3900 10000 3900
+Wire Wire Line
+	10300 3800 10000 3800
+Wire Wire Line
+	10300 3600 10000 3600
+Wire Wire Line
+	10300 3500 10000 3500
+Wire Wire Line
+	10300 3400 10000 3400
+Wire Wire Line
+	10300 3200 10000 3200
+Wire Wire Line
+	10300 3100 10000 3100
+Wire Wire Line
+	10300 3000 10000 3000
+Wire Wire Line
+	10300 2800 10000 2800
+Wire Wire Line
+	10300 2700 10000 2700
+Wire Wire Line
+	10300 2600 10000 2600
+Wire Wire Line
+	10300 2400 10000 2400
+Wire Wire Line
+	10300 2300 10000 2300
+Wire Wire Line
+	10300 2200 10000 2200
+Wire Wire Line
+	10300 2000 10000 2000
+Wire Wire Line
+	10300 1900 10000 1900
+Wire Wire Line
+	10300 1800 10000 1800
+Wire Wire Line
+	10300 1600 10000 1600
+Wire Wire Line
+	10300 1500 10000 1500
+Wire Wire Line
+	10300 1400 10000 1400
+Wire Wire Line
+	10300 1200 10000 1200
+Wire Wire Line
+	10300 1100 10000 1100
+Wire Wire Line
+	10300 1000 10000 1000
+Wire Wire Line
+	9300 4000 9000 4000
+Wire Wire Line
+	9300 3900 9000 3900
+Wire Wire Line
+	9300 3800 9000 3800
+Wire Wire Line
+	9300 3600 9000 3600
+Wire Wire Line
+	9300 3500 9000 3500
+Wire Wire Line
+	9300 3400 9000 3400
+Wire Wire Line
+	9300 3200 9000 3200
+Wire Wire Line
+	9300 3100 9000 3100
+Wire Wire Line
+	9300 3000 9000 3000
+Wire Wire Line
+	9300 2800 9000 2800
+Wire Wire Line
+	9300 2700 9000 2700
+Wire Wire Line
+	9300 2600 9000 2600
+Wire Wire Line
+	9300 2400 9000 2400
+Wire Wire Line
+	9300 2300 9000 2300
+Wire Wire Line
+	9300 2200 9000 2200
+Wire Wire Line
+	9300 2000 9000 2000
+Wire Wire Line
+	9300 1900 9000 1900
+Wire Wire Line
+	9300 1800 9000 1800
+Wire Wire Line
+	9300 1600 9000 1600
+Wire Wire Line
+	9300 1500 9000 1500
+Wire Wire Line
+	9300 1400 9000 1400
+Wire Wire Line
+	9300 1200 9000 1200
+Wire Wire Line
+	9300 1100 9000 1100
+Wire Wire Line
+	9300 1000 9000 1000
+$Sheet
+S 9300 900  700  3400
+U 5D578A79
+F0 "sheet5D5789B1" 50
+F1 "LED_COL.sch" 50
+F2 "G0" I L 9300 1100 50 
+F3 "B0" I L 9300 1200 50 
+F4 "R1" I L 9300 1400 50 
+F5 "G1" I L 9300 1500 50 
+F6 "B1" I L 9300 1600 50 
+F7 "R2" I L 9300 1800 50 
+F8 "G2" I L 9300 1900 50 
+F9 "B2" I L 9300 2000 50 
+F10 "R4" I L 9300 2600 50 
+F11 "R5" I L 9300 3000 50 
+F12 "R6" I L 9300 3400 50 
+F13 "R7" I L 9300 3800 50 
+F14 "R8" I R 10000 1000 50 
+F15 "R9" I R 10000 1400 50 
+F16 "R10" I R 10000 1800 50 
+F17 "R11" I R 10000 2200 50 
+F18 "R12" I R 10000 2600 50 
+F19 "R13" I R 10000 3000 50 
+F20 "R14" I R 10000 3400 50 
+F21 "R15" I R 10000 3800 50 
+F22 "G4" I L 9300 2700 50 
+F23 "G5" I L 9300 3100 50 
+F24 "G6" I L 9300 3500 50 
+F25 "G7" I L 9300 3900 50 
+F26 "G8" I R 10000 1100 50 
+F27 "G9" I R 10000 1500 50 
+F28 "G10" I R 10000 1900 50 
+F29 "G11" I R 10000 2300 50 
+F30 "G12" I R 10000 2700 50 
+F31 "G13" I R 10000 3100 50 
+F32 "G14" I R 10000 3500 50 
+F33 "G15" I R 10000 3900 50 
+F34 "B4" I L 9300 2800 50 
+F35 "B5" I L 9300 3200 50 
+F36 "B6" I L 9300 3600 50 
+F37 "B7" I L 9300 4000 50 
+F38 "B8" I R 10000 1200 50 
+F39 "B9" I R 10000 1600 50 
+F40 "B10" I R 10000 2000 50 
+F41 "B11" I R 10000 2400 50 
+F42 "B12" I R 10000 2800 50 
+F43 "B13" I R 10000 3200 50 
+F44 "B14" I R 10000 3600 50 
+F45 "B3" I L 9300 2400 50 
+F46 "G3" I L 9300 2300 50 
+F47 "R3" I L 9300 2200 50 
+F48 "B15" I R 10000 4000 50 
+F49 "R0" I L 9300 1000 50 
+F50 "C" I R 10000 4200 50 
+$EndSheet
+Wire Wire Line
+	8400 4200 8700 4200
+Text Label 8700 4000 2    50   ~ 0
+B15
+Text Label 8700 3600 2    50   ~ 0
+B14
+Text Label 8700 3200 2    50   ~ 0
+B13
+Text Label 8700 2800 2    50   ~ 0
+B12
+Text Label 8700 2400 2    50   ~ 0
+B11
+Text Label 8700 2000 2    50   ~ 0
+B10
+Text Label 8700 1600 2    50   ~ 0
+B9
+Text Label 8700 1200 2    50   ~ 0
+B8
+Text Label 7400 4000 0    50   ~ 0
+B7
+Text Label 7400 3600 0    50   ~ 0
+B6
+Text Label 7400 3200 0    50   ~ 0
+B5
+Text Label 7400 2800 0    50   ~ 0
+B4
+Text Label 7400 2400 0    50   ~ 0
+B3
+Text Label 7400 2000 0    50   ~ 0
+B2
+Text Label 7400 1600 0    50   ~ 0
+B1
+Text Label 8700 3900 2    50   ~ 0
+G15
+Text Label 8700 3500 2    50   ~ 0
+G14
+Text Label 8700 3100 2    50   ~ 0
+G13
+Text Label 8700 2700 2    50   ~ 0
+G12
+Text Label 8700 2300 2    50   ~ 0
+G11
+Text Label 8700 1900 2    50   ~ 0
+G10
+Text Label 8700 1500 2    50   ~ 0
+G9
+Text Label 8700 1100 2    50   ~ 0
+G8
+Text Label 7400 3900 0    50   ~ 0
+G7
+Text Label 7400 3500 0    50   ~ 0
+G6
+Text Label 7400 3100 0    50   ~ 0
+G5
+Text Label 7400 2700 0    50   ~ 0
+G4
+Text Label 7400 2300 0    50   ~ 0
+G3
+Text Label 7400 1900 0    50   ~ 0
+G2
+Text Label 7400 1500 0    50   ~ 0
+G1
+Text Label 7400 1400 0    50   ~ 0
+R1
+Text Label 8700 3800 2    50   ~ 0
+R15
+Text Label 8700 3400 2    50   ~ 0
+R14
+Text Label 8700 3000 2    50   ~ 0
+R13
+Text Label 8700 2600 2    50   ~ 0
+R12
+Text Label 8700 2200 2    50   ~ 0
+R11
+Text Label 8700 1800 2    50   ~ 0
+R10
+Text Label 8700 1400 2    50   ~ 0
+R9
+Text Label 8700 1000 2    50   ~ 0
+R8
+Text Label 7400 3800 0    50   ~ 0
+R7
+Text Label 7400 3400 0    50   ~ 0
+R6
+Text Label 7400 3000 0    50   ~ 0
+R5
+Text Label 7400 2600 0    50   ~ 0
+R4
+Text Label 7400 2200 0    50   ~ 0
+R3
+Text Label 7400 1800 0    50   ~ 0
+R2
+Text Label 7400 1200 0    50   ~ 0
+B0
+Text Label 7400 1100 0    50   ~ 0
+G0
+Text Label 7400 1000 0    50   ~ 0
+R0
+Wire Wire Line
+	8700 4000 8400 4000
+Wire Wire Line
+	8700 3900 8400 3900
+Wire Wire Line
+	8700 3800 8400 3800
+Wire Wire Line
+	8700 3600 8400 3600
+Wire Wire Line
+	8700 3500 8400 3500
+Wire Wire Line
+	8700 3400 8400 3400
+Wire Wire Line
+	8700 3200 8400 3200
+Wire Wire Line
+	8700 3100 8400 3100
+Wire Wire Line
+	8700 3000 8400 3000
+Wire Wire Line
+	8700 2800 8400 2800
+Wire Wire Line
+	8700 2700 8400 2700
+Wire Wire Line
+	8700 2600 8400 2600
+Wire Wire Line
+	8700 2400 8400 2400
+Wire Wire Line
+	8700 2300 8400 2300
+Wire Wire Line
+	8700 2200 8400 2200
+Wire Wire Line
+	8700 2000 8400 2000
+Wire Wire Line
+	8700 1900 8400 1900
+Wire Wire Line
+	8700 1800 8400 1800
+Wire Wire Line
+	8700 1600 8400 1600
+Wire Wire Line
+	8700 1500 8400 1500
+Wire Wire Line
+	8700 1400 8400 1400
+Wire Wire Line
+	8700 1200 8400 1200
+Wire Wire Line
+	8700 1100 8400 1100
+Wire Wire Line
+	8700 1000 8400 1000
+Wire Wire Line
+	7700 4000 7400 4000
+Wire Wire Line
+	7700 3900 7400 3900
+Wire Wire Line
+	7700 3800 7400 3800
+Wire Wire Line
+	7700 3600 7400 3600
+Wire Wire Line
+	7700 3500 7400 3500
+Wire Wire Line
+	7700 3400 7400 3400
+Wire Wire Line
+	7700 3200 7400 3200
+Wire Wire Line
+	7700 3100 7400 3100
+Wire Wire Line
+	7700 3000 7400 3000
+Wire Wire Line
+	7700 2800 7400 2800
+Wire Wire Line
+	7700 2700 7400 2700
+Wire Wire Line
+	7700 2600 7400 2600
+Wire Wire Line
+	7700 2400 7400 2400
+Wire Wire Line
+	7700 2300 7400 2300
+Wire Wire Line
+	7700 2200 7400 2200
+Wire Wire Line
+	7700 2000 7400 2000
+Wire Wire Line
+	7700 1900 7400 1900
+Wire Wire Line
+	7700 1800 7400 1800
+Wire Wire Line
+	7700 1600 7400 1600
+Wire Wire Line
+	7700 1500 7400 1500
+Wire Wire Line
+	7700 1400 7400 1400
+Wire Wire Line
+	7700 1200 7400 1200
+Wire Wire Line
+	7700 1100 7400 1100
+Wire Wire Line
+	7700 1000 7400 1000
+$Sheet
+S 7700 900  700  3400
+U 5D5789E4
+F0 "sheet5D5789B0" 50
+F1 "LED_COL.sch" 50
+F2 "G0" I L 7700 1100 50 
+F3 "B0" I L 7700 1200 50 
+F4 "R1" I L 7700 1400 50 
+F5 "G1" I L 7700 1500 50 
+F6 "B1" I L 7700 1600 50 
+F7 "R2" I L 7700 1800 50 
+F8 "G2" I L 7700 1900 50 
+F9 "B2" I L 7700 2000 50 
+F10 "R4" I L 7700 2600 50 
+F11 "R5" I L 7700 3000 50 
+F12 "R6" I L 7700 3400 50 
+F13 "R7" I L 7700 3800 50 
+F14 "R8" I R 8400 1000 50 
+F15 "R9" I R 8400 1400 50 
+F16 "R10" I R 8400 1800 50 
+F17 "R11" I R 8400 2200 50 
+F18 "R12" I R 8400 2600 50 
+F19 "R13" I R 8400 3000 50 
+F20 "R14" I R 8400 3400 50 
+F21 "R15" I R 8400 3800 50 
+F22 "G4" I L 7700 2700 50 
+F23 "G5" I L 7700 3100 50 
+F24 "G6" I L 7700 3500 50 
+F25 "G7" I L 7700 3900 50 
+F26 "G8" I R 8400 1100 50 
+F27 "G9" I R 8400 1500 50 
+F28 "G10" I R 8400 1900 50 
+F29 "G11" I R 8400 2300 50 
+F30 "G12" I R 8400 2700 50 
+F31 "G13" I R 8400 3100 50 
+F32 "G14" I R 8400 3500 50 
+F33 "G15" I R 8400 3900 50 
+F34 "B4" I L 7700 2800 50 
+F35 "B5" I L 7700 3200 50 
+F36 "B6" I L 7700 3600 50 
+F37 "B7" I L 7700 4000 50 
+F38 "B8" I R 8400 1200 50 
+F39 "B9" I R 8400 1600 50 
+F40 "B10" I R 8400 2000 50 
+F41 "B11" I R 8400 2400 50 
+F42 "B12" I R 8400 2800 50 
+F43 "B13" I R 8400 3200 50 
+F44 "B14" I R 8400 3600 50 
+F45 "B3" I L 7700 2400 50 
+F46 "G3" I L 7700 2300 50 
+F47 "R3" I L 7700 2200 50 
+F48 "B15" I R 8400 4000 50 
+F49 "R0" I L 7700 1000 50 
+F50 "C" I R 8400 4200 50 
+$EndSheet
+Text Label 7100 4200 2    50   ~ 0
+C1
+Wire Wire Line
+	6800 4200 7100 4200
+Text Label 7100 4000 2    50   ~ 0
+B15
+Text Label 7100 3600 2    50   ~ 0
+B14
+Text Label 7100 3200 2    50   ~ 0
+B13
+Text Label 7100 2800 2    50   ~ 0
+B12
+Text Label 7100 2400 2    50   ~ 0
+B11
+Text Label 7100 2000 2    50   ~ 0
+B10
+Text Label 7100 1600 2    50   ~ 0
+B9
+Text Label 7100 1200 2    50   ~ 0
+B8
+Text Label 7100 3900 2    50   ~ 0
+G15
+Text Label 7100 3500 2    50   ~ 0
+G14
+Text Label 7100 3100 2    50   ~ 0
+G13
+Text Label 7100 2700 2    50   ~ 0
+G12
+Text Label 7100 2300 2    50   ~ 0
+G11
+Text Label 7100 1900 2    50   ~ 0
+G10
+Text Label 7100 1500 2    50   ~ 0
+G9
+Text Label 7100 1100 2    50   ~ 0
+G8
+Text Label 7100 3800 2    50   ~ 0
+R15
+Text Label 7100 3400 2    50   ~ 0
+R14
+Text Label 7100 3000 2    50   ~ 0
+R13
+Text Label 7100 2600 2    50   ~ 0
+R12
+Text Label 7100 2200 2    50   ~ 0
+R11
+Text Label 7100 1800 2    50   ~ 0
+R10
+Text Label 7100 1400 2    50   ~ 0
+R9
+Text Label 7100 1000 2    50   ~ 0
+R8
+Wire Wire Line
+	7100 4000 6800 4000
+Wire Wire Line
+	7100 3900 6800 3900
+Wire Wire Line
+	7100 3800 6800 3800
+Wire Wire Line
+	7100 3600 6800 3600
+Wire Wire Line
+	7100 3500 6800 3500
+Wire Wire Line
+	7100 3400 6800 3400
+Wire Wire Line
+	7100 3200 6800 3200
+Wire Wire Line
+	7100 3100 6800 3100
+Wire Wire Line
+	7100 3000 6800 3000
+Wire Wire Line
+	7100 2800 6800 2800
+Wire Wire Line
+	7100 2700 6800 2700
+Wire Wire Line
+	7100 2600 6800 2600
+Wire Wire Line
+	7100 2400 6800 2400
+Wire Wire Line
+	7100 2300 6800 2300
+Wire Wire Line
+	7100 2200 6800 2200
+Wire Wire Line
+	7100 2000 6800 2000
+Wire Wire Line
+	7100 1900 6800 1900
+Wire Wire Line
+	7100 1800 6800 1800
+Wire Wire Line
+	7100 1600 6800 1600
+Wire Wire Line
+	7100 1500 6800 1500
+Wire Wire Line
+	7100 1400 6800 1400
+Wire Wire Line
+	7100 1200 6800 1200
+Wire Wire Line
+	7100 1100 6800 1100
+Wire Wire Line
+	7100 1000 6800 1000
+$Sheet
+S 10900 900  700  3400
+U 5D5E4590
+F0 "sheet5D5E455A" 50
+F1 "LED_COL.sch" 50
+F2 "G0" I L 10900 1100 50 
+F3 "B0" I L 10900 1200 50 
+F4 "R1" I L 10900 1400 50 
+F5 "G1" I L 10900 1500 50 
+F6 "B1" I L 10900 1600 50 
+F7 "R2" I L 10900 1800 50 
+F8 "G2" I L 10900 1900 50 
+F9 "B2" I L 10900 2000 50 
+F10 "R4" I L 10900 2600 50 
+F11 "R5" I L 10900 3000 50 
+F12 "R6" I L 10900 3400 50 
+F13 "R7" I L 10900 3800 50 
+F14 "R8" I R 11600 1000 50 
+F15 "R9" I R 11600 1400 50 
+F16 "R10" I R 11600 1800 50 
+F17 "R11" I R 11600 2200 50 
+F18 "R12" I R 11600 2600 50 
+F19 "R13" I R 11600 3000 50 
+F20 "R14" I R 11600 3400 50 
+F21 "R15" I R 11600 3800 50 
+F22 "G4" I L 10900 2700 50 
+F23 "G5" I L 10900 3100 50 
+F24 "G6" I L 10900 3500 50 
+F25 "G7" I L 10900 3900 50 
+F26 "G8" I R 11600 1100 50 
+F27 "G9" I R 11600 1500 50 
+F28 "G10" I R 11600 1900 50 
+F29 "G11" I R 11600 2300 50 
+F30 "G12" I R 11600 2700 50 
+F31 "G13" I R 11600 3100 50 
+F32 "G14" I R 11600 3500 50 
+F33 "G15" I R 11600 3900 50 
+F34 "B4" I L 10900 2800 50 
+F35 "B5" I L 10900 3200 50 
+F36 "B6" I L 10900 3600 50 
+F37 "B7" I L 10900 4000 50 
+F38 "B8" I R 11600 1200 50 
+F39 "B9" I R 11600 1600 50 
+F40 "B10" I R 11600 2000 50 
+F41 "B11" I R 11600 2400 50 
+F42 "B12" I R 11600 2800 50 
+F43 "B13" I R 11600 3200 50 
+F44 "B14" I R 11600 3600 50 
+F45 "B3" I L 10900 2400 50 
+F46 "G3" I L 10900 2300 50 
+F47 "R3" I L 10900 2200 50 
+F48 "B15" I R 11600 4000 50 
+F49 "R0" I L 10900 1000 50 
+F50 "C" I R 11600 4200 50 
+$EndSheet
+Wire Wire Line
+	10900 1000 10600 1000
+Wire Wire Line
+	10900 1100 10600 1100
+Wire Wire Line
+	10900 1200 10600 1200
+Wire Wire Line
+	10900 1400 10600 1400
+Wire Wire Line
+	10900 1500 10600 1500
+Wire Wire Line
+	10900 1600 10600 1600
+Wire Wire Line
+	10900 1800 10600 1800
+Wire Wire Line
+	10900 1900 10600 1900
+Wire Wire Line
+	10900 2000 10600 2000
+Wire Wire Line
+	10900 2200 10600 2200
+Wire Wire Line
+	10900 2300 10600 2300
+Wire Wire Line
+	10900 2400 10600 2400
+Wire Wire Line
+	10900 2600 10600 2600
+Wire Wire Line
+	10900 2700 10600 2700
+Wire Wire Line
+	10900 2800 10600 2800
+Wire Wire Line
+	10900 3000 10600 3000
+Wire Wire Line
+	10900 3100 10600 3100
+Wire Wire Line
+	10900 3200 10600 3200
+Wire Wire Line
+	10900 3400 10600 3400
+Wire Wire Line
+	10900 3500 10600 3500
+Wire Wire Line
+	10900 3600 10600 3600
+Wire Wire Line
+	10900 3800 10600 3800
+Wire Wire Line
+	10900 3900 10600 3900
+Wire Wire Line
+	10900 4000 10600 4000
+Wire Wire Line
+	11900 1000 11600 1000
+Wire Wire Line
+	11900 1100 11600 1100
+Wire Wire Line
+	11900 1200 11600 1200
+Wire Wire Line
+	11900 1400 11600 1400
+Wire Wire Line
+	11900 1500 11600 1500
+Wire Wire Line
+	11900 1600 11600 1600
+Wire Wire Line
+	11900 1800 11600 1800
+Wire Wire Line
+	11900 1900 11600 1900
+Wire Wire Line
+	11900 2000 11600 2000
+Wire Wire Line
+	11900 2200 11600 2200
+Wire Wire Line
+	11900 2300 11600 2300
+Wire Wire Line
+	11900 2400 11600 2400
+Wire Wire Line
+	11900 2600 11600 2600
+Wire Wire Line
+	11900 2700 11600 2700
+Wire Wire Line
+	11900 2800 11600 2800
+Wire Wire Line
+	11900 3000 11600 3000
+Wire Wire Line
+	11900 3100 11600 3100
+Wire Wire Line
+	11900 3200 11600 3200
+Wire Wire Line
+	11900 3400 11600 3400
+Wire Wire Line
+	11900 3500 11600 3500
+Wire Wire Line
+	11900 3600 11600 3600
+Wire Wire Line
+	11900 3800 11600 3800
+Wire Wire Line
+	11900 3900 11600 3900
+Wire Wire Line
+	11900 4000 11600 4000
+Text Label 11900 1000 2    50   ~ 0
+R8
+Text Label 11900 1400 2    50   ~ 0
+R9
+Text Label 11900 1800 2    50   ~ 0
+R10
+Text Label 11900 2200 2    50   ~ 0
+R11
+Text Label 11900 2600 2    50   ~ 0
+R12
+Text Label 11900 3000 2    50   ~ 0
+R13
+Text Label 11900 3400 2    50   ~ 0
+R14
+Text Label 11900 3800 2    50   ~ 0
+R15
+Text Label 11900 1100 2    50   ~ 0
+G8
+Text Label 11900 1500 2    50   ~ 0
+G9
+Text Label 11900 1900 2    50   ~ 0
+G10
+Text Label 11900 2300 2    50   ~ 0
+G11
+Text Label 11900 2700 2    50   ~ 0
+G12
+Text Label 11900 3100 2    50   ~ 0
+G13
+Text Label 11900 3500 2    50   ~ 0
+G14
+Text Label 11900 3900 2    50   ~ 0
+G15
+Text Label 11900 1200 2    50   ~ 0
+B8
+Text Label 11900 1600 2    50   ~ 0
+B9
+Text Label 11900 2000 2    50   ~ 0
+B10
+Text Label 11900 2400 2    50   ~ 0
+B11
+Text Label 11900 2800 2    50   ~ 0
+B12
+Text Label 11900 3200 2    50   ~ 0
+B13
+Text Label 11900 3600 2    50   ~ 0
+B14
+Text Label 11900 4000 2    50   ~ 0
+B15
+Text Label 11900 4200 2    50   ~ 0
+C4
+Wire Wire Line
+	11600 4200 11900 4200
+$Sheet
+S 12500 900  700  3400
+U 5D5E4625
+F0 "sheet5D5E455B" 50
+F1 "LED_COL.sch" 50
+F2 "G0" I L 12500 1100 50 
+F3 "B0" I L 12500 1200 50 
+F4 "R1" I L 12500 1400 50 
+F5 "G1" I L 12500 1500 50 
+F6 "B1" I L 12500 1600 50 
+F7 "R2" I L 12500 1800 50 
+F8 "G2" I L 12500 1900 50 
+F9 "B2" I L 12500 2000 50 
+F10 "R4" I L 12500 2600 50 
+F11 "R5" I L 12500 3000 50 
+F12 "R6" I L 12500 3400 50 
+F13 "R7" I L 12500 3800 50 
+F14 "R8" I R 13200 1000 50 
+F15 "R9" I R 13200 1400 50 
+F16 "R10" I R 13200 1800 50 
+F17 "R11" I R 13200 2200 50 
+F18 "R12" I R 13200 2600 50 
+F19 "R13" I R 13200 3000 50 
+F20 "R14" I R 13200 3400 50 
+F21 "R15" I R 13200 3800 50 
+F22 "G4" I L 12500 2700 50 
+F23 "G5" I L 12500 3100 50 
+F24 "G6" I L 12500 3500 50 
+F25 "G7" I L 12500 3900 50 
+F26 "G8" I R 13200 1100 50 
+F27 "G9" I R 13200 1500 50 
+F28 "G10" I R 13200 1900 50 
+F29 "G11" I R 13200 2300 50 
+F30 "G12" I R 13200 2700 50 
+F31 "G13" I R 13200 3100 50 
+F32 "G14" I R 13200 3500 50 
+F33 "G15" I R 13200 3900 50 
+F34 "B4" I L 12500 2800 50 
+F35 "B5" I L 12500 3200 50 
+F36 "B6" I L 12500 3600 50 
+F37 "B7" I L 12500 4000 50 
+F38 "B8" I R 13200 1200 50 
+F39 "B9" I R 13200 1600 50 
+F40 "B10" I R 13200 2000 50 
+F41 "B11" I R 13200 2400 50 
+F42 "B12" I R 13200 2800 50 
+F43 "B13" I R 13200 3200 50 
+F44 "B14" I R 13200 3600 50 
+F45 "B3" I L 12500 2400 50 
+F46 "G3" I L 12500 2300 50 
+F47 "R3" I L 12500 2200 50 
+F48 "B15" I R 13200 4000 50 
+F49 "R0" I L 12500 1000 50 
+F50 "C" I R 13200 4200 50 
+$EndSheet
+Wire Wire Line
+	12500 1000 12200 1000
+Wire Wire Line
+	12500 1100 12200 1100
+Wire Wire Line
+	12500 1200 12200 1200
+Wire Wire Line
+	12500 1400 12200 1400
+Wire Wire Line
+	12500 1500 12200 1500
+Wire Wire Line
+	12500 1600 12200 1600
+Wire Wire Line
+	12500 1800 12200 1800
+Wire Wire Line
+	12500 1900 12200 1900
+Wire Wire Line
+	12500 2000 12200 2000
+Wire Wire Line
+	12500 2200 12200 2200
+Wire Wire Line
+	12500 2300 12200 2300
+Wire Wire Line
+	12500 2400 12200 2400
+Wire Wire Line
+	12500 2600 12200 2600
+Wire Wire Line
+	12500 2700 12200 2700
+Wire Wire Line
+	12500 2800 12200 2800
+Wire Wire Line
+	12500 3000 12200 3000
+Wire Wire Line
+	12500 3100 12200 3100
+Wire Wire Line
+	12500 3200 12200 3200
+Wire Wire Line
+	12500 3400 12200 3400
+Wire Wire Line
+	12500 3500 12200 3500
+Wire Wire Line
+	12500 3600 12200 3600
+Wire Wire Line
+	12500 3800 12200 3800
+Wire Wire Line
+	12500 3900 12200 3900
+Wire Wire Line
+	12500 4000 12200 4000
+Wire Wire Line
+	13500 1000 13200 1000
+Wire Wire Line
+	13500 1100 13200 1100
+Wire Wire Line
+	13500 1200 13200 1200
+Wire Wire Line
+	13500 1400 13200 1400
+Wire Wire Line
+	13500 1500 13200 1500
+Wire Wire Line
+	13500 1600 13200 1600
+Wire Wire Line
+	13500 1800 13200 1800
+Wire Wire Line
+	13500 1900 13200 1900
+Wire Wire Line
+	13500 2000 13200 2000
+Wire Wire Line
+	13500 2200 13200 2200
+Wire Wire Line
+	13500 2300 13200 2300
+Wire Wire Line
+	13500 2400 13200 2400
+Wire Wire Line
+	13500 2600 13200 2600
+Wire Wire Line
+	13500 2700 13200 2700
+Wire Wire Line
+	13500 2800 13200 2800
+Wire Wire Line
+	13500 3000 13200 3000
+Wire Wire Line
+	13500 3100 13200 3100
+Wire Wire Line
+	13500 3200 13200 3200
+Wire Wire Line
+	13500 3400 13200 3400
+Wire Wire Line
+	13500 3500 13200 3500
+Wire Wire Line
+	13500 3600 13200 3600
+Wire Wire Line
+	13500 3800 13200 3800
+Wire Wire Line
+	13500 3900 13200 3900
+Wire Wire Line
+	13500 4000 13200 4000
+Text Label 12200 1000 0    50   ~ 0
+R0
+Text Label 12200 1100 0    50   ~ 0
+G0
+Text Label 12200 1200 0    50   ~ 0
+B0
+Text Label 12200 1800 0    50   ~ 0
+R2
+Text Label 12200 2200 0    50   ~ 0
+R3
+Text Label 12200 2600 0    50   ~ 0
+R4
+Text Label 12200 3000 0    50   ~ 0
+R5
+Text Label 12200 3400 0    50   ~ 0
+R6
+Text Label 12200 3800 0    50   ~ 0
+R7
+Text Label 13500 1000 2    50   ~ 0
+R8
+Text Label 13500 1400 2    50   ~ 0
+R9
+Text Label 13500 1800 2    50   ~ 0
+R10
+Text Label 13500 2200 2    50   ~ 0
+R11
+Text Label 13500 2600 2    50   ~ 0
+R12
+Text Label 13500 3000 2    50   ~ 0
+R13
+Text Label 13500 3400 2    50   ~ 0
+R14
+Text Label 13500 3800 2    50   ~ 0
+R15
+Text Label 12200 1400 0    50   ~ 0
+R1
+Text Label 12200 1500 0    50   ~ 0
+G1
+Text Label 12200 1900 0    50   ~ 0
+G2
+Text Label 12200 2300 0    50   ~ 0
+G3
+Text Label 12200 2700 0    50   ~ 0
+G4
+Text Label 12200 3100 0    50   ~ 0
+G5
+Text Label 12200 3500 0    50   ~ 0
+G6
+Text Label 12200 3900 0    50   ~ 0
+G7
+Text Label 13500 1100 2    50   ~ 0
+G8
+Text Label 13500 1500 2    50   ~ 0
+G9
+Text Label 13500 1900 2    50   ~ 0
+G10
+Text Label 13500 2300 2    50   ~ 0
+G11
+Text Label 13500 2700 2    50   ~ 0
+G12
+Text Label 13500 3100 2    50   ~ 0
+G13
+Text Label 13500 3500 2    50   ~ 0
+G14
+Text Label 13500 3900 2    50   ~ 0
+G15
+Text Label 12200 1600 0    50   ~ 0
+B1
+Text Label 12200 2000 0    50   ~ 0
+B2
+Text Label 12200 2400 0    50   ~ 0
+B3
+Text Label 12200 2800 0    50   ~ 0
+B4
+Text Label 12200 3200 0    50   ~ 0
+B5
+Text Label 12200 3600 0    50   ~ 0
+B6
+Text Label 12200 4000 0    50   ~ 0
+B7
+Text Label 13500 1200 2    50   ~ 0
+B8
+Text Label 13500 1600 2    50   ~ 0
+B9
+Text Label 13500 2000 2    50   ~ 0
+B10
+Text Label 13500 2400 2    50   ~ 0
+B11
+Text Label 13500 2800 2    50   ~ 0
+B12
+Text Label 13500 3200 2    50   ~ 0
+B13
+Text Label 13500 3600 2    50   ~ 0
+B14
+Text Label 13500 4000 2    50   ~ 0
+B15
+Wire Wire Line
+	13200 4200 13500 4200
+Text Label 13500 4200 2    50   ~ 0
+C5
+$Sheet
+S 14100 900  700  3400
+U 5D5E46BA
+F0 "sheet5D5E455C" 50
+F1 "LED_COL.sch" 50
+F2 "G0" I L 14100 1100 50 
+F3 "B0" I L 14100 1200 50 
+F4 "R1" I L 14100 1400 50 
+F5 "G1" I L 14100 1500 50 
+F6 "B1" I L 14100 1600 50 
+F7 "R2" I L 14100 1800 50 
+F8 "G2" I L 14100 1900 50 
+F9 "B2" I L 14100 2000 50 
+F10 "R4" I L 14100 2600 50 
+F11 "R5" I L 14100 3000 50 
+F12 "R6" I L 14100 3400 50 
+F13 "R7" I L 14100 3800 50 
+F14 "R8" I R 14800 1000 50 
+F15 "R9" I R 14800 1400 50 
+F16 "R10" I R 14800 1800 50 
+F17 "R11" I R 14800 2200 50 
+F18 "R12" I R 14800 2600 50 
+F19 "R13" I R 14800 3000 50 
+F20 "R14" I R 14800 3400 50 
+F21 "R15" I R 14800 3800 50 
+F22 "G4" I L 14100 2700 50 
+F23 "G5" I L 14100 3100 50 
+F24 "G6" I L 14100 3500 50 
+F25 "G7" I L 14100 3900 50 
+F26 "G8" I R 14800 1100 50 
+F27 "G9" I R 14800 1500 50 
+F28 "G10" I R 14800 1900 50 
+F29 "G11" I R 14800 2300 50 
+F30 "G12" I R 14800 2700 50 
+F31 "G13" I R 14800 3100 50 
+F32 "G14" I R 14800 3500 50 
+F33 "G15" I R 14800 3900 50 
+F34 "B4" I L 14100 2800 50 
+F35 "B5" I L 14100 3200 50 
+F36 "B6" I L 14100 3600 50 
+F37 "B7" I L 14100 4000 50 
+F38 "B8" I R 14800 1200 50 
+F39 "B9" I R 14800 1600 50 
+F40 "B10" I R 14800 2000 50 
+F41 "B11" I R 14800 2400 50 
+F42 "B12" I R 14800 2800 50 
+F43 "B13" I R 14800 3200 50 
+F44 "B14" I R 14800 3600 50 
+F45 "B3" I L 14100 2400 50 
+F46 "G3" I L 14100 2300 50 
+F47 "R3" I L 14100 2200 50 
+F48 "B15" I R 14800 4000 50 
+F49 "R0" I L 14100 1000 50 
+F50 "C" I R 14800 4200 50 
+$EndSheet
+Wire Wire Line
+	14100 1000 13800 1000
+Wire Wire Line
+	14100 1100 13800 1100
+Wire Wire Line
+	14100 1200 13800 1200
+Wire Wire Line
+	14100 1400 13800 1400
+Wire Wire Line
+	14100 1500 13800 1500
+Wire Wire Line
+	14100 1600 13800 1600
+Wire Wire Line
+	14100 1800 13800 1800
+Wire Wire Line
+	14100 1900 13800 1900
+Wire Wire Line
+	14100 2000 13800 2000
+Wire Wire Line
+	14100 2200 13800 2200
+Wire Wire Line
+	14100 2300 13800 2300
+Wire Wire Line
+	14100 2400 13800 2400
+Wire Wire Line
+	14100 2600 13800 2600
+Wire Wire Line
+	14100 2700 13800 2700
+Wire Wire Line
+	14100 2800 13800 2800
+Wire Wire Line
+	14100 3000 13800 3000
+Wire Wire Line
+	14100 3100 13800 3100
+Wire Wire Line
+	14100 3200 13800 3200
+Wire Wire Line
+	14100 3400 13800 3400
+Wire Wire Line
+	14100 3500 13800 3500
+Wire Wire Line
+	14100 3600 13800 3600
+Wire Wire Line
+	14100 3800 13800 3800
+Wire Wire Line
+	14100 3900 13800 3900
+Wire Wire Line
+	14100 4000 13800 4000
+Wire Wire Line
+	15100 1000 14800 1000
+Wire Wire Line
+	15100 1100 14800 1100
+Wire Wire Line
+	15100 1200 14800 1200
+Wire Wire Line
+	15100 1400 14800 1400
+Wire Wire Line
+	15100 1500 14800 1500
+Wire Wire Line
+	15100 1600 14800 1600
+Wire Wire Line
+	15100 1800 14800 1800
+Wire Wire Line
+	15100 1900 14800 1900
+Wire Wire Line
+	15100 2000 14800 2000
+Wire Wire Line
+	15100 2200 14800 2200
+Wire Wire Line
+	15100 2300 14800 2300
+Wire Wire Line
+	15100 2400 14800 2400
+Wire Wire Line
+	15100 2600 14800 2600
+Wire Wire Line
+	15100 2700 14800 2700
+Wire Wire Line
+	15100 2800 14800 2800
+Wire Wire Line
+	15100 3000 14800 3000
+Wire Wire Line
+	15100 3100 14800 3100
+Wire Wire Line
+	15100 3200 14800 3200
+Wire Wire Line
+	15100 3400 14800 3400
+Wire Wire Line
+	15100 3500 14800 3500
+Wire Wire Line
+	15100 3600 14800 3600
+Wire Wire Line
+	15100 3800 14800 3800
+Wire Wire Line
+	15100 3900 14800 3900
+Wire Wire Line
+	15100 4000 14800 4000
+Text Label 13800 1000 0    50   ~ 0
+R0
+Text Label 13800 1100 0    50   ~ 0
+G0
+Text Label 13800 1200 0    50   ~ 0
+B0
+Text Label 13800 1800 0    50   ~ 0
+R2
+Text Label 13800 2200 0    50   ~ 0
+R3
+Text Label 13800 2600 0    50   ~ 0
+R4
+Text Label 13800 3000 0    50   ~ 0
+R5
+Text Label 13800 3400 0    50   ~ 0
+R6
+Text Label 13800 3800 0    50   ~ 0
+R7
+Text Label 15100 1000 2    50   ~ 0
+R8
+Text Label 15100 1400 2    50   ~ 0
+R9
+Text Label 15100 1800 2    50   ~ 0
+R10
+Text Label 15100 2200 2    50   ~ 0
+R11
+Text Label 15100 2600 2    50   ~ 0
+R12
+Text Label 15100 3000 2    50   ~ 0
+R13
+Text Label 15100 3400 2    50   ~ 0
+R14
+Text Label 15100 3800 2    50   ~ 0
+R15
+Text Label 13800 1400 0    50   ~ 0
+R1
+Text Label 13800 1500 0    50   ~ 0
+G1
+Text Label 13800 1900 0    50   ~ 0
+G2
+Text Label 13800 2300 0    50   ~ 0
+G3
+Text Label 13800 2700 0    50   ~ 0
+G4
+Text Label 13800 3100 0    50   ~ 0
+G5
+Text Label 13800 3500 0    50   ~ 0
+G6
+Text Label 13800 3900 0    50   ~ 0
+G7
+Text Label 15100 1100 2    50   ~ 0
+G8
+Text Label 15100 1500 2    50   ~ 0
+G9
+Text Label 15100 1900 2    50   ~ 0
+G10
+Text Label 15100 2300 2    50   ~ 0
+G11
+Text Label 15100 2700 2    50   ~ 0
+G12
+Text Label 15100 3100 2    50   ~ 0
+G13
+Text Label 15100 3500 2    50   ~ 0
+G14
+Text Label 15100 3900 2    50   ~ 0
+G15
+Text Label 13800 1600 0    50   ~ 0
+B1
+Text Label 13800 2000 0    50   ~ 0
+B2
+Text Label 13800 2400 0    50   ~ 0
+B3
+Text Label 13800 2800 0    50   ~ 0
+B4
+Text Label 13800 3200 0    50   ~ 0
+B5
+Text Label 13800 3600 0    50   ~ 0
+B6
+Text Label 13800 4000 0    50   ~ 0
+B7
+Text Label 15100 1200 2    50   ~ 0
+B8
+Text Label 15100 1600 2    50   ~ 0
+B9
+Text Label 15100 2000 2    50   ~ 0
+B10
+Text Label 15100 2400 2    50   ~ 0
+B11
+Text Label 15100 2800 2    50   ~ 0
+B12
+Text Label 15100 3200 2    50   ~ 0
+B13
+Text Label 15100 3600 2    50   ~ 0
+B14
+Text Label 15100 4000 2    50   ~ 0
+B15
+Wire Wire Line
+	14800 4200 15100 4200
+$Sheet
+S 15700 900  700  3400
+U 5D5E474F
+F0 "sheet5D5E455D" 50
+F1 "LED_COL.sch" 50
+F2 "G0" I L 15700 1100 50 
+F3 "B0" I L 15700 1200 50 
+F4 "R1" I L 15700 1400 50 
+F5 "G1" I L 15700 1500 50 
+F6 "B1" I L 15700 1600 50 
+F7 "R2" I L 15700 1800 50 
+F8 "G2" I L 15700 1900 50 
+F9 "B2" I L 15700 2000 50 
+F10 "R4" I L 15700 2600 50 
+F11 "R5" I L 15700 3000 50 
+F12 "R6" I L 15700 3400 50 
+F13 "R7" I L 15700 3800 50 
+F14 "R8" I R 16400 1000 50 
+F15 "R9" I R 16400 1400 50 
+F16 "R10" I R 16400 1800 50 
+F17 "R11" I R 16400 2200 50 
+F18 "R12" I R 16400 2600 50 
+F19 "R13" I R 16400 3000 50 
+F20 "R14" I R 16400 3400 50 
+F21 "R15" I R 16400 3800 50 
+F22 "G4" I L 15700 2700 50 
+F23 "G5" I L 15700 3100 50 
+F24 "G6" I L 15700 3500 50 
+F25 "G7" I L 15700 3900 50 
+F26 "G8" I R 16400 1100 50 
+F27 "G9" I R 16400 1500 50 
+F28 "G10" I R 16400 1900 50 
+F29 "G11" I R 16400 2300 50 
+F30 "G12" I R 16400 2700 50 
+F31 "G13" I R 16400 3100 50 
+F32 "G14" I R 16400 3500 50 
+F33 "G15" I R 16400 3900 50 
+F34 "B4" I L 15700 2800 50 
+F35 "B5" I L 15700 3200 50 
+F36 "B6" I L 15700 3600 50 
+F37 "B7" I L 15700 4000 50 
+F38 "B8" I R 16400 1200 50 
+F39 "B9" I R 16400 1600 50 
+F40 "B10" I R 16400 2000 50 
+F41 "B11" I R 16400 2400 50 
+F42 "B12" I R 16400 2800 50 
+F43 "B13" I R 16400 3200 50 
+F44 "B14" I R 16400 3600 50 
+F45 "B3" I L 15700 2400 50 
+F46 "G3" I L 15700 2300 50 
+F47 "R3" I L 15700 2200 50 
+F48 "B15" I R 16400 4000 50 
+F49 "R0" I L 15700 1000 50 
+F50 "C" I R 16400 4200 50 
+$EndSheet
+Wire Wire Line
+	15700 1000 15400 1000
+Wire Wire Line
+	15700 1100 15400 1100
+Wire Wire Line
+	15700 1200 15400 1200
+Wire Wire Line
+	15700 1400 15400 1400
+Wire Wire Line
+	15700 1500 15400 1500
+Wire Wire Line
+	15700 1600 15400 1600
+Wire Wire Line
+	15700 1800 15400 1800
+Wire Wire Line
+	15700 1900 15400 1900
+Wire Wire Line
+	15700 2000 15400 2000
+Wire Wire Line
+	15700 2200 15400 2200
+Wire Wire Line
+	15700 2300 15400 2300
+Wire Wire Line
+	15700 2400 15400 2400
+Wire Wire Line
+	15700 2600 15400 2600
+Wire Wire Line
+	15700 2700 15400 2700
+Wire Wire Line
+	15700 2800 15400 2800
+Wire Wire Line
+	15700 3000 15400 3000
+Wire Wire Line
+	15700 3100 15400 3100
+Wire Wire Line
+	15700 3200 15400 3200
+Wire Wire Line
+	15700 3400 15400 3400
+Wire Wire Line
+	15700 3500 15400 3500
+Wire Wire Line
+	15700 3600 15400 3600
+Wire Wire Line
+	15700 3800 15400 3800
+Wire Wire Line
+	15700 3900 15400 3900
+Wire Wire Line
+	15700 4000 15400 4000
+Wire Wire Line
+	16700 1000 16400 1000
+Wire Wire Line
+	16700 1100 16400 1100
+Wire Wire Line
+	16700 1200 16400 1200
+Wire Wire Line
+	16700 1400 16400 1400
+Wire Wire Line
+	16700 1500 16400 1500
+Wire Wire Line
+	16700 1600 16400 1600
+Wire Wire Line
+	16700 1800 16400 1800
+Wire Wire Line
+	16700 1900 16400 1900
+Wire Wire Line
+	16700 2000 16400 2000
+Wire Wire Line
+	16700 2200 16400 2200
+Wire Wire Line
+	16700 2300 16400 2300
+Wire Wire Line
+	16700 2400 16400 2400
+Wire Wire Line
+	16700 2600 16400 2600
+Wire Wire Line
+	16700 2700 16400 2700
+Wire Wire Line
+	16700 2800 16400 2800
+Wire Wire Line
+	16700 3000 16400 3000
+Wire Wire Line
+	16700 3100 16400 3100
+Wire Wire Line
+	16700 3200 16400 3200
+Wire Wire Line
+	16700 3400 16400 3400
+Wire Wire Line
+	16700 3500 16400 3500
+Wire Wire Line
+	16700 3600 16400 3600
+Wire Wire Line
+	16700 3800 16400 3800
+Wire Wire Line
+	16700 3900 16400 3900
+Wire Wire Line
+	16700 4000 16400 4000
+Text Label 15400 1000 0    50   ~ 0
+R0
+Text Label 15400 1100 0    50   ~ 0
+G0
+Text Label 15400 1200 0    50   ~ 0
+B0
+Text Label 15400 1800 0    50   ~ 0
+R2
+Text Label 15400 2200 0    50   ~ 0
+R3
+Text Label 15400 2600 0    50   ~ 0
+R4
+Text Label 15400 3000 0    50   ~ 0
+R5
+Text Label 15400 3400 0    50   ~ 0
+R6
+Text Label 15400 3800 0    50   ~ 0
+R7
+Text Label 16700 1000 2    50   ~ 0
+R8
+Text Label 16700 1400 2    50   ~ 0
+R9
+Text Label 16700 1800 2    50   ~ 0
+R10
+Text Label 16700 2200 2    50   ~ 0
+R11
+Text Label 16700 2600 2    50   ~ 0
+R12
+Text Label 16700 3000 2    50   ~ 0
+R13
+Text Label 16700 3400 2    50   ~ 0
+R14
+Text Label 16700 3800 2    50   ~ 0
+R15
+Text Label 15400 1400 0    50   ~ 0
+R1
+Text Label 15400 1500 0    50   ~ 0
+G1
+Text Label 15400 1900 0    50   ~ 0
+G2
+Text Label 15400 2300 0    50   ~ 0
+G3
+Text Label 15400 2700 0    50   ~ 0
+G4
+Text Label 15400 3100 0    50   ~ 0
+G5
+Text Label 15400 3500 0    50   ~ 0
+G6
+Text Label 15400 3900 0    50   ~ 0
+G7
+Text Label 16700 1100 2    50   ~ 0
+G8
+Text Label 16700 1500 2    50   ~ 0
+G9
+Text Label 16700 1900 2    50   ~ 0
+G10
+Text Label 16700 2300 2    50   ~ 0
+G11
+Text Label 16700 2700 2    50   ~ 0
+G12
+Text Label 16700 3100 2    50   ~ 0
+G13
+Text Label 16700 3500 2    50   ~ 0
+G14
+Text Label 16700 3900 2    50   ~ 0
+G15
+Text Label 15400 1600 0    50   ~ 0
+B1
+Text Label 15400 2000 0    50   ~ 0
+B2
+Text Label 15400 2400 0    50   ~ 0
+B3
+Text Label 15400 2800 0    50   ~ 0
+B4
+Text Label 15400 3200 0    50   ~ 0
+B5
+Text Label 15400 3600 0    50   ~ 0
+B6
+Text Label 15400 4000 0    50   ~ 0
+B7
+Text Label 16700 1200 2    50   ~ 0
+B8
+Text Label 16700 1600 2    50   ~ 0
+B9
+Text Label 16700 2000 2    50   ~ 0
+B10
+Text Label 16700 2400 2    50   ~ 0
+B11
+Text Label 16700 2800 2    50   ~ 0
+B12
+Text Label 16700 3200 2    50   ~ 0
+B13
+Text Label 16700 3600 2    50   ~ 0
+B14
+Text Label 16700 4000 2    50   ~ 0
+B15
+Wire Wire Line
+	16400 4200 16700 4200
+Text Label 16700 4200 2    50   ~ 0
+C7
+Text Label 15100 4200 2    50   ~ 0
+C6
+Text Label 16700 8000 2    50   ~ 0
+C15
+Wire Wire Line
+	16400 8000 16700 8000
+Text Label 16700 7800 2    50   ~ 0
+B15
+Text Label 16700 7400 2    50   ~ 0
+B14
+Text Label 16700 7000 2    50   ~ 0
+B13
+Text Label 16700 6600 2    50   ~ 0
+B12
+Text Label 16700 6200 2    50   ~ 0
+B11
+Text Label 16700 5800 2    50   ~ 0
+B10
+Text Label 16700 5400 2    50   ~ 0
+B9
+Text Label 16700 5000 2    50   ~ 0
+B8
+Text Label 15400 7800 0    50   ~ 0
+B7
+Text Label 15400 7400 0    50   ~ 0
+B6
+Text Label 15400 7000 0    50   ~ 0
+B5
+Text Label 15400 6600 0    50   ~ 0
+B4
+Text Label 15400 6200 0    50   ~ 0
+B3
+Text Label 15400 5800 0    50   ~ 0
+B2
+Text Label 15400 5400 0    50   ~ 0
+B1
+Text Label 16700 7700 2    50   ~ 0
+G15
+Text Label 16700 7300 2    50   ~ 0
+G14
+Text Label 16700 6900 2    50   ~ 0
+G13
+Text Label 16700 6500 2    50   ~ 0
+G12
+Text Label 16700 6100 2    50   ~ 0
+G11
+Text Label 16700 5700 2    50   ~ 0
+G10
+Text Label 16700 5300 2    50   ~ 0
+G9
+Text Label 16700 4900 2    50   ~ 0
+G8
+Text Label 15400 7700 0    50   ~ 0
+G7
+Text Label 15400 7300 0    50   ~ 0
+G6
+Text Label 15400 6900 0    50   ~ 0
+G5
+Text Label 15400 6500 0    50   ~ 0
+G4
+Text Label 15400 6100 0    50   ~ 0
+G3
+Text Label 15400 5700 0    50   ~ 0
+G2
+Text Label 15400 5300 0    50   ~ 0
+G1
+Text Label 15400 5200 0    50   ~ 0
+R1
+Text Label 16700 7600 2    50   ~ 0
+R15
+Text Label 16700 7200 2    50   ~ 0
+R14
+Text Label 16700 6800 2    50   ~ 0
+R13
+Text Label 16700 6400 2    50   ~ 0
+R12
+Text Label 16700 6000 2    50   ~ 0
+R11
+Text Label 16700 5600 2    50   ~ 0
+R10
+Text Label 16700 5200 2    50   ~ 0
+R9
+Text Label 16700 4800 2    50   ~ 0
+R8
+Text Label 15400 7600 0    50   ~ 0
+R7
+Text Label 15400 7200 0    50   ~ 0
+R6
+Text Label 15400 6800 0    50   ~ 0
+R5
+Text Label 15400 6400 0    50   ~ 0
+R4
+Text Label 15400 6000 0    50   ~ 0
+R3
+Text Label 15400 5600 0    50   ~ 0
+R2
+Text Label 15400 5000 0    50   ~ 0
+B0
+Text Label 15400 4900 0    50   ~ 0
+G0
+Text Label 15400 4800 0    50   ~ 0
+R0
+Wire Wire Line
+	16700 7800 16400 7800
+Wire Wire Line
+	16700 7700 16400 7700
+Wire Wire Line
+	16700 7600 16400 7600
+Wire Wire Line
+	16700 7400 16400 7400
+Wire Wire Line
+	16700 7300 16400 7300
+Wire Wire Line
+	16700 7200 16400 7200
+Wire Wire Line
+	16700 7000 16400 7000
+Wire Wire Line
+	16700 6900 16400 6900
+Wire Wire Line
+	16700 6800 16400 6800
+Wire Wire Line
+	16700 6600 16400 6600
+Wire Wire Line
+	16700 6500 16400 6500
+Wire Wire Line
+	16700 6400 16400 6400
+Wire Wire Line
+	16700 6200 16400 6200
+Wire Wire Line
+	16700 6100 16400 6100
+Wire Wire Line
+	16700 6000 16400 6000
+Wire Wire Line
+	16700 5800 16400 5800
+Wire Wire Line
+	16700 5700 16400 5700
+Wire Wire Line
+	16700 5600 16400 5600
+Wire Wire Line
+	16700 5400 16400 5400
+Wire Wire Line
+	16700 5300 16400 5300
+Wire Wire Line
+	16700 5200 16400 5200
+Wire Wire Line
+	16700 5000 16400 5000
+Wire Wire Line
+	16700 4900 16400 4900
+Wire Wire Line
+	16700 4800 16400 4800
+Wire Wire Line
+	15700 7800 15400 7800
+Wire Wire Line
+	15700 7700 15400 7700
+Wire Wire Line
+	15700 7600 15400 7600
+Wire Wire Line
+	15700 7400 15400 7400
+Wire Wire Line
+	15700 7300 15400 7300
+Wire Wire Line
+	15700 7200 15400 7200
+Wire Wire Line
+	15700 7000 15400 7000
+Wire Wire Line
+	15700 6900 15400 6900
+Wire Wire Line
+	15700 6800 15400 6800
+Wire Wire Line
+	15700 6600 15400 6600
+Wire Wire Line
+	15700 6500 15400 6500
+Wire Wire Line
+	15700 6400 15400 6400
+Wire Wire Line
+	15700 6200 15400 6200
+Wire Wire Line
+	15700 6100 15400 6100
+Wire Wire Line
+	15700 6000 15400 6000
+Wire Wire Line
+	15700 5800 15400 5800
+Wire Wire Line
+	15700 5700 15400 5700
+Wire Wire Line
+	15700 5600 15400 5600
+Wire Wire Line
+	15700 5400 15400 5400
+Wire Wire Line
+	15700 5300 15400 5300
+Wire Wire Line
+	15700 5200 15400 5200
+Wire Wire Line
+	15700 5000 15400 5000
+Wire Wire Line
+	15700 4900 15400 4900
+Wire Wire Line
+	15700 4800 15400 4800
+$Sheet
+S 15700 4700 700  3400
+U 5D67FD9E
+F0 "sheet5D67FBAC" 50
+F1 "LED_COL.sch" 50
+F2 "G0" I L 15700 4900 50 
+F3 "B0" I L 15700 5000 50 
+F4 "R1" I L 15700 5200 50 
+F5 "G1" I L 15700 5300 50 
+F6 "B1" I L 15700 5400 50 
+F7 "R2" I L 15700 5600 50 
+F8 "G2" I L 15700 5700 50 
+F9 "B2" I L 15700 5800 50 
+F10 "R4" I L 15700 6400 50 
+F11 "R5" I L 15700 6800 50 
+F12 "R6" I L 15700 7200 50 
+F13 "R7" I L 15700 7600 50 
+F14 "R8" I R 16400 4800 50 
+F15 "R9" I R 16400 5200 50 
+F16 "R10" I R 16400 5600 50 
+F17 "R11" I R 16400 6000 50 
+F18 "R12" I R 16400 6400 50 
+F19 "R13" I R 16400 6800 50 
+F20 "R14" I R 16400 7200 50 
+F21 "R15" I R 16400 7600 50 
+F22 "G4" I L 15700 6500 50 
+F23 "G5" I L 15700 6900 50 
+F24 "G6" I L 15700 7300 50 
+F25 "G7" I L 15700 7700 50 
+F26 "G8" I R 16400 4900 50 
+F27 "G9" I R 16400 5300 50 
+F28 "G10" I R 16400 5700 50 
+F29 "G11" I R 16400 6100 50 
+F30 "G12" I R 16400 6500 50 
+F31 "G13" I R 16400 6900 50 
+F32 "G14" I R 16400 7300 50 
+F33 "G15" I R 16400 7700 50 
+F34 "B4" I L 15700 6600 50 
+F35 "B5" I L 15700 7000 50 
+F36 "B6" I L 15700 7400 50 
+F37 "B7" I L 15700 7800 50 
+F38 "B8" I R 16400 5000 50 
+F39 "B9" I R 16400 5400 50 
+F40 "B10" I R 16400 5800 50 
+F41 "B11" I R 16400 6200 50 
+F42 "B12" I R 16400 6600 50 
+F43 "B13" I R 16400 7000 50 
+F44 "B14" I R 16400 7400 50 
+F45 "B3" I L 15700 6200 50 
+F46 "G3" I L 15700 6100 50 
+F47 "R3" I L 15700 6000 50 
+F48 "B15" I R 16400 7800 50 
+F49 "R0" I L 15700 4800 50 
+F50 "C" I R 16400 8000 50 
+$EndSheet
+Wire Wire Line
+	14800 8000 15100 8000
+Text Label 15100 8000 2    50   ~ 0
+C14
+Text Label 15100 7800 2    50   ~ 0
+B15
+Text Label 15100 7400 2    50   ~ 0
+B14
+Text Label 15100 7000 2    50   ~ 0
+B13
+Text Label 15100 6600 2    50   ~ 0
+B12
+Text Label 15100 6200 2    50   ~ 0
+B11
+Text Label 15100 5800 2    50   ~ 0
+B10
+Text Label 15100 5400 2    50   ~ 0
+B9
+Text Label 15100 5000 2    50   ~ 0
+B8
+Text Label 13800 7800 0    50   ~ 0
+B7
+Text Label 13800 7400 0    50   ~ 0
+B6
+Text Label 13800 7000 0    50   ~ 0
+B5
+Text Label 13800 6600 0    50   ~ 0
+B4
+Text Label 13800 6200 0    50   ~ 0
+B3
+Text Label 13800 5800 0    50   ~ 0
+B2
+Text Label 13800 5400 0    50   ~ 0
+B1
+Text Label 15100 7700 2    50   ~ 0
+G15
+Text Label 15100 7300 2    50   ~ 0
+G14
+Text Label 15100 6900 2    50   ~ 0
+G13
+Text Label 15100 6500 2    50   ~ 0
+G12
+Text Label 15100 6100 2    50   ~ 0
+G11
+Text Label 15100 5700 2    50   ~ 0
+G10
+Text Label 15100 5300 2    50   ~ 0
+G9
+Text Label 15100 4900 2    50   ~ 0
+G8
+Text Label 13800 7700 0    50   ~ 0
+G7
+Text Label 13800 7300 0    50   ~ 0
+G6
+Text Label 13800 6900 0    50   ~ 0
+G5
+Text Label 13800 6500 0    50   ~ 0
+G4
+Text Label 13800 6100 0    50   ~ 0
+G3
+Text Label 13800 5700 0    50   ~ 0
+G2
+Text Label 13800 5300 0    50   ~ 0
+G1
+Text Label 13800 5200 0    50   ~ 0
+R1
+Text Label 15100 7600 2    50   ~ 0
+R15
+Text Label 15100 7200 2    50   ~ 0
+R14
+Text Label 15100 6800 2    50   ~ 0
+R13
+Text Label 15100 6400 2    50   ~ 0
+R12
+Text Label 15100 6000 2    50   ~ 0
+R11
+Text Label 15100 5600 2    50   ~ 0
+R10
+Text Label 15100 5200 2    50   ~ 0
+R9
+Text Label 15100 4800 2    50   ~ 0
+R8
+Text Label 13800 7600 0    50   ~ 0
+R7
+Text Label 13800 7200 0    50   ~ 0
+R6
+Text Label 13800 6800 0    50   ~ 0
+R5
+Text Label 13800 6400 0    50   ~ 0
+R4
+Text Label 13800 6000 0    50   ~ 0
+R3
+Text Label 13800 5600 0    50   ~ 0
+R2
+Text Label 13800 5000 0    50   ~ 0
+B0
+Text Label 13800 4900 0    50   ~ 0
+G0
+Text Label 13800 4800 0    50   ~ 0
+R0
+Wire Wire Line
+	15100 7800 14800 7800
+Wire Wire Line
+	15100 7700 14800 7700
+Wire Wire Line
+	15100 7600 14800 7600
+Wire Wire Line
+	15100 7400 14800 7400
+Wire Wire Line
+	15100 7300 14800 7300
+Wire Wire Line
+	15100 7200 14800 7200
+Wire Wire Line
+	15100 7000 14800 7000
+Wire Wire Line
+	15100 6900 14800 6900
+Wire Wire Line
+	15100 6800 14800 6800
+Wire Wire Line
+	15100 6600 14800 6600
+Wire Wire Line
+	15100 6500 14800 6500
+Wire Wire Line
+	15100 6400 14800 6400
+Wire Wire Line
+	15100 6200 14800 6200
+Wire Wire Line
+	15100 6100 14800 6100
+Wire Wire Line
+	15100 6000 14800 6000
+Wire Wire Line
+	15100 5800 14800 5800
+Wire Wire Line
+	15100 5700 14800 5700
+Wire Wire Line
+	15100 5600 14800 5600
+Wire Wire Line
+	15100 5400 14800 5400
+Wire Wire Line
+	15100 5300 14800 5300
+Wire Wire Line
+	15100 5200 14800 5200
+Wire Wire Line
+	15100 5000 14800 5000
+Wire Wire Line
+	15100 4900 14800 4900
+Wire Wire Line
+	15100 4800 14800 4800
+Wire Wire Line
+	14100 7800 13800 7800
+Wire Wire Line
+	14100 7700 13800 7700
+Wire Wire Line
+	14100 7600 13800 7600
+Wire Wire Line
+	14100 7400 13800 7400
+Wire Wire Line
+	14100 7300 13800 7300
+Wire Wire Line
+	14100 7200 13800 7200
+Wire Wire Line
+	14100 7000 13800 7000
+Wire Wire Line
+	14100 6900 13800 6900
+Wire Wire Line
+	14100 6800 13800 6800
+Wire Wire Line
+	14100 6600 13800 6600
+Wire Wire Line
+	14100 6500 13800 6500
+Wire Wire Line
+	14100 6400 13800 6400
+Wire Wire Line
+	14100 6200 13800 6200
+Wire Wire Line
+	14100 6100 13800 6100
+Wire Wire Line
+	14100 6000 13800 6000
+Wire Wire Line
+	14100 5800 13800 5800
+Wire Wire Line
+	14100 5700 13800 5700
+Wire Wire Line
+	14100 5600 13800 5600
+Wire Wire Line
+	14100 5400 13800 5400
+Wire Wire Line
+	14100 5300 13800 5300
+Wire Wire Line
+	14100 5200 13800 5200
+Wire Wire Line
+	14100 5000 13800 5000
+Wire Wire Line
+	14100 4900 13800 4900
+Wire Wire Line
+	14100 4800 13800 4800
+$Sheet
+S 14100 4700 700  3400
+U 5D67FD09
+F0 "sheet5D67FBAB" 50
+F1 "LED_COL.sch" 50
+F2 "G0" I L 14100 4900 50 
+F3 "B0" I L 14100 5000 50 
+F4 "R1" I L 14100 5200 50 
+F5 "G1" I L 14100 5300 50 
+F6 "B1" I L 14100 5400 50 
+F7 "R2" I L 14100 5600 50 
+F8 "G2" I L 14100 5700 50 
+F9 "B2" I L 14100 5800 50 
+F10 "R4" I L 14100 6400 50 
+F11 "R5" I L 14100 6800 50 
+F12 "R6" I L 14100 7200 50 
+F13 "R7" I L 14100 7600 50 
+F14 "R8" I R 14800 4800 50 
+F15 "R9" I R 14800 5200 50 
+F16 "R10" I R 14800 5600 50 
+F17 "R11" I R 14800 6000 50 
+F18 "R12" I R 14800 6400 50 
+F19 "R13" I R 14800 6800 50 
+F20 "R14" I R 14800 7200 50 
+F21 "R15" I R 14800 7600 50 
+F22 "G4" I L 14100 6500 50 
+F23 "G5" I L 14100 6900 50 
+F24 "G6" I L 14100 7300 50 
+F25 "G7" I L 14100 7700 50 
+F26 "G8" I R 14800 4900 50 
+F27 "G9" I R 14800 5300 50 
+F28 "G10" I R 14800 5700 50 
+F29 "G11" I R 14800 6100 50 
+F30 "G12" I R 14800 6500 50 
+F31 "G13" I R 14800 6900 50 
+F32 "G14" I R 14800 7300 50 
+F33 "G15" I R 14800 7700 50 
+F34 "B4" I L 14100 6600 50 
+F35 "B5" I L 14100 7000 50 
+F36 "B6" I L 14100 7400 50 
+F37 "B7" I L 14100 7800 50 
+F38 "B8" I R 14800 5000 50 
+F39 "B9" I R 14800 5400 50 
+F40 "B10" I R 14800 5800 50 
+F41 "B11" I R 14800 6200 50 
+F42 "B12" I R 14800 6600 50 
+F43 "B13" I R 14800 7000 50 
+F44 "B14" I R 14800 7400 50 
+F45 "B3" I L 14100 6200 50 
+F46 "G3" I L 14100 6100 50 
+F47 "R3" I L 14100 6000 50 
+F48 "B15" I R 14800 7800 50 
+F49 "R0" I L 14100 4800 50 
+F50 "C" I R 14800 8000 50 
+$EndSheet
+Text Label 13500 8000 2    50   ~ 0
+C13
+Wire Wire Line
+	13200 8000 13500 8000
+Text Label 13500 7800 2    50   ~ 0
+B15
+Text Label 13500 7400 2    50   ~ 0
+B14
+Text Label 13500 7000 2    50   ~ 0
+B13
+Text Label 13500 6600 2    50   ~ 0
+B12
+Text Label 13500 6200 2    50   ~ 0
+B11
+Text Label 13500 5800 2    50   ~ 0
+B10
+Text Label 13500 5400 2    50   ~ 0
+B9
+Text Label 13500 5000 2    50   ~ 0
+B8
+Text Label 12200 7800 0    50   ~ 0
+B7
+Text Label 12200 7400 0    50   ~ 0
+B6
+Text Label 12200 7000 0    50   ~ 0
+B5
+Text Label 12200 6600 0    50   ~ 0
+B4
+Text Label 12200 6200 0    50   ~ 0
+B3
+Text Label 12200 5800 0    50   ~ 0
+B2
+Text Label 12200 5400 0    50   ~ 0
+B1
+Text Label 13500 7700 2    50   ~ 0
+G15
+Text Label 13500 7300 2    50   ~ 0
+G14
+Text Label 13500 6900 2    50   ~ 0
+G13
+Text Label 13500 6500 2    50   ~ 0
+G12
+Text Label 13500 6100 2    50   ~ 0
+G11
+Text Label 13500 5700 2    50   ~ 0
+G10
+Text Label 13500 5300 2    50   ~ 0
+G9
+Text Label 13500 4900 2    50   ~ 0
+G8
+Text Label 12200 7700 0    50   ~ 0
+G7
+Text Label 12200 7300 0    50   ~ 0
+G6
+Text Label 12200 6900 0    50   ~ 0
+G5
+Text Label 12200 6500 0    50   ~ 0
+G4
+Text Label 12200 6100 0    50   ~ 0
+G3
+Text Label 12200 5700 0    50   ~ 0
+G2
+Text Label 12200 5300 0    50   ~ 0
+G1
+Text Label 12200 5200 0    50   ~ 0
+R1
+Text Label 13500 7600 2    50   ~ 0
+R15
+Text Label 13500 7200 2    50   ~ 0
+R14
+Text Label 13500 6800 2    50   ~ 0
+R13
+Text Label 13500 6400 2    50   ~ 0
+R12
+Text Label 13500 6000 2    50   ~ 0
+R11
+Text Label 13500 5600 2    50   ~ 0
+R10
+Text Label 13500 5200 2    50   ~ 0
+R9
+Text Label 13500 4800 2    50   ~ 0
+R8
+Text Label 12200 7600 0    50   ~ 0
+R7
+Text Label 12200 7200 0    50   ~ 0
+R6
+Text Label 12200 6800 0    50   ~ 0
+R5
+Text Label 12200 6400 0    50   ~ 0
+R4
+Text Label 12200 6000 0    50   ~ 0
+R3
+Text Label 12200 5600 0    50   ~ 0
+R2
+Text Label 12200 5000 0    50   ~ 0
+B0
+Text Label 12200 4900 0    50   ~ 0
+G0
+Text Label 12200 4800 0    50   ~ 0
+R0
+Wire Wire Line
+	13500 7800 13200 7800
+Wire Wire Line
+	13500 7700 13200 7700
+Wire Wire Line
+	13500 7600 13200 7600
+Wire Wire Line
+	13500 7400 13200 7400
+Wire Wire Line
+	13500 7300 13200 7300
+Wire Wire Line
+	13500 7200 13200 7200
+Wire Wire Line
+	13500 7000 13200 7000
+Wire Wire Line
+	13500 6900 13200 6900
+Wire Wire Line
+	13500 6800 13200 6800
+Wire Wire Line
+	13500 6600 13200 6600
+Wire Wire Line
+	13500 6500 13200 6500
+Wire Wire Line
+	13500 6400 13200 6400
+Wire Wire Line
+	13500 6200 13200 6200
+Wire Wire Line
+	13500 6100 13200 6100
+Wire Wire Line
+	13500 6000 13200 6000
+Wire Wire Line
+	13500 5800 13200 5800
+Wire Wire Line
+	13500 5700 13200 5700
+Wire Wire Line
+	13500 5600 13200 5600
+Wire Wire Line
+	13500 5400 13200 5400
+Wire Wire Line
+	13500 5300 13200 5300
+Wire Wire Line
+	13500 5200 13200 5200
+Wire Wire Line
+	13500 5000 13200 5000
+Wire Wire Line
+	13500 4900 13200 4900
+Wire Wire Line
+	13500 4800 13200 4800
+Wire Wire Line
+	12500 7800 12200 7800
+Wire Wire Line
+	12500 7700 12200 7700
+Wire Wire Line
+	12500 7600 12200 7600
+Wire Wire Line
+	12500 7400 12200 7400
+Wire Wire Line
+	12500 7300 12200 7300
+Wire Wire Line
+	12500 7200 12200 7200
+Wire Wire Line
+	12500 7000 12200 7000
+Wire Wire Line
+	12500 6900 12200 6900
+Wire Wire Line
+	12500 6800 12200 6800
+Wire Wire Line
+	12500 6600 12200 6600
+Wire Wire Line
+	12500 6500 12200 6500
+Wire Wire Line
+	12500 6400 12200 6400
+Wire Wire Line
+	12500 6200 12200 6200
+Wire Wire Line
+	12500 6100 12200 6100
+Wire Wire Line
+	12500 6000 12200 6000
+Wire Wire Line
+	12500 5800 12200 5800
+Wire Wire Line
+	12500 5700 12200 5700
+Wire Wire Line
+	12500 5600 12200 5600
+Wire Wire Line
+	12500 5400 12200 5400
+Wire Wire Line
+	12500 5300 12200 5300
+Wire Wire Line
+	12500 5200 12200 5200
+Wire Wire Line
+	12500 5000 12200 5000
+Wire Wire Line
+	12500 4900 12200 4900
+Wire Wire Line
+	12500 4800 12200 4800
+$Sheet
+S 12500 4700 700  3400
+U 5D67FC74
+F0 "sheet5D67FBAA" 50
+F1 "LED_COL.sch" 50
+F2 "G0" I L 12500 4900 50 
+F3 "B0" I L 12500 5000 50 
+F4 "R1" I L 12500 5200 50 
+F5 "G1" I L 12500 5300 50 
+F6 "B1" I L 12500 5400 50 
+F7 "R2" I L 12500 5600 50 
+F8 "G2" I L 12500 5700 50 
+F9 "B2" I L 12500 5800 50 
+F10 "R4" I L 12500 6400 50 
+F11 "R5" I L 12500 6800 50 
+F12 "R6" I L 12500 7200 50 
+F13 "R7" I L 12500 7600 50 
+F14 "R8" I R 13200 4800 50 
+F15 "R9" I R 13200 5200 50 
+F16 "R10" I R 13200 5600 50 
+F17 "R11" I R 13200 6000 50 
+F18 "R12" I R 13200 6400 50 
+F19 "R13" I R 13200 6800 50 
+F20 "R14" I R 13200 7200 50 
+F21 "R15" I R 13200 7600 50 
+F22 "G4" I L 12500 6500 50 
+F23 "G5" I L 12500 6900 50 
+F24 "G6" I L 12500 7300 50 
+F25 "G7" I L 12500 7700 50 
+F26 "G8" I R 13200 4900 50 
+F27 "G9" I R 13200 5300 50 
+F28 "G10" I R 13200 5700 50 
+F29 "G11" I R 13200 6100 50 
+F30 "G12" I R 13200 6500 50 
+F31 "G13" I R 13200 6900 50 
+F32 "G14" I R 13200 7300 50 
+F33 "G15" I R 13200 7700 50 
+F34 "B4" I L 12500 6600 50 
+F35 "B5" I L 12500 7000 50 
+F36 "B6" I L 12500 7400 50 
+F37 "B7" I L 12500 7800 50 
+F38 "B8" I R 13200 5000 50 
+F39 "B9" I R 13200 5400 50 
+F40 "B10" I R 13200 5800 50 
+F41 "B11" I R 13200 6200 50 
+F42 "B12" I R 13200 6600 50 
+F43 "B13" I R 13200 7000 50 
+F44 "B14" I R 13200 7400 50 
+F45 "B3" I L 12500 6200 50 
+F46 "G3" I L 12500 6100 50 
+F47 "R3" I L 12500 6000 50 
+F48 "B15" I R 13200 7800 50 
+F49 "R0" I L 12500 4800 50 
+F50 "C" I R 13200 8000 50 
+$EndSheet
+Wire Wire Line
+	11600 8000 11900 8000
+Text Label 11900 8000 2    50   ~ 0
+C12
+Text Label 11900 7800 2    50   ~ 0
+B15
+Text Label 11900 7400 2    50   ~ 0
+B14
+Text Label 11900 7000 2    50   ~ 0
+B13
+Text Label 11900 6600 2    50   ~ 0
+B12
+Text Label 11900 6200 2    50   ~ 0
+B11
+Text Label 11900 5800 2    50   ~ 0
+B10
+Text Label 11900 5400 2    50   ~ 0
+B9
+Text Label 11900 5000 2    50   ~ 0
+B8
+Text Label 10600 7800 0    50   ~ 0
+B7
+Text Label 10600 7400 0    50   ~ 0
+B6
+Text Label 10600 7000 0    50   ~ 0
+B5
+Text Label 10600 6600 0    50   ~ 0
+B4
+Text Label 10600 6200 0    50   ~ 0
+B3
+Text Label 10600 5800 0    50   ~ 0
+B2
+Text Label 10600 5400 0    50   ~ 0
+B1
+Text Label 11900 7700 2    50   ~ 0
+G15
+Text Label 11900 7300 2    50   ~ 0
+G14
+Text Label 11900 6900 2    50   ~ 0
+G13
+Text Label 11900 6500 2    50   ~ 0
+G12
+Text Label 11900 6100 2    50   ~ 0
+G11
+Text Label 11900 5700 2    50   ~ 0
+G10
+Text Label 11900 5300 2    50   ~ 0
+G9
+Text Label 11900 4900 2    50   ~ 0
+G8
+Text Label 10600 7700 0    50   ~ 0
+G7
+Text Label 10600 7300 0    50   ~ 0
+G6
+Text Label 10600 6900 0    50   ~ 0
+G5
+Text Label 10600 6500 0    50   ~ 0
+G4
+Text Label 10600 6100 0    50   ~ 0
+G3
+Text Label 10600 5700 0    50   ~ 0
+G2
+Text Label 10600 5300 0    50   ~ 0
+G1
+Text Label 10600 5200 0    50   ~ 0
+R1
+Text Label 11900 7600 2    50   ~ 0
+R15
+Text Label 11900 7200 2    50   ~ 0
+R14
+Text Label 11900 6800 2    50   ~ 0
+R13
+Text Label 11900 6400 2    50   ~ 0
+R12
+Text Label 11900 6000 2    50   ~ 0
+R11
+Text Label 11900 5600 2    50   ~ 0
+R10
+Text Label 11900 5200 2    50   ~ 0
+R9
+Text Label 11900 4800 2    50   ~ 0
+R8
+Text Label 10600 7600 0    50   ~ 0
+R7
+Text Label 10600 7200 0    50   ~ 0
+R6
+Text Label 10600 6800 0    50   ~ 0
+R5
+Text Label 10600 6400 0    50   ~ 0
+R4
+Text Label 10600 6000 0    50   ~ 0
+R3
+Text Label 10600 5600 0    50   ~ 0
+R2
+Text Label 10600 5000 0    50   ~ 0
+B0
+Text Label 10600 4900 0    50   ~ 0
+G0
+Text Label 10600 4800 0    50   ~ 0
+R0
+Wire Wire Line
+	11900 7800 11600 7800
+Wire Wire Line
+	11900 7700 11600 7700
+Wire Wire Line
+	11900 7600 11600 7600
+Wire Wire Line
+	11900 7400 11600 7400
+Wire Wire Line
+	11900 7300 11600 7300
+Wire Wire Line
+	11900 7200 11600 7200
+Wire Wire Line
+	11900 7000 11600 7000
+Wire Wire Line
+	11900 6900 11600 6900
+Wire Wire Line
+	11900 6800 11600 6800
+Wire Wire Line
+	11900 6600 11600 6600
+Wire Wire Line
+	11900 6500 11600 6500
+Wire Wire Line
+	11900 6400 11600 6400
+Wire Wire Line
+	11900 6200 11600 6200
+Wire Wire Line
+	11900 6100 11600 6100
+Wire Wire Line
+	11900 6000 11600 6000
+Wire Wire Line
+	11900 5800 11600 5800
+Wire Wire Line
+	11900 5700 11600 5700
+Wire Wire Line
+	11900 5600 11600 5600
+Wire Wire Line
+	11900 5400 11600 5400
+Wire Wire Line
+	11900 5300 11600 5300
+Wire Wire Line
+	11900 5200 11600 5200
+Wire Wire Line
+	11900 5000 11600 5000
+Wire Wire Line
+	11900 4900 11600 4900
+Wire Wire Line
+	11900 4800 11600 4800
+Wire Wire Line
+	10900 7800 10600 7800
+Wire Wire Line
+	10900 7700 10600 7700
+Wire Wire Line
+	10900 7600 10600 7600
+Wire Wire Line
+	10900 7400 10600 7400
+Wire Wire Line
+	10900 7300 10600 7300
+Wire Wire Line
+	10900 7200 10600 7200
+Wire Wire Line
+	10900 7000 10600 7000
+Wire Wire Line
+	10900 6900 10600 6900
+Wire Wire Line
+	10900 6800 10600 6800
+Wire Wire Line
+	10900 6600 10600 6600
+Wire Wire Line
+	10900 6500 10600 6500
+Wire Wire Line
+	10900 6400 10600 6400
+Wire Wire Line
+	10900 6200 10600 6200
+Wire Wire Line
+	10900 6100 10600 6100
+Wire Wire Line
+	10900 6000 10600 6000
+Wire Wire Line
+	10900 5800 10600 5800
+Wire Wire Line
+	10900 5700 10600 5700
+Wire Wire Line
+	10900 5600 10600 5600
+Wire Wire Line
+	10900 5400 10600 5400
+Wire Wire Line
+	10900 5300 10600 5300
+Wire Wire Line
+	10900 5200 10600 5200
+Wire Wire Line
+	10900 5000 10600 5000
+Wire Wire Line
+	10900 4900 10600 4900
+Wire Wire Line
+	10900 4800 10600 4800
+$Sheet
+S 10900 4700 700  3400
+U 5D67FBDF
+F0 "sheet5D67FBA9" 50
+F1 "LED_COL.sch" 50
+F2 "G0" I L 10900 4900 50 
+F3 "B0" I L 10900 5000 50 
+F4 "R1" I L 10900 5200 50 
+F5 "G1" I L 10900 5300 50 
+F6 "B1" I L 10900 5400 50 
+F7 "R2" I L 10900 5600 50 
+F8 "G2" I L 10900 5700 50 
+F9 "B2" I L 10900 5800 50 
+F10 "R4" I L 10900 6400 50 
+F11 "R5" I L 10900 6800 50 
+F12 "R6" I L 10900 7200 50 
+F13 "R7" I L 10900 7600 50 
+F14 "R8" I R 11600 4800 50 
+F15 "R9" I R 11600 5200 50 
+F16 "R10" I R 11600 5600 50 
+F17 "R11" I R 11600 6000 50 
+F18 "R12" I R 11600 6400 50 
+F19 "R13" I R 11600 6800 50 
+F20 "R14" I R 11600 7200 50 
+F21 "R15" I R 11600 7600 50 
+F22 "G4" I L 10900 6500 50 
+F23 "G5" I L 10900 6900 50 
+F24 "G6" I L 10900 7300 50 
+F25 "G7" I L 10900 7700 50 
+F26 "G8" I R 11600 4900 50 
+F27 "G9" I R 11600 5300 50 
+F28 "G10" I R 11600 5700 50 
+F29 "G11" I R 11600 6100 50 
+F30 "G12" I R 11600 6500 50 
+F31 "G13" I R 11600 6900 50 
+F32 "G14" I R 11600 7300 50 
+F33 "G15" I R 11600 7700 50 
+F34 "B4" I L 10900 6600 50 
+F35 "B5" I L 10900 7000 50 
+F36 "B6" I L 10900 7400 50 
+F37 "B7" I L 10900 7800 50 
+F38 "B8" I R 11600 5000 50 
+F39 "B9" I R 11600 5400 50 
+F40 "B10" I R 11600 5800 50 
+F41 "B11" I R 11600 6200 50 
+F42 "B12" I R 11600 6600 50 
+F43 "B13" I R 11600 7000 50 
+F44 "B14" I R 11600 7400 50 
+F45 "B3" I L 10900 6200 50 
+F46 "G3" I L 10900 6100 50 
+F47 "R3" I L 10900 6000 50 
+F48 "B15" I R 11600 7800 50 
+F49 "R0" I L 10900 4800 50 
+F50 "C" I R 11600 8000 50 
+$EndSheet
+Text Label 10300 8000 2    50   ~ 0
+C11
+Wire Wire Line
+	10000 8000 10300 8000
+Text Label 10300 7800 2    50   ~ 0
+B15
+Text Label 10300 7400 2    50   ~ 0
+B14
+Text Label 10300 7000 2    50   ~ 0
+B13
+Text Label 10300 6600 2    50   ~ 0
+B12
+Text Label 10300 6200 2    50   ~ 0
+B11
+Text Label 10300 5800 2    50   ~ 0
+B10
+Text Label 10300 5400 2    50   ~ 0
+B9
+Text Label 10300 5000 2    50   ~ 0
+B8
+Text Label 9000 7800 0    50   ~ 0
+B7
+Text Label 9000 7400 0    50   ~ 0
+B6
+Text Label 9000 7000 0    50   ~ 0
+B5
+Text Label 9000 6600 0    50   ~ 0
+B4
+Text Label 9000 6200 0    50   ~ 0
+B3
+Text Label 9000 5800 0    50   ~ 0
+B2
+Text Label 9000 5400 0    50   ~ 0
+B1
+Text Label 10300 7700 2    50   ~ 0
+G15
+Text Label 10300 7300 2    50   ~ 0
+G14
+Text Label 10300 6900 2    50   ~ 0
+G13
+Text Label 10300 6500 2    50   ~ 0
+G12
+Text Label 10300 6100 2    50   ~ 0
+G11
+Text Label 10300 5700 2    50   ~ 0
+G10
+Text Label 10300 5300 2    50   ~ 0
+G9
+Text Label 10300 4900 2    50   ~ 0
+G8
+Text Label 9000 7700 0    50   ~ 0
+G7
+Text Label 9000 7300 0    50   ~ 0
+G6
+Text Label 9000 6900 0    50   ~ 0
+G5
+Text Label 9000 6500 0    50   ~ 0
+G4
+Text Label 9000 6100 0    50   ~ 0
+G3
+Text Label 9000 5700 0    50   ~ 0
+G2
+Text Label 9000 5300 0    50   ~ 0
+G1
+Text Label 9000 5200 0    50   ~ 0
+R1
+Text Label 10300 7600 2    50   ~ 0
+R15
+Text Label 10300 7200 2    50   ~ 0
+R14
+Text Label 10300 6800 2    50   ~ 0
+R13
+Text Label 10300 6400 2    50   ~ 0
+R12
+Text Label 10300 6000 2    50   ~ 0
+R11
+Text Label 10300 5600 2    50   ~ 0
+R10
+Text Label 10300 5200 2    50   ~ 0
+R9
+Text Label 10300 4800 2    50   ~ 0
+R8
+Text Label 9000 7600 0    50   ~ 0
+R7
+Text Label 9000 7200 0    50   ~ 0
+R6
+Text Label 9000 6800 0    50   ~ 0
+R5
+Text Label 9000 6400 0    50   ~ 0
+R4
+Text Label 9000 6000 0    50   ~ 0
+R3
+Text Label 9000 5600 0    50   ~ 0
+R2
+Text Label 9000 5000 0    50   ~ 0
+B0
+Text Label 9000 4900 0    50   ~ 0
+G0
+Text Label 9000 4800 0    50   ~ 0
+R0
+Wire Wire Line
+	10300 7800 10000 7800
+Wire Wire Line
+	10300 7700 10000 7700
+Wire Wire Line
+	10300 7600 10000 7600
+Wire Wire Line
+	10300 7400 10000 7400
+Wire Wire Line
+	10300 7300 10000 7300
+Wire Wire Line
+	10300 7200 10000 7200
+Wire Wire Line
+	10300 7000 10000 7000
+Wire Wire Line
+	10300 6900 10000 6900
+Wire Wire Line
+	10300 6800 10000 6800
+Wire Wire Line
+	10300 6600 10000 6600
+Wire Wire Line
+	10300 6500 10000 6500
+Wire Wire Line
+	10300 6400 10000 6400
+Wire Wire Line
+	10300 6200 10000 6200
+Wire Wire Line
+	10300 6100 10000 6100
+Wire Wire Line
+	10300 6000 10000 6000
+Wire Wire Line
+	10300 5800 10000 5800
+Wire Wire Line
+	10300 5700 10000 5700
+Wire Wire Line
+	10300 5600 10000 5600
+Wire Wire Line
+	10300 5400 10000 5400
+Wire Wire Line
+	10300 5300 10000 5300
+Wire Wire Line
+	10300 5200 10000 5200
+Wire Wire Line
+	10300 5000 10000 5000
+Wire Wire Line
+	10300 4900 10000 4900
+Wire Wire Line
+	10300 4800 10000 4800
+Wire Wire Line
+	9300 7800 9000 7800
+Wire Wire Line
+	9300 7700 9000 7700
+Wire Wire Line
+	9300 7600 9000 7600
+Wire Wire Line
+	9300 7400 9000 7400
+Wire Wire Line
+	9300 7300 9000 7300
+Wire Wire Line
+	9300 7200 9000 7200
+Wire Wire Line
+	9300 7000 9000 7000
+Wire Wire Line
+	9300 6900 9000 6900
+Wire Wire Line
+	9300 6800 9000 6800
+Wire Wire Line
+	9300 6600 9000 6600
+Wire Wire Line
+	9300 6500 9000 6500
+Wire Wire Line
+	9300 6400 9000 6400
+Wire Wire Line
+	9300 6200 9000 6200
+Wire Wire Line
+	9300 6100 9000 6100
+Wire Wire Line
+	9300 6000 9000 6000
+Wire Wire Line
+	9300 5800 9000 5800
+Wire Wire Line
+	9300 5700 9000 5700
+Wire Wire Line
+	9300 5600 9000 5600
+Wire Wire Line
+	9300 5400 9000 5400
+Wire Wire Line
+	9300 5300 9000 5300
+Wire Wire Line
+	9300 5200 9000 5200
+Wire Wire Line
+	9300 5000 9000 5000
+Wire Wire Line
+	9300 4900 9000 4900
+Wire Wire Line
+	9300 4800 9000 4800
+$Sheet
+S 9300 4700 700  3400
+U 5D5928C6
+F0 "sheet5D5926D4" 50
+F1 "LED_COL.sch" 50
+F2 "G0" I L 9300 4900 50 
+F3 "B0" I L 9300 5000 50 
+F4 "R1" I L 9300 5200 50 
+F5 "G1" I L 9300 5300 50 
+F6 "B1" I L 9300 5400 50 
+F7 "R2" I L 9300 5600 50 
+F8 "G2" I L 9300 5700 50 
+F9 "B2" I L 9300 5800 50 
+F10 "R4" I L 9300 6400 50 
+F11 "R5" I L 9300 6800 50 
+F12 "R6" I L 9300 7200 50 
+F13 "R7" I L 9300 7600 50 
+F14 "R8" I R 10000 4800 50 
+F15 "R9" I R 10000 5200 50 
+F16 "R10" I R 10000 5600 50 
+F17 "R11" I R 10000 6000 50 
+F18 "R12" I R 10000 6400 50 
+F19 "R13" I R 10000 6800 50 
+F20 "R14" I R 10000 7200 50 
+F21 "R15" I R 10000 7600 50 
+F22 "G4" I L 9300 6500 50 
+F23 "G5" I L 9300 6900 50 
+F24 "G6" I L 9300 7300 50 
+F25 "G7" I L 9300 7700 50 
+F26 "G8" I R 10000 4900 50 
+F27 "G9" I R 10000 5300 50 
+F28 "G10" I R 10000 5700 50 
+F29 "G11" I R 10000 6100 50 
+F30 "G12" I R 10000 6500 50 
+F31 "G13" I R 10000 6900 50 
+F32 "G14" I R 10000 7300 50 
+F33 "G15" I R 10000 7700 50 
+F34 "B4" I L 9300 6600 50 
+F35 "B5" I L 9300 7000 50 
+F36 "B6" I L 9300 7400 50 
+F37 "B7" I L 9300 7800 50 
+F38 "B8" I R 10000 5000 50 
+F39 "B9" I R 10000 5400 50 
+F40 "B10" I R 10000 5800 50 
+F41 "B11" I R 10000 6200 50 
+F42 "B12" I R 10000 6600 50 
+F43 "B13" I R 10000 7000 50 
+F44 "B14" I R 10000 7400 50 
+F45 "B3" I L 9300 6200 50 
+F46 "G3" I L 9300 6100 50 
+F47 "R3" I L 9300 6000 50 
+F48 "B15" I R 10000 7800 50 
+F49 "R0" I L 9300 4800 50 
+F50 "C" I R 10000 8000 50 
+$EndSheet
+Wire Wire Line
+	8400 8000 8700 8000
+Text Label 8700 8000 2    50   ~ 0
+C10
+Text Label 8700 7800 2    50   ~ 0
+B15
+Text Label 8700 7400 2    50   ~ 0
+B14
+Text Label 8700 7000 2    50   ~ 0
+B13
+Text Label 8700 6600 2    50   ~ 0
+B12
+Text Label 8700 6200 2    50   ~ 0
+B11
+Text Label 8700 5800 2    50   ~ 0
+B10
+Text Label 8700 5400 2    50   ~ 0
+B9
+Text Label 8700 5000 2    50   ~ 0
+B8
+Text Label 7400 7800 0    50   ~ 0
+B7
+Text Label 7400 7400 0    50   ~ 0
+B6
+Text Label 7400 7000 0    50   ~ 0
+B5
+Text Label 7400 6600 0    50   ~ 0
+B4
+Text Label 7400 6200 0    50   ~ 0
+B3
+Text Label 7400 5800 0    50   ~ 0
+B2
+Text Label 7400 5400 0    50   ~ 0
+B1
+Text Label 8700 7700 2    50   ~ 0
+G15
+Text Label 8700 7300 2    50   ~ 0
+G14
+Text Label 8700 6900 2    50   ~ 0
+G13
+Text Label 8700 6500 2    50   ~ 0
+G12
+Text Label 8700 6100 2    50   ~ 0
+G11
+Text Label 8700 5700 2    50   ~ 0
+G10
+Text Label 8700 5300 2    50   ~ 0
+G9
+Text Label 8700 4900 2    50   ~ 0
+G8
+Text Label 7400 7700 0    50   ~ 0
+G7
+Text Label 7400 7300 0    50   ~ 0
+G6
+Text Label 7400 6900 0    50   ~ 0
+G5
+Text Label 7400 6500 0    50   ~ 0
+G4
+Text Label 7400 6100 0    50   ~ 0
+G3
+Text Label 7400 5700 0    50   ~ 0
+G2
+Text Label 7400 5300 0    50   ~ 0
+G1
+Text Label 7400 5200 0    50   ~ 0
+R1
+Text Label 8700 7600 2    50   ~ 0
+R15
+Text Label 8700 7200 2    50   ~ 0
+R14
+Text Label 8700 6800 2    50   ~ 0
+R13
+Text Label 8700 6400 2    50   ~ 0
+R12
+Text Label 8700 6000 2    50   ~ 0
+R11
+Text Label 8700 5600 2    50   ~ 0
+R10
+Text Label 8700 5200 2    50   ~ 0
+R9
+Text Label 8700 4800 2    50   ~ 0
+R8
+Text Label 7400 7600 0    50   ~ 0
+R7
+Text Label 7400 7200 0    50   ~ 0
+R6
+Text Label 7400 6800 0    50   ~ 0
+R5
+Text Label 7400 6400 0    50   ~ 0
+R4
+Text Label 7400 6000 0    50   ~ 0
+R3
+Text Label 7400 5600 0    50   ~ 0
+R2
+Text Label 7400 5000 0    50   ~ 0
+B0
+Text Label 7400 4900 0    50   ~ 0
+G0
+Text Label 7400 4800 0    50   ~ 0
+R0
+Wire Wire Line
+	8700 7800 8400 7800
+Wire Wire Line
+	8700 7700 8400 7700
+Wire Wire Line
+	8700 7600 8400 7600
+Wire Wire Line
+	8700 7400 8400 7400
+Wire Wire Line
+	8700 7300 8400 7300
+Wire Wire Line
+	8700 7200 8400 7200
+Wire Wire Line
+	8700 7000 8400 7000
+Wire Wire Line
+	8700 6900 8400 6900
+Wire Wire Line
+	8700 6800 8400 6800
+Wire Wire Line
+	8700 6600 8400 6600
+Wire Wire Line
+	8700 6500 8400 6500
+Wire Wire Line
+	8700 6400 8400 6400
+Wire Wire Line
+	8700 6200 8400 6200
+Wire Wire Line
+	8700 6100 8400 6100
+Wire Wire Line
+	8700 6000 8400 6000
+Wire Wire Line
+	8700 5800 8400 5800
+Wire Wire Line
+	8700 5700 8400 5700
+Wire Wire Line
+	8700 5600 8400 5600
+Wire Wire Line
+	8700 5400 8400 5400
+Wire Wire Line
+	8700 5300 8400 5300
+Wire Wire Line
+	8700 5200 8400 5200
+Wire Wire Line
+	8700 5000 8400 5000
+Wire Wire Line
+	8700 4900 8400 4900
+Wire Wire Line
+	8700 4800 8400 4800
+Wire Wire Line
+	7700 7800 7400 7800
+Wire Wire Line
+	7700 7700 7400 7700
+Wire Wire Line
+	7700 7600 7400 7600
+Wire Wire Line
+	7700 7400 7400 7400
+Wire Wire Line
+	7700 7300 7400 7300
+Wire Wire Line
+	7700 7200 7400 7200
+Wire Wire Line
+	7700 7000 7400 7000
+Wire Wire Line
+	7700 6900 7400 6900
+Wire Wire Line
+	7700 6800 7400 6800
+Wire Wire Line
+	7700 6600 7400 6600
+Wire Wire Line
+	7700 6500 7400 6500
+Wire Wire Line
+	7700 6400 7400 6400
+Wire Wire Line
+	7700 6200 7400 6200
+Wire Wire Line
+	7700 6100 7400 6100
+Wire Wire Line
+	7700 6000 7400 6000
+Wire Wire Line
+	7700 5800 7400 5800
+Wire Wire Line
+	7700 5700 7400 5700
+Wire Wire Line
+	7700 5600 7400 5600
+Wire Wire Line
+	7700 5400 7400 5400
+Wire Wire Line
+	7700 5300 7400 5300
+Wire Wire Line
+	7700 5200 7400 5200
+Wire Wire Line
+	7700 5000 7400 5000
+Wire Wire Line
+	7700 4900 7400 4900
+Wire Wire Line
+	7700 4800 7400 4800
+$Sheet
+S 7700 4700 700  3400
+U 5D592831
+F0 "sheet5D5926D3" 50
+F1 "LED_COL.sch" 50
+F2 "G0" I L 7700 4900 50 
+F3 "B0" I L 7700 5000 50 
+F4 "R1" I L 7700 5200 50 
+F5 "G1" I L 7700 5300 50 
+F6 "B1" I L 7700 5400 50 
+F7 "R2" I L 7700 5600 50 
+F8 "G2" I L 7700 5700 50 
+F9 "B2" I L 7700 5800 50 
+F10 "R4" I L 7700 6400 50 
+F11 "R5" I L 7700 6800 50 
+F12 "R6" I L 7700 7200 50 
+F13 "R7" I L 7700 7600 50 
+F14 "R8" I R 8400 4800 50 
+F15 "R9" I R 8400 5200 50 
+F16 "R10" I R 8400 5600 50 
+F17 "R11" I R 8400 6000 50 
+F18 "R12" I R 8400 6400 50 
+F19 "R13" I R 8400 6800 50 
+F20 "R14" I R 8400 7200 50 
+F21 "R15" I R 8400 7600 50 
+F22 "G4" I L 7700 6500 50 
+F23 "G5" I L 7700 6900 50 
+F24 "G6" I L 7700 7300 50 
+F25 "G7" I L 7700 7700 50 
+F26 "G8" I R 8400 4900 50 
+F27 "G9" I R 8400 5300 50 
+F28 "G10" I R 8400 5700 50 
+F29 "G11" I R 8400 6100 50 
+F30 "G12" I R 8400 6500 50 
+F31 "G13" I R 8400 6900 50 
+F32 "G14" I R 8400 7300 50 
+F33 "G15" I R 8400 7700 50 
+F34 "B4" I L 7700 6600 50 
+F35 "B5" I L 7700 7000 50 
+F36 "B6" I L 7700 7400 50 
+F37 "B7" I L 7700 7800 50 
+F38 "B8" I R 8400 5000 50 
+F39 "B9" I R 8400 5400 50 
+F40 "B10" I R 8400 5800 50 
+F41 "B11" I R 8400 6200 50 
+F42 "B12" I R 8400 6600 50 
+F43 "B13" I R 8400 7000 50 
+F44 "B14" I R 8400 7400 50 
+F45 "B3" I L 7700 6200 50 
+F46 "G3" I L 7700 6100 50 
+F47 "R3" I L 7700 6000 50 
+F48 "B15" I R 8400 7800 50 
+F49 "R0" I L 7700 4800 50 
+F50 "C" I R 8400 8000 50 
+$EndSheet
+Text Label 7100 8000 2    50   ~ 0
+C9
+Wire Wire Line
+	6800 8000 7100 8000
+Text Label 7100 7800 2    50   ~ 0
+B15
+Text Label 7100 7400 2    50   ~ 0
+B14
+Text Label 7100 7000 2    50   ~ 0
+B13
+Text Label 7100 6600 2    50   ~ 0
+B12
+Text Label 7100 6200 2    50   ~ 0
+B11
+Text Label 7100 5800 2    50   ~ 0
+B10
+Text Label 7100 5400 2    50   ~ 0
+B9
+Text Label 7100 5000 2    50   ~ 0
+B8
+Text Label 5800 7800 0    50   ~ 0
+B7
+Text Label 5800 7400 0    50   ~ 0
+B6
+Text Label 5800 7000 0    50   ~ 0
+B5
+Text Label 5800 6600 0    50   ~ 0
+B4
+Text Label 5800 6200 0    50   ~ 0
+B3
+Text Label 5800 5800 0    50   ~ 0
+B2
+Text Label 5800 5400 0    50   ~ 0
+B1
+Text Label 7100 7700 2    50   ~ 0
+G15
+Text Label 7100 7300 2    50   ~ 0
+G14
+Text Label 7100 6900 2    50   ~ 0
+G13
+Text Label 7100 6500 2    50   ~ 0
+G12
+Text Label 7100 6100 2    50   ~ 0
+G11
+Text Label 7100 5700 2    50   ~ 0
+G10
+Text Label 7100 5300 2    50   ~ 0
+G9
+Text Label 7100 4900 2    50   ~ 0
+G8
+Text Label 5800 7700 0    50   ~ 0
+G7
+Text Label 5800 7300 0    50   ~ 0
+G6
+Text Label 5800 6900 0    50   ~ 0
+G5
+Text Label 5800 6500 0    50   ~ 0
+G4
+Text Label 5800 6100 0    50   ~ 0
+G3
+Text Label 5800 5700 0    50   ~ 0
+G2
+Text Label 5800 5300 0    50   ~ 0
+G1
+Text Label 5800 5200 0    50   ~ 0
+R1
+Text Label 7100 7600 2    50   ~ 0
+R15
+Text Label 7100 7200 2    50   ~ 0
+R14
+Text Label 7100 6800 2    50   ~ 0
+R13
+Text Label 7100 6400 2    50   ~ 0
+R12
+Text Label 7100 6000 2    50   ~ 0
+R11
+Text Label 7100 5600 2    50   ~ 0
+R10
+Text Label 7100 5200 2    50   ~ 0
+R9
+Text Label 7100 4800 2    50   ~ 0
+R8
+Text Label 5800 7600 0    50   ~ 0
+R7
+Text Label 5800 7200 0    50   ~ 0
+R6
+Text Label 5800 6800 0    50   ~ 0
+R5
+Text Label 5800 6400 0    50   ~ 0
+R4
+Text Label 5800 6000 0    50   ~ 0
+R3
+Text Label 5800 5600 0    50   ~ 0
+R2
+Text Label 5800 5000 0    50   ~ 0
+B0
+Text Label 5800 4900 0    50   ~ 0
+G0
+Text Label 5800 4800 0    50   ~ 0
+R0
+Wire Wire Line
+	7100 7800 6800 7800
+Wire Wire Line
+	7100 7700 6800 7700
+Wire Wire Line
+	7100 7600 6800 7600
+Wire Wire Line
+	7100 7400 6800 7400
+Wire Wire Line
+	7100 7300 6800 7300
+Wire Wire Line
+	7100 7200 6800 7200
+Wire Wire Line
+	7100 7000 6800 7000
+Wire Wire Line
+	7100 6900 6800 6900
+Wire Wire Line
+	7100 6800 6800 6800
+Wire Wire Line
+	7100 6600 6800 6600
+Wire Wire Line
+	7100 6500 6800 6500
+Wire Wire Line
+	7100 6400 6800 6400
+Wire Wire Line
+	7100 6200 6800 6200
+Wire Wire Line
+	7100 6100 6800 6100
+Wire Wire Line
+	7100 6000 6800 6000
+Wire Wire Line
+	7100 5800 6800 5800
+Wire Wire Line
+	7100 5700 6800 5700
+Wire Wire Line
+	7100 5600 6800 5600
+Wire Wire Line
+	7100 5400 6800 5400
+Wire Wire Line
+	7100 5300 6800 5300
+Wire Wire Line
+	7100 5200 6800 5200
+Wire Wire Line
+	7100 5000 6800 5000
+Wire Wire Line
+	7100 4900 6800 4900
+Wire Wire Line
+	7100 4800 6800 4800
+Wire Wire Line
+	6100 7800 5800 7800
+Wire Wire Line
+	6100 7700 5800 7700
+Wire Wire Line
+	6100 7600 5800 7600
+Wire Wire Line
+	6100 7400 5800 7400
+Wire Wire Line
+	6100 7300 5800 7300
+Wire Wire Line
+	6100 7200 5800 7200
+Wire Wire Line
+	6100 7000 5800 7000
+Wire Wire Line
+	6100 6900 5800 6900
+Wire Wire Line
+	6100 6800 5800 6800
+Wire Wire Line
+	6100 6600 5800 6600
+Wire Wire Line
+	6100 6500 5800 6500
+Wire Wire Line
+	6100 6400 5800 6400
+Wire Wire Line
+	6100 6200 5800 6200
+Wire Wire Line
+	6100 6100 5800 6100
+Wire Wire Line
+	6100 6000 5800 6000
+Wire Wire Line
+	6100 5800 5800 5800
+Wire Wire Line
+	6100 5700 5800 5700
+Wire Wire Line
+	6100 5600 5800 5600
+Wire Wire Line
+	6100 5400 5800 5400
+Wire Wire Line
+	6100 5300 5800 5300
+Wire Wire Line
+	6100 5200 5800 5200
+Wire Wire Line
+	6100 5000 5800 5000
+Wire Wire Line
+	6100 4900 5800 4900
+Wire Wire Line
+	6100 4800 5800 4800
+$Sheet
+S 6100 4700 700  3400
+U 5D59279C
+F0 "sheet5D5926D2" 50
+F1 "LED_COL.sch" 50
+F2 "G0" I L 6100 4900 50 
+F3 "B0" I L 6100 5000 50 
+F4 "R1" I L 6100 5200 50 
+F5 "G1" I L 6100 5300 50 
+F6 "B1" I L 6100 5400 50 
+F7 "R2" I L 6100 5600 50 
+F8 "G2" I L 6100 5700 50 
+F9 "B2" I L 6100 5800 50 
+F10 "R4" I L 6100 6400 50 
+F11 "R5" I L 6100 6800 50 
+F12 "R6" I L 6100 7200 50 
+F13 "R7" I L 6100 7600 50 
+F14 "R8" I R 6800 4800 50 
+F15 "R9" I R 6800 5200 50 
+F16 "R10" I R 6800 5600 50 
+F17 "R11" I R 6800 6000 50 
+F18 "R12" I R 6800 6400 50 
+F19 "R13" I R 6800 6800 50 
+F20 "R14" I R 6800 7200 50 
+F21 "R15" I R 6800 7600 50 
+F22 "G4" I L 6100 6500 50 
+F23 "G5" I L 6100 6900 50 
+F24 "G6" I L 6100 7300 50 
+F25 "G7" I L 6100 7700 50 
+F26 "G8" I R 6800 4900 50 
+F27 "G9" I R 6800 5300 50 
+F28 "G10" I R 6800 5700 50 
+F29 "G11" I R 6800 6100 50 
+F30 "G12" I R 6800 6500 50 
+F31 "G13" I R 6800 6900 50 
+F32 "G14" I R 6800 7300 50 
+F33 "G15" I R 6800 7700 50 
+F34 "B4" I L 6100 6600 50 
+F35 "B5" I L 6100 7000 50 
+F36 "B6" I L 6100 7400 50 
+F37 "B7" I L 6100 7800 50 
+F38 "B8" I R 6800 5000 50 
+F39 "B9" I R 6800 5400 50 
+F40 "B10" I R 6800 5800 50 
+F41 "B11" I R 6800 6200 50 
+F42 "B12" I R 6800 6600 50 
+F43 "B13" I R 6800 7000 50 
+F44 "B14" I R 6800 7400 50 
+F45 "B3" I L 6100 6200 50 
+F46 "G3" I L 6100 6100 50 
+F47 "R3" I L 6100 6000 50 
+F48 "B15" I R 6800 7800 50 
+F49 "R0" I L 6100 4800 50 
+F50 "C" I R 6800 8000 50 
+$EndSheet
+Wire Wire Line
+	5200 8000 5500 8000
+Text Label 5500 8000 2    50   ~ 0
+C8
+Text Label 5500 7800 2    50   ~ 0
+B15
+Text Label 5500 7400 2    50   ~ 0
+B14
+Text Label 5500 7000 2    50   ~ 0
+B13
+Text Label 5500 6600 2    50   ~ 0
+B12
+Text Label 5500 6200 2    50   ~ 0
+B11
+Text Label 5500 5800 2    50   ~ 0
+B10
+Text Label 5500 5400 2    50   ~ 0
+B9
+Text Label 5500 5000 2    50   ~ 0
+B8
+Text Label 4200 7800 0    50   ~ 0
+B7
+Text Label 4200 7400 0    50   ~ 0
+B6
+Text Label 4200 7000 0    50   ~ 0
+B5
+Text Label 4200 6600 0    50   ~ 0
+B4
+Text Label 4200 6200 0    50   ~ 0
+B3
+Text Label 4200 5800 0    50   ~ 0
+B2
+Text Label 4200 5400 0    50   ~ 0
+B1
+Text Label 5500 7700 2    50   ~ 0
+G15
+Text Label 5500 7300 2    50   ~ 0
+G14
+Text Label 5500 6900 2    50   ~ 0
+G13
+Text Label 5500 6500 2    50   ~ 0
+G12
+Text Label 5500 6100 2    50   ~ 0
+G11
+Text Label 5500 5700 2    50   ~ 0
+G10
+Text Label 5500 5300 2    50   ~ 0
+G9
+Text Label 5500 4900 2    50   ~ 0
+G8
+Text Label 4200 7700 0    50   ~ 0
+G7
+Text Label 4200 7300 0    50   ~ 0
+G6
+Text Label 4200 6900 0    50   ~ 0
+G5
+Text Label 4200 6500 0    50   ~ 0
+G4
+Text Label 4200 6100 0    50   ~ 0
+G3
+Text Label 4200 5700 0    50   ~ 0
+G2
+Text Label 4200 5300 0    50   ~ 0
+G1
+Text Label 4200 5200 0    50   ~ 0
+R1
+Text Label 5500 7600 2    50   ~ 0
+R15
+Text Label 5500 7200 2    50   ~ 0
+R14
+Text Label 5500 6800 2    50   ~ 0
+R13
+Text Label 5500 6400 2    50   ~ 0
+R12
+Text Label 5500 6000 2    50   ~ 0
+R11
+Text Label 5500 5600 2    50   ~ 0
+R10
+Text Label 5500 5200 2    50   ~ 0
+R9
+Text Label 5500 4800 2    50   ~ 0
+R8
+Text Label 4200 7600 0    50   ~ 0
+R7
+Text Label 4200 7200 0    50   ~ 0
+R6
+Text Label 4200 6800 0    50   ~ 0
+R5
+Text Label 4200 6400 0    50   ~ 0
+R4
+Text Label 4200 6000 0    50   ~ 0
+R3
+Text Label 4200 5600 0    50   ~ 0
+R2
+Text Label 4200 5000 0    50   ~ 0
+B0
+Text Label 4200 4900 0    50   ~ 0
+G0
+Text Label 4200 4800 0    50   ~ 0
+R0
+Wire Wire Line
+	5500 7800 5200 7800
+Wire Wire Line
+	5500 7700 5200 7700
+Wire Wire Line
+	5500 7600 5200 7600
+Wire Wire Line
+	5500 7400 5200 7400
+Wire Wire Line
+	5500 7300 5200 7300
+Wire Wire Line
+	5500 7200 5200 7200
+Wire Wire Line
+	5500 7000 5200 7000
+Wire Wire Line
+	5500 6900 5200 6900
+Wire Wire Line
+	5500 6800 5200 6800
+Wire Wire Line
+	5500 6600 5200 6600
+Wire Wire Line
+	5500 6500 5200 6500
+Wire Wire Line
+	5500 6400 5200 6400
+Wire Wire Line
+	5500 6200 5200 6200
+Wire Wire Line
+	5500 6100 5200 6100
+Wire Wire Line
+	5500 6000 5200 6000
+Wire Wire Line
+	5500 5800 5200 5800
+Wire Wire Line
+	5500 5700 5200 5700
+Wire Wire Line
+	5500 5600 5200 5600
+Wire Wire Line
+	5500 5400 5200 5400
+Wire Wire Line
+	5500 5300 5200 5300
+Wire Wire Line
+	5500 5200 5200 5200
+Wire Wire Line
+	5500 5000 5200 5000
+Wire Wire Line
+	5500 4900 5200 4900
+Wire Wire Line
+	5500 4800 5200 4800
+Wire Wire Line
+	4500 7800 4200 7800
+Wire Wire Line
+	4500 7700 4200 7700
+Wire Wire Line
+	4500 7600 4200 7600
+Wire Wire Line
+	4500 7400 4200 7400
+Wire Wire Line
+	4500 7300 4200 7300
+Wire Wire Line
+	4500 7200 4200 7200
+Wire Wire Line
+	4500 7000 4200 7000
+Wire Wire Line
+	4500 6900 4200 6900
+Wire Wire Line
+	4500 6800 4200 6800
+Wire Wire Line
+	4500 6600 4200 6600
+Wire Wire Line
+	4500 6500 4200 6500
+Wire Wire Line
+	4500 6400 4200 6400
+Wire Wire Line
+	4500 6200 4200 6200
+Wire Wire Line
+	4500 6100 4200 6100
+Wire Wire Line
+	4500 6000 4200 6000
+Wire Wire Line
+	4500 5800 4200 5800
+Wire Wire Line
+	4500 5700 4200 5700
+Wire Wire Line
+	4500 5600 4200 5600
+Wire Wire Line
+	4500 5400 4200 5400
+Wire Wire Line
+	4500 5300 4200 5300
+Wire Wire Line
+	4500 5200 4200 5200
+Wire Wire Line
+	4500 5000 4200 5000
+Wire Wire Line
+	4500 4900 4200 4900
+Wire Wire Line
+	4500 4800 4200 4800
+$Sheet
+S 4500 4700 700  3400
+U 5D592707
+F0 "sheet5D5926D1" 50
+F1 "LED_COL.sch" 50
+F2 "G0" I L 4500 4900 50 
+F3 "B0" I L 4500 5000 50 
+F4 "R1" I L 4500 5200 50 
+F5 "G1" I L 4500 5300 50 
+F6 "B1" I L 4500 5400 50 
+F7 "R2" I L 4500 5600 50 
+F8 "G2" I L 4500 5700 50 
+F9 "B2" I L 4500 5800 50 
+F10 "R4" I L 4500 6400 50 
+F11 "R5" I L 4500 6800 50 
+F12 "R6" I L 4500 7200 50 
+F13 "R7" I L 4500 7600 50 
+F14 "R8" I R 5200 4800 50 
+F15 "R9" I R 5200 5200 50 
+F16 "R10" I R 5200 5600 50 
+F17 "R11" I R 5200 6000 50 
+F18 "R12" I R 5200 6400 50 
+F19 "R13" I R 5200 6800 50 
+F20 "R14" I R 5200 7200 50 
+F21 "R15" I R 5200 7600 50 
+F22 "G4" I L 4500 6500 50 
+F23 "G5" I L 4500 6900 50 
+F24 "G6" I L 4500 7300 50 
+F25 "G7" I L 4500 7700 50 
+F26 "G8" I R 5200 4900 50 
+F27 "G9" I R 5200 5300 50 
+F28 "G10" I R 5200 5700 50 
+F29 "G11" I R 5200 6100 50 
+F30 "G12" I R 5200 6500 50 
+F31 "G13" I R 5200 6900 50 
+F32 "G14" I R 5200 7300 50 
+F33 "G15" I R 5200 7700 50 
+F34 "B4" I L 4500 6600 50 
+F35 "B5" I L 4500 7000 50 
+F36 "B6" I L 4500 7400 50 
+F37 "B7" I L 4500 7800 50 
+F38 "B8" I R 5200 5000 50 
+F39 "B9" I R 5200 5400 50 
+F40 "B10" I R 5200 5800 50 
+F41 "B11" I R 5200 6200 50 
+F42 "B12" I R 5200 6600 50 
+F43 "B13" I R 5200 7000 50 
+F44 "B14" I R 5200 7400 50 
+F45 "B3" I L 4500 6200 50 
+F46 "G3" I L 4500 6100 50 
+F47 "R3" I L 4500 6000 50 
+F48 "B15" I R 5200 7800 50 
+F49 "R0" I L 4500 4800 50 
+F50 "C" I R 5200 8000 50 
+$EndSheet
+$Sheet
+S 4500 8500 700  3400
+U 62B18282
+F0 "sheet62B18240" 50
+F1 "LED_COL.sch" 50
+F2 "G0" I L 4500 8700 50 
+F3 "B0" I L 4500 8800 50 
+F4 "R1" I L 4500 9000 50 
+F5 "G1" I L 4500 9100 50 
+F6 "B1" I L 4500 9200 50 
+F7 "R2" I L 4500 9400 50 
+F8 "G2" I L 4500 9500 50 
+F9 "B2" I L 4500 9600 50 
+F10 "R4" I L 4500 10200 50 
+F11 "R5" I L 4500 10600 50 
+F12 "R6" I L 4500 11000 50 
+F13 "R7" I L 4500 11400 50 
+F14 "R8" I R 5200 8600 50 
+F15 "R9" I R 5200 9000 50 
+F16 "R10" I R 5200 9400 50 
+F17 "R11" I R 5200 9800 50 
+F18 "R12" I R 5200 10200 50 
+F19 "R13" I R 5200 10600 50 
+F20 "R14" I R 5200 11000 50 
+F21 "R15" I R 5200 11400 50 
+F22 "G4" I L 4500 10300 50 
+F23 "G5" I L 4500 10700 50 
+F24 "G6" I L 4500 11100 50 
+F25 "G7" I L 4500 11500 50 
+F26 "G8" I R 5200 8700 50 
+F27 "G9" I R 5200 9100 50 
+F28 "G10" I R 5200 9500 50 
+F29 "G11" I R 5200 9900 50 
+F30 "G12" I R 5200 10300 50 
+F31 "G13" I R 5200 10700 50 
+F32 "G14" I R 5200 11100 50 
+F33 "G15" I R 5200 11500 50 
+F34 "B4" I L 4500 10400 50 
+F35 "B5" I L 4500 10800 50 
+F36 "B6" I L 4500 11200 50 
+F37 "B7" I L 4500 11600 50 
+F38 "B8" I R 5200 8800 50 
+F39 "B9" I R 5200 9200 50 
+F40 "B10" I R 5200 9600 50 
+F41 "B11" I R 5200 10000 50 
+F42 "B12" I R 5200 10400 50 
+F43 "B13" I R 5200 10800 50 
+F44 "B14" I R 5200 11200 50 
+F45 "B3" I L 4500 10000 50 
+F46 "G3" I L 4500 9900 50 
+F47 "R3" I L 4500 9800 50 
+F48 "B15" I R 5200 11600 50 
+F49 "R0" I L 4500 8600 50 
+F50 "C" I R 5200 11800 50 
+$EndSheet
+Wire Wire Line
+	4500 8600 4200 8600
+Wire Wire Line
+	4500 8700 4200 8700
+Wire Wire Line
+	4500 8800 4200 8800
+Wire Wire Line
+	4500 9000 4200 9000
+Wire Wire Line
+	4500 9100 4200 9100
+Wire Wire Line
+	4500 9200 4200 9200
+Wire Wire Line
+	4500 9400 4200 9400
+Wire Wire Line
+	4500 9500 4200 9500
+Wire Wire Line
+	4500 9600 4200 9600
+Wire Wire Line
+	4500 9800 4200 9800
+Wire Wire Line
+	4500 9900 4200 9900
+Wire Wire Line
+	4500 10000 4200 10000
+Wire Wire Line
+	4500 10200 4200 10200
+Wire Wire Line
+	4500 10300 4200 10300
+Wire Wire Line
+	4500 10400 4200 10400
+Wire Wire Line
+	4500 10600 4200 10600
+Wire Wire Line
+	4500 10700 4200 10700
+Wire Wire Line
+	4500 10800 4200 10800
+Wire Wire Line
+	4500 11000 4200 11000
+Wire Wire Line
+	4500 11100 4200 11100
+Wire Wire Line
+	4500 11200 4200 11200
+Wire Wire Line
+	4500 11400 4200 11400
+Wire Wire Line
+	4500 11500 4200 11500
+Wire Wire Line
+	4500 11600 4200 11600
+Wire Wire Line
+	5500 8600 5200 8600
+Wire Wire Line
+	5500 8700 5200 8700
+Wire Wire Line
+	5500 8800 5200 8800
+Wire Wire Line
+	5500 9000 5200 9000
+Wire Wire Line
+	5500 9100 5200 9100
+Wire Wire Line
+	5500 9200 5200 9200
+Wire Wire Line
+	5500 9400 5200 9400
+Wire Wire Line
+	5500 9500 5200 9500
+Wire Wire Line
+	5500 9600 5200 9600
+Wire Wire Line
+	5500 9800 5200 9800
+Wire Wire Line
+	5500 9900 5200 9900
+Wire Wire Line
+	5500 10000 5200 10000
+Wire Wire Line
+	5500 10200 5200 10200
+Wire Wire Line
+	5500 10300 5200 10300
+Wire Wire Line
+	5500 10400 5200 10400
+Wire Wire Line
+	5500 10600 5200 10600
+Wire Wire Line
+	5500 10700 5200 10700
+Wire Wire Line
+	5500 10800 5200 10800
+Wire Wire Line
+	5500 11000 5200 11000
+Wire Wire Line
+	5500 11100 5200 11100
+Wire Wire Line
+	5500 11200 5200 11200
+Wire Wire Line
+	5500 11400 5200 11400
+Wire Wire Line
+	5500 11500 5200 11500
+Wire Wire Line
+	5500 11600 5200 11600
+Text Label 4200 8600 0    50   ~ 0
+R0
+Text Label 4200 8700 0    50   ~ 0
+G0
+Text Label 4200 8800 0    50   ~ 0
+B0
+Text Label 4200 9400 0    50   ~ 0
+R2
+Text Label 4200 9800 0    50   ~ 0
+R3
+Text Label 4200 10200 0    50   ~ 0
+R4
+Text Label 4200 10600 0    50   ~ 0
+R5
+Text Label 4200 11000 0    50   ~ 0
+R6
+Text Label 4200 11400 0    50   ~ 0
+R7
+Text Label 5500 8600 2    50   ~ 0
+R8
+Text Label 5500 9000 2    50   ~ 0
+R9
+Text Label 5500 9400 2    50   ~ 0
+R10
+Text Label 5500 9800 2    50   ~ 0
+R11
+Text Label 5500 10200 2    50   ~ 0
+R12
+Text Label 5500 10600 2    50   ~ 0
+R13
+Text Label 5500 11000 2    50   ~ 0
+R14
+Text Label 5500 11400 2    50   ~ 0
+R15
+Text Label 4200 9000 0    50   ~ 0
+R1
+Text Label 4200 9100 0    50   ~ 0
+G1
+Text Label 4200 9500 0    50   ~ 0
+G2
+Text Label 4200 9900 0    50   ~ 0
+G3
+Text Label 4200 10300 0    50   ~ 0
+G4
+Text Label 4200 10700 0    50   ~ 0
+G5
+Text Label 4200 11100 0    50   ~ 0
+G6
+Text Label 4200 11500 0    50   ~ 0
+G7
+Text Label 5500 8700 2    50   ~ 0
+G8
+Text Label 5500 9100 2    50   ~ 0
+G9
+Text Label 5500 9500 2    50   ~ 0
+G10
+Text Label 5500 9900 2    50   ~ 0
+G11
+Text Label 5500 10300 2    50   ~ 0
+G12
+Text Label 5500 10700 2    50   ~ 0
+G13
+Text Label 5500 11100 2    50   ~ 0
+G14
+Text Label 5500 11500 2    50   ~ 0
+G15
+Text Label 4200 9200 0    50   ~ 0
+B1
+Text Label 4200 9600 0    50   ~ 0
+B2
+Text Label 4200 10000 0    50   ~ 0
+B3
+Text Label 4200 10400 0    50   ~ 0
+B4
+Text Label 4200 10800 0    50   ~ 0
+B5
+Text Label 4200 11200 0    50   ~ 0
+B6
+Text Label 4200 11600 0    50   ~ 0
+B7
+Text Label 5500 8800 2    50   ~ 0
+B8
+Text Label 5500 9200 2    50   ~ 0
+B9
+Text Label 5500 9600 2    50   ~ 0
+B10
+Text Label 5500 10000 2    50   ~ 0
+B11
+Text Label 5500 10400 2    50   ~ 0
+B12
+Text Label 5500 10800 2    50   ~ 0
+B13
+Text Label 5500 11200 2    50   ~ 0
+B14
+Text Label 5500 11600 2    50   ~ 0
+B15
+Text Label 5500 11800 2    50   ~ 0
+C16
+Wire Wire Line
+	5200 11800 5500 11800
+$Sheet
+S 6100 8500 700  3400
+U 62B18317
+F0 "sheet62B18241" 50
+F1 "LED_COL.sch" 50
+F2 "G0" I L 6100 8700 50 
+F3 "B0" I L 6100 8800 50 
+F4 "R1" I L 6100 9000 50 
+F5 "G1" I L 6100 9100 50 
+F6 "B1" I L 6100 9200 50 
+F7 "R2" I L 6100 9400 50 
+F8 "G2" I L 6100 9500 50 
+F9 "B2" I L 6100 9600 50 
+F10 "R4" I L 6100 10200 50 
+F11 "R5" I L 6100 10600 50 
+F12 "R6" I L 6100 11000 50 
+F13 "R7" I L 6100 11400 50 
+F14 "R8" I R 6800 8600 50 
+F15 "R9" I R 6800 9000 50 
+F16 "R10" I R 6800 9400 50 
+F17 "R11" I R 6800 9800 50 
+F18 "R12" I R 6800 10200 50 
+F19 "R13" I R 6800 10600 50 
+F20 "R14" I R 6800 11000 50 
+F21 "R15" I R 6800 11400 50 
+F22 "G4" I L 6100 10300 50 
+F23 "G5" I L 6100 10700 50 
+F24 "G6" I L 6100 11100 50 
+F25 "G7" I L 6100 11500 50 
+F26 "G8" I R 6800 8700 50 
+F27 "G9" I R 6800 9100 50 
+F28 "G10" I R 6800 9500 50 
+F29 "G11" I R 6800 9900 50 
+F30 "G12" I R 6800 10300 50 
+F31 "G13" I R 6800 10700 50 
+F32 "G14" I R 6800 11100 50 
+F33 "G15" I R 6800 11500 50 
+F34 "B4" I L 6100 10400 50 
+F35 "B5" I L 6100 10800 50 
+F36 "B6" I L 6100 11200 50 
+F37 "B7" I L 6100 11600 50 
+F38 "B8" I R 6800 8800 50 
+F39 "B9" I R 6800 9200 50 
+F40 "B10" I R 6800 9600 50 
+F41 "B11" I R 6800 10000 50 
+F42 "B12" I R 6800 10400 50 
+F43 "B13" I R 6800 10800 50 
+F44 "B14" I R 6800 11200 50 
+F45 "B3" I L 6100 10000 50 
+F46 "G3" I L 6100 9900 50 
+F47 "R3" I L 6100 9800 50 
+F48 "B15" I R 6800 11600 50 
+F49 "R0" I L 6100 8600 50 
+F50 "C" I R 6800 11800 50 
+$EndSheet
+Wire Wire Line
+	6100 8600 5800 8600
+Wire Wire Line
+	6100 8700 5800 8700
+Wire Wire Line
+	6100 8800 5800 8800
+Wire Wire Line
+	6100 9000 5800 9000
+Wire Wire Line
+	6100 9100 5800 9100
+Wire Wire Line
+	6100 9200 5800 9200
+Wire Wire Line
+	6100 9400 5800 9400
+Wire Wire Line
+	6100 9500 5800 9500
+Wire Wire Line
+	6100 9600 5800 9600
+Wire Wire Line
+	6100 9800 5800 9800
+Wire Wire Line
+	6100 9900 5800 9900
+Wire Wire Line
+	6100 10000 5800 10000
+Wire Wire Line
+	6100 10200 5800 10200
+Wire Wire Line
+	6100 10300 5800 10300
+Wire Wire Line
+	6100 10400 5800 10400
+Wire Wire Line
+	6100 10600 5800 10600
+Wire Wire Line
+	6100 10700 5800 10700
+Wire Wire Line
+	6100 10800 5800 10800
+Wire Wire Line
+	6100 11000 5800 11000
+Wire Wire Line
+	6100 11100 5800 11100
+Wire Wire Line
+	6100 11200 5800 11200
+Wire Wire Line
+	6100 11400 5800 11400
+Wire Wire Line
+	6100 11500 5800 11500
+Wire Wire Line
+	6100 11600 5800 11600
+Text Label 5800 8600 0    50   ~ 0
+R0
+Text Label 5800 8700 0    50   ~ 0
+G0
+Text Label 5800 8800 0    50   ~ 0
+B0
+Text Label 5800 9400 0    50   ~ 0
+R2
+Text Label 5800 9800 0    50   ~ 0
+R3
+Text Label 5800 10200 0    50   ~ 0
+R4
+Text Label 5800 10600 0    50   ~ 0
+R5
+Text Label 5800 11000 0    50   ~ 0
+R6
+Text Label 5800 11400 0    50   ~ 0
+R7
+Text Label 5800 9000 0    50   ~ 0
+R1
+Text Label 5800 9100 0    50   ~ 0
+G1
+Text Label 5800 9500 0    50   ~ 0
+G2
+Text Label 5800 9900 0    50   ~ 0
+G3
+Text Label 5800 10300 0    50   ~ 0
+G4
+Text Label 5800 10700 0    50   ~ 0
+G5
+Text Label 5800 11100 0    50   ~ 0
+G6
+Text Label 5800 11500 0    50   ~ 0
+G7
+Text Label 5800 9200 0    50   ~ 0
+B1
+Text Label 5800 9600 0    50   ~ 0
+B2
+Text Label 5800 10000 0    50   ~ 0
+B3
+Text Label 5800 10400 0    50   ~ 0
+B4
+Text Label 5800 10800 0    50   ~ 0
+B5
+Text Label 5800 11200 0    50   ~ 0
+B6
+Text Label 5800 11600 0    50   ~ 0
+B7
+Text Label 8700 11800 2    50   ~ 0
+C18
+Text Label 10600 11600 0    50   ~ 0
+B7
+Text Label 10600 11200 0    50   ~ 0
+B6
+Text Label 10600 10800 0    50   ~ 0
+B5
+Text Label 10600 10400 0    50   ~ 0
+B4
+Text Label 10600 10000 0    50   ~ 0
+B3
+Text Label 10600 9600 0    50   ~ 0
+B2
+Text Label 10600 9200 0    50   ~ 0
+B1
+Text Label 10600 11500 0    50   ~ 0
+G7
+Text Label 10600 11100 0    50   ~ 0
+G6
+Text Label 10600 10700 0    50   ~ 0
+G5
+Text Label 10600 10300 0    50   ~ 0
+G4
+Text Label 10600 9900 0    50   ~ 0
+G3
+Text Label 10600 9500 0    50   ~ 0
+G2
+Text Label 10600 9100 0    50   ~ 0
+G1
+Text Label 10600 9000 0    50   ~ 0
+R1
+Text Label 10600 11400 0    50   ~ 0
+R7
+Text Label 10600 11000 0    50   ~ 0
+R6
+Text Label 10600 10600 0    50   ~ 0
+R5
+Text Label 10600 10200 0    50   ~ 0
+R4
+Text Label 10600 9800 0    50   ~ 0
+R3
+Text Label 10600 9400 0    50   ~ 0
+R2
+Text Label 10600 8800 0    50   ~ 0
+B0
+Text Label 10600 8700 0    50   ~ 0
+G0
+Text Label 10600 8600 0    50   ~ 0
+R0
+Text Label 10300 11800 2    50   ~ 0
+C19
+Wire Wire Line
+	10000 11800 10300 11800
+Text Label 10300 11600 2    50   ~ 0
+B15
+Text Label 10300 11200 2    50   ~ 0
+B14
+Text Label 10300 10800 2    50   ~ 0
+B13
+Text Label 10300 10400 2    50   ~ 0
+B12
+Text Label 10300 10000 2    50   ~ 0
+B11
+Text Label 10300 9600 2    50   ~ 0
+B10
+Text Label 10300 9200 2    50   ~ 0
+B9
+Text Label 10300 8800 2    50   ~ 0
+B8
+Text Label 9000 11600 0    50   ~ 0
+B7
+Text Label 9000 11200 0    50   ~ 0
+B6
+Text Label 9000 10800 0    50   ~ 0
+B5
+Text Label 9000 10400 0    50   ~ 0
+B4
+Text Label 9000 10000 0    50   ~ 0
+B3
+Text Label 9000 9600 0    50   ~ 0
+B2
+Text Label 9000 9200 0    50   ~ 0
+B1
+Text Label 10300 11500 2    50   ~ 0
+G15
+Text Label 10300 11100 2    50   ~ 0
+G14
+Text Label 10300 10700 2    50   ~ 0
+G13
+Text Label 10300 10300 2    50   ~ 0
+G12
+Text Label 10300 9900 2    50   ~ 0
+G11
+Text Label 10300 9500 2    50   ~ 0
+G10
+Text Label 10300 9100 2    50   ~ 0
+G9
+Text Label 10300 8700 2    50   ~ 0
+G8
+Text Label 9000 11500 0    50   ~ 0
+G7
+Text Label 9000 11100 0    50   ~ 0
+G6
+Text Label 9000 10700 0    50   ~ 0
+G5
+Text Label 9000 10300 0    50   ~ 0
+G4
+Text Label 9000 9900 0    50   ~ 0
+G3
+Text Label 9000 9500 0    50   ~ 0
+G2
+Text Label 9000 9100 0    50   ~ 0
+G1
+Text Label 9000 9000 0    50   ~ 0
+R1
+Text Label 10300 11400 2    50   ~ 0
+R15
+Text Label 10300 11000 2    50   ~ 0
+R14
+Text Label 10300 10600 2    50   ~ 0
+R13
+Text Label 10300 10200 2    50   ~ 0
+R12
+Text Label 10300 9800 2    50   ~ 0
+R11
+Text Label 10300 9400 2    50   ~ 0
+R10
+Text Label 10300 9000 2    50   ~ 0
+R9
+Text Label 10300 8600 2    50   ~ 0
+R8
+Text Label 9000 11400 0    50   ~ 0
+R7
+Text Label 9000 11000 0    50   ~ 0
+R6
+Text Label 9000 10600 0    50   ~ 0
+R5
+Text Label 9000 10200 0    50   ~ 0
+R4
+Text Label 9000 9800 0    50   ~ 0
+R3
+Text Label 9000 9400 0    50   ~ 0
+R2
+Text Label 9000 8800 0    50   ~ 0
+B0
+Text Label 9000 8700 0    50   ~ 0
+G0
+Text Label 9000 8600 0    50   ~ 0
+R0
+Wire Wire Line
+	10300 11600 10000 11600
+Wire Wire Line
+	10300 11500 10000 11500
+Wire Wire Line
+	10300 11400 10000 11400
+Wire Wire Line
+	10300 11200 10000 11200
+Wire Wire Line
+	10300 11100 10000 11100
+Wire Wire Line
+	10300 11000 10000 11000
+Wire Wire Line
+	10300 10800 10000 10800
+Wire Wire Line
+	10300 10700 10000 10700
+Wire Wire Line
+	10300 10600 10000 10600
+Wire Wire Line
+	10300 10400 10000 10400
+Wire Wire Line
+	10300 10300 10000 10300
+Wire Wire Line
+	10300 10200 10000 10200
+Wire Wire Line
+	10300 10000 10000 10000
+Wire Wire Line
+	10300 9900 10000 9900
+Wire Wire Line
+	10300 9800 10000 9800
+Wire Wire Line
+	10300 9600 10000 9600
+Wire Wire Line
+	10300 9500 10000 9500
+Wire Wire Line
+	10300 9400 10000 9400
+Wire Wire Line
+	10300 9200 10000 9200
+Wire Wire Line
+	10300 9100 10000 9100
+Wire Wire Line
+	10300 9000 10000 9000
+Wire Wire Line
+	10300 8800 10000 8800
+Wire Wire Line
+	10300 8700 10000 8700
+Wire Wire Line
+	10300 8600 10000 8600
+Wire Wire Line
+	9300 11600 9000 11600
+Wire Wire Line
+	9300 11500 9000 11500
+Wire Wire Line
+	9300 11400 9000 11400
+Wire Wire Line
+	9300 11200 9000 11200
+Wire Wire Line
+	9300 11100 9000 11100
+Wire Wire Line
+	9300 11000 9000 11000
+Wire Wire Line
+	9300 10800 9000 10800
+Wire Wire Line
+	9300 10700 9000 10700
+Wire Wire Line
+	9300 10600 9000 10600
+Wire Wire Line
+	9300 10400 9000 10400
+Wire Wire Line
+	9300 10300 9000 10300
+Wire Wire Line
+	9300 10200 9000 10200
+Wire Wire Line
+	9300 10000 9000 10000
+Wire Wire Line
+	9300 9900 9000 9900
+Wire Wire Line
+	9300 9800 9000 9800
+Wire Wire Line
+	9300 9600 9000 9600
+Wire Wire Line
+	9300 9500 9000 9500
+Wire Wire Line
+	9300 9400 9000 9400
+Wire Wire Line
+	9300 9200 9000 9200
+Wire Wire Line
+	9300 9100 9000 9100
+Wire Wire Line
+	9300 9000 9000 9000
+Wire Wire Line
+	9300 8800 9000 8800
+Wire Wire Line
+	9300 8700 9000 8700
+Wire Wire Line
+	9300 8600 9000 8600
+$Sheet
+S 9300 8500 700  3400
+U 62B183F5
+F0 "sheet62B18242" 50
+F1 "LED_COL.sch" 50
+F2 "G0" I L 9300 8700 50 
+F3 "B0" I L 9300 8800 50 
+F4 "R1" I L 9300 9000 50 
+F5 "G1" I L 9300 9100 50 
+F6 "B1" I L 9300 9200 50 
+F7 "R2" I L 9300 9400 50 
+F8 "G2" I L 9300 9500 50 
+F9 "B2" I L 9300 9600 50 
+F10 "R4" I L 9300 10200 50 
+F11 "R5" I L 9300 10600 50 
+F12 "R6" I L 9300 11000 50 
+F13 "R7" I L 9300 11400 50 
+F14 "R8" I R 10000 8600 50 
+F15 "R9" I R 10000 9000 50 
+F16 "R10" I R 10000 9400 50 
+F17 "R11" I R 10000 9800 50 
+F18 "R12" I R 10000 10200 50 
+F19 "R13" I R 10000 10600 50 
+F20 "R14" I R 10000 11000 50 
+F21 "R15" I R 10000 11400 50 
+F22 "G4" I L 9300 10300 50 
+F23 "G5" I L 9300 10700 50 
+F24 "G6" I L 9300 11100 50 
+F25 "G7" I L 9300 11500 50 
+F26 "G8" I R 10000 8700 50 
+F27 "G9" I R 10000 9100 50 
+F28 "G10" I R 10000 9500 50 
+F29 "G11" I R 10000 9900 50 
+F30 "G12" I R 10000 10300 50 
+F31 "G13" I R 10000 10700 50 
+F32 "G14" I R 10000 11100 50 
+F33 "G15" I R 10000 11500 50 
+F34 "B4" I L 9300 10400 50 
+F35 "B5" I L 9300 10800 50 
+F36 "B6" I L 9300 11200 50 
+F37 "B7" I L 9300 11600 50 
+F38 "B8" I R 10000 8800 50 
+F39 "B9" I R 10000 9200 50 
+F40 "B10" I R 10000 9600 50 
+F41 "B11" I R 10000 10000 50 
+F42 "B12" I R 10000 10400 50 
+F43 "B13" I R 10000 10800 50 
+F44 "B14" I R 10000 11200 50 
+F45 "B3" I L 9300 10000 50 
+F46 "G3" I L 9300 9900 50 
+F47 "R3" I L 9300 9800 50 
+F48 "B15" I R 10000 11600 50 
+F49 "R0" I L 9300 8600 50 
+F50 "C" I R 10000 11800 50 
+$EndSheet
+Wire Wire Line
+	8400 11800 8700 11800
+Text Label 8700 11600 2    50   ~ 0
+B15
+Text Label 8700 11200 2    50   ~ 0
+B14
+Text Label 8700 10800 2    50   ~ 0
+B13
+Text Label 8700 10400 2    50   ~ 0
+B12
+Text Label 8700 10000 2    50   ~ 0
+B11
+Text Label 8700 9600 2    50   ~ 0
+B10
+Text Label 8700 9200 2    50   ~ 0
+B9
+Text Label 8700 8800 2    50   ~ 0
+B8
+Text Label 7400 11600 0    50   ~ 0
+B7
+Text Label 7400 11200 0    50   ~ 0
+B6
+Text Label 7400 10800 0    50   ~ 0
+B5
+Text Label 7400 10400 0    50   ~ 0
+B4
+Text Label 7400 10000 0    50   ~ 0
+B3
+Text Label 7400 9600 0    50   ~ 0
+B2
+Text Label 7400 9200 0    50   ~ 0
+B1
+Text Label 8700 11500 2    50   ~ 0
+G15
+Text Label 8700 11100 2    50   ~ 0
+G14
+Text Label 8700 10700 2    50   ~ 0
+G13
+Text Label 8700 10300 2    50   ~ 0
+G12
+Text Label 8700 9900 2    50   ~ 0
+G11
+Text Label 8700 9500 2    50   ~ 0
+G10
+Text Label 8700 9100 2    50   ~ 0
+G9
+Text Label 8700 8700 2    50   ~ 0
+G8
+Text Label 7400 11500 0    50   ~ 0
+G7
+Text Label 7400 11100 0    50   ~ 0
+G6
+Text Label 7400 10700 0    50   ~ 0
+G5
+Text Label 7400 10300 0    50   ~ 0
+G4
+Text Label 7400 9900 0    50   ~ 0
+G3
+Text Label 7400 9500 0    50   ~ 0
+G2
+Text Label 7400 9100 0    50   ~ 0
+G1
+Text Label 7400 9000 0    50   ~ 0
+R1
+Text Label 8700 11400 2    50   ~ 0
+R15
+Text Label 8700 11000 2    50   ~ 0
+R14
+Text Label 8700 10600 2    50   ~ 0
+R13
+Text Label 8700 10200 2    50   ~ 0
+R12
+Text Label 8700 9800 2    50   ~ 0
+R11
+Text Label 8700 9400 2    50   ~ 0
+R10
+Text Label 8700 9000 2    50   ~ 0
+R9
+Text Label 8700 8600 2    50   ~ 0
+R8
+Text Label 7400 11400 0    50   ~ 0
+R7
+Text Label 7400 11000 0    50   ~ 0
+R6
+Text Label 7400 10600 0    50   ~ 0
+R5
+Text Label 7400 10200 0    50   ~ 0
+R4
+Text Label 7400 9800 0    50   ~ 0
+R3
+Text Label 7400 9400 0    50   ~ 0
+R2
+Text Label 7400 8800 0    50   ~ 0
+B0
+Text Label 7400 8700 0    50   ~ 0
+G0
+Text Label 7400 8600 0    50   ~ 0
+R0
+Wire Wire Line
+	8700 11600 8400 11600
+Wire Wire Line
+	8700 11500 8400 11500
+Wire Wire Line
+	8700 11400 8400 11400
+Wire Wire Line
+	8700 11200 8400 11200
+Wire Wire Line
+	8700 11100 8400 11100
+Wire Wire Line
+	8700 11000 8400 11000
+Wire Wire Line
+	8700 10800 8400 10800
+Wire Wire Line
+	8700 10700 8400 10700
+Wire Wire Line
+	8700 10600 8400 10600
+Wire Wire Line
+	8700 10400 8400 10400
+Wire Wire Line
+	8700 10300 8400 10300
+Wire Wire Line
+	8700 10200 8400 10200
+Wire Wire Line
+	8700 10000 8400 10000
+Wire Wire Line
+	8700 9900 8400 9900
+Wire Wire Line
+	8700 9800 8400 9800
+Wire Wire Line
+	8700 9600 8400 9600
+Wire Wire Line
+	8700 9500 8400 9500
+Wire Wire Line
+	8700 9400 8400 9400
+Wire Wire Line
+	8700 9200 8400 9200
+Wire Wire Line
+	8700 9100 8400 9100
+Wire Wire Line
+	8700 9000 8400 9000
+Wire Wire Line
+	8700 8800 8400 8800
+Wire Wire Line
+	8700 8700 8400 8700
+Wire Wire Line
+	8700 8600 8400 8600
+Wire Wire Line
+	7700 11600 7400 11600
+Wire Wire Line
+	7700 11500 7400 11500
+Wire Wire Line
+	7700 11400 7400 11400
+Wire Wire Line
+	7700 11200 7400 11200
+Wire Wire Line
+	7700 11100 7400 11100
+Wire Wire Line
+	7700 11000 7400 11000
+Wire Wire Line
+	7700 10800 7400 10800
+Wire Wire Line
+	7700 10700 7400 10700
+Wire Wire Line
+	7700 10600 7400 10600
+Wire Wire Line
+	7700 10400 7400 10400
+Wire Wire Line
+	7700 10300 7400 10300
+Wire Wire Line
+	7700 10200 7400 10200
+Wire Wire Line
+	7700 10000 7400 10000
+Wire Wire Line
+	7700 9900 7400 9900
+Wire Wire Line
+	7700 9800 7400 9800
+Wire Wire Line
+	7700 9600 7400 9600
+Wire Wire Line
+	7700 9500 7400 9500
+Wire Wire Line
+	7700 9400 7400 9400
+Wire Wire Line
+	7700 9200 7400 9200
+Wire Wire Line
+	7700 9100 7400 9100
+Wire Wire Line
+	7700 9000 7400 9000
+Wire Wire Line
+	7700 8800 7400 8800
+Wire Wire Line
+	7700 8700 7400 8700
+Wire Wire Line
+	7700 8600 7400 8600
+$Sheet
+S 7700 8500 700  3400
+U 62B18489
+F0 "sheet62B18243" 50
+F1 "LED_COL.sch" 50
+F2 "G0" I L 7700 8700 50 
+F3 "B0" I L 7700 8800 50 
+F4 "R1" I L 7700 9000 50 
+F5 "G1" I L 7700 9100 50 
+F6 "B1" I L 7700 9200 50 
+F7 "R2" I L 7700 9400 50 
+F8 "G2" I L 7700 9500 50 
+F9 "B2" I L 7700 9600 50 
+F10 "R4" I L 7700 10200 50 
+F11 "R5" I L 7700 10600 50 
+F12 "R6" I L 7700 11000 50 
+F13 "R7" I L 7700 11400 50 
+F14 "R8" I R 8400 8600 50 
+F15 "R9" I R 8400 9000 50 
+F16 "R10" I R 8400 9400 50 
+F17 "R11" I R 8400 9800 50 
+F18 "R12" I R 8400 10200 50 
+F19 "R13" I R 8400 10600 50 
+F20 "R14" I R 8400 11000 50 
+F21 "R15" I R 8400 11400 50 
+F22 "G4" I L 7700 10300 50 
+F23 "G5" I L 7700 10700 50 
+F24 "G6" I L 7700 11100 50 
+F25 "G7" I L 7700 11500 50 
+F26 "G8" I R 8400 8700 50 
+F27 "G9" I R 8400 9100 50 
+F28 "G10" I R 8400 9500 50 
+F29 "G11" I R 8400 9900 50 
+F30 "G12" I R 8400 10300 50 
+F31 "G13" I R 8400 10700 50 
+F32 "G14" I R 8400 11100 50 
+F33 "G15" I R 8400 11500 50 
+F34 "B4" I L 7700 10400 50 
+F35 "B5" I L 7700 10800 50 
+F36 "B6" I L 7700 11200 50 
+F37 "B7" I L 7700 11600 50 
+F38 "B8" I R 8400 8800 50 
+F39 "B9" I R 8400 9200 50 
+F40 "B10" I R 8400 9600 50 
+F41 "B11" I R 8400 10000 50 
+F42 "B12" I R 8400 10400 50 
+F43 "B13" I R 8400 10800 50 
+F44 "B14" I R 8400 11200 50 
+F45 "B3" I L 7700 10000 50 
+F46 "G3" I L 7700 9900 50 
+F47 "R3" I L 7700 9800 50 
+F48 "B15" I R 8400 11600 50 
+F49 "R0" I L 7700 8600 50 
+F50 "C" I R 8400 11800 50 
+$EndSheet
+Text Label 7100 11800 2    50   ~ 0
+C17
+Wire Wire Line
+	6800 11800 7100 11800
+Text Label 7100 11600 2    50   ~ 0
+B15
+Text Label 7100 11200 2    50   ~ 0
+B14
+Text Label 7100 10800 2    50   ~ 0
+B13
+Text Label 7100 10400 2    50   ~ 0
+B12
+Text Label 7100 10000 2    50   ~ 0
+B11
+Text Label 7100 9600 2    50   ~ 0
+B10
+Text Label 7100 9200 2    50   ~ 0
+B9
+Text Label 7100 8800 2    50   ~ 0
+B8
+Text Label 7100 11500 2    50   ~ 0
+G15
+Text Label 7100 11100 2    50   ~ 0
+G14
+Text Label 7100 10700 2    50   ~ 0
+G13
+Text Label 7100 10300 2    50   ~ 0
+G12
+Text Label 7100 9900 2    50   ~ 0
+G11
+Text Label 7100 9500 2    50   ~ 0
+G10
+Text Label 7100 9100 2    50   ~ 0
+G9
+Text Label 7100 8700 2    50   ~ 0
+G8
+Text Label 7100 11400 2    50   ~ 0
+R15
+Text Label 7100 11000 2    50   ~ 0
+R14
+Text Label 7100 10600 2    50   ~ 0
+R13
+Text Label 7100 10200 2    50   ~ 0
+R12
+Text Label 7100 9800 2    50   ~ 0
+R11
+Text Label 7100 9400 2    50   ~ 0
+R10
+Text Label 7100 9000 2    50   ~ 0
+R9
+Text Label 7100 8600 2    50   ~ 0
+R8
+Wire Wire Line
+	7100 11600 6800 11600
+Wire Wire Line
+	7100 11500 6800 11500
+Wire Wire Line
+	7100 11400 6800 11400
+Wire Wire Line
+	7100 11200 6800 11200
+Wire Wire Line
+	7100 11100 6800 11100
+Wire Wire Line
+	7100 11000 6800 11000
+Wire Wire Line
+	7100 10800 6800 10800
+Wire Wire Line
+	7100 10700 6800 10700
+Wire Wire Line
+	7100 10600 6800 10600
+Wire Wire Line
+	7100 10400 6800 10400
+Wire Wire Line
+	7100 10300 6800 10300
+Wire Wire Line
+	7100 10200 6800 10200
+Wire Wire Line
+	7100 10000 6800 10000
+Wire Wire Line
+	7100 9900 6800 9900
+Wire Wire Line
+	7100 9800 6800 9800
+Wire Wire Line
+	7100 9600 6800 9600
+Wire Wire Line
+	7100 9500 6800 9500
+Wire Wire Line
+	7100 9400 6800 9400
+Wire Wire Line
+	7100 9200 6800 9200
+Wire Wire Line
+	7100 9100 6800 9100
+Wire Wire Line
+	7100 9000 6800 9000
+Wire Wire Line
+	7100 8800 6800 8800
+Wire Wire Line
+	7100 8700 6800 8700
+Wire Wire Line
+	7100 8600 6800 8600
+$Sheet
+S 10900 8500 700  3400
+U 62B184EE
+F0 "sheet62B18244" 50
+F1 "LED_COL.sch" 50
+F2 "G0" I L 10900 8700 50 
+F3 "B0" I L 10900 8800 50 
+F4 "R1" I L 10900 9000 50 
+F5 "G1" I L 10900 9100 50 
+F6 "B1" I L 10900 9200 50 
+F7 "R2" I L 10900 9400 50 
+F8 "G2" I L 10900 9500 50 
+F9 "B2" I L 10900 9600 50 
+F10 "R4" I L 10900 10200 50 
+F11 "R5" I L 10900 10600 50 
+F12 "R6" I L 10900 11000 50 
+F13 "R7" I L 10900 11400 50 
+F14 "R8" I R 11600 8600 50 
+F15 "R9" I R 11600 9000 50 
+F16 "R10" I R 11600 9400 50 
+F17 "R11" I R 11600 9800 50 
+F18 "R12" I R 11600 10200 50 
+F19 "R13" I R 11600 10600 50 
+F20 "R14" I R 11600 11000 50 
+F21 "R15" I R 11600 11400 50 
+F22 "G4" I L 10900 10300 50 
+F23 "G5" I L 10900 10700 50 
+F24 "G6" I L 10900 11100 50 
+F25 "G7" I L 10900 11500 50 
+F26 "G8" I R 11600 8700 50 
+F27 "G9" I R 11600 9100 50 
+F28 "G10" I R 11600 9500 50 
+F29 "G11" I R 11600 9900 50 
+F30 "G12" I R 11600 10300 50 
+F31 "G13" I R 11600 10700 50 
+F32 "G14" I R 11600 11100 50 
+F33 "G15" I R 11600 11500 50 
+F34 "B4" I L 10900 10400 50 
+F35 "B5" I L 10900 10800 50 
+F36 "B6" I L 10900 11200 50 
+F37 "B7" I L 10900 11600 50 
+F38 "B8" I R 11600 8800 50 
+F39 "B9" I R 11600 9200 50 
+F40 "B10" I R 11600 9600 50 
+F41 "B11" I R 11600 10000 50 
+F42 "B12" I R 11600 10400 50 
+F43 "B13" I R 11600 10800 50 
+F44 "B14" I R 11600 11200 50 
+F45 "B3" I L 10900 10000 50 
+F46 "G3" I L 10900 9900 50 
+F47 "R3" I L 10900 9800 50 
+F48 "B15" I R 11600 11600 50 
+F49 "R0" I L 10900 8600 50 
+F50 "C" I R 11600 11800 50 
+$EndSheet
+Wire Wire Line
+	10900 8600 10600 8600
+Wire Wire Line
+	10900 8700 10600 8700
+Wire Wire Line
+	10900 8800 10600 8800
+Wire Wire Line
+	10900 9000 10600 9000
+Wire Wire Line
+	10900 9100 10600 9100
+Wire Wire Line
+	10900 9200 10600 9200
+Wire Wire Line
+	10900 9400 10600 9400
+Wire Wire Line
+	10900 9500 10600 9500
+Wire Wire Line
+	10900 9600 10600 9600
+Wire Wire Line
+	10900 9800 10600 9800
+Wire Wire Line
+	10900 9900 10600 9900
+Wire Wire Line
+	10900 10000 10600 10000
+Wire Wire Line
+	10900 10200 10600 10200
+Wire Wire Line
+	10900 10300 10600 10300
+Wire Wire Line
+	10900 10400 10600 10400
+Wire Wire Line
+	10900 10600 10600 10600
+Wire Wire Line
+	10900 10700 10600 10700
+Wire Wire Line
+	10900 10800 10600 10800
+Wire Wire Line
+	10900 11000 10600 11000
+Wire Wire Line
+	10900 11100 10600 11100
+Wire Wire Line
+	10900 11200 10600 11200
+Wire Wire Line
+	10900 11400 10600 11400
+Wire Wire Line
+	10900 11500 10600 11500
+Wire Wire Line
+	10900 11600 10600 11600
+Wire Wire Line
+	11900 8600 11600 8600
+Wire Wire Line
+	11900 8700 11600 8700
+Wire Wire Line
+	11900 8800 11600 8800
+Wire Wire Line
+	11900 9000 11600 9000
+Wire Wire Line
+	11900 9100 11600 9100
+Wire Wire Line
+	11900 9200 11600 9200
+Wire Wire Line
+	11900 9400 11600 9400
+Wire Wire Line
+	11900 9500 11600 9500
+Wire Wire Line
+	11900 9600 11600 9600
+Wire Wire Line
+	11900 9800 11600 9800
+Wire Wire Line
+	11900 9900 11600 9900
+Wire Wire Line
+	11900 10000 11600 10000
+Wire Wire Line
+	11900 10200 11600 10200
+Wire Wire Line
+	11900 10300 11600 10300
+Wire Wire Line
+	11900 10400 11600 10400
+Wire Wire Line
+	11900 10600 11600 10600
+Wire Wire Line
+	11900 10700 11600 10700
+Wire Wire Line
+	11900 10800 11600 10800
+Wire Wire Line
+	11900 11000 11600 11000
+Wire Wire Line
+	11900 11100 11600 11100
+Wire Wire Line
+	11900 11200 11600 11200
+Wire Wire Line
+	11900 11400 11600 11400
+Wire Wire Line
+	11900 11500 11600 11500
+Wire Wire Line
+	11900 11600 11600 11600
+Text Label 11900 8600 2    50   ~ 0
+R8
+Text Label 11900 9000 2    50   ~ 0
+R9
+Text Label 11900 9400 2    50   ~ 0
+R10
+Text Label 11900 9800 2    50   ~ 0
+R11
+Text Label 11900 10200 2    50   ~ 0
+R12
+Text Label 11900 10600 2    50   ~ 0
+R13
+Text Label 11900 11000 2    50   ~ 0
+R14
+Text Label 11900 11400 2    50   ~ 0
+R15
+Text Label 11900 8700 2    50   ~ 0
+G8
+Text Label 11900 9100 2    50   ~ 0
+G9
+Text Label 11900 9500 2    50   ~ 0
+G10
+Text Label 11900 9900 2    50   ~ 0
+G11
+Text Label 11900 10300 2    50   ~ 0
+G12
+Text Label 11900 10700 2    50   ~ 0
+G13
+Text Label 11900 11100 2    50   ~ 0
+G14
+Text Label 11900 11500 2    50   ~ 0
+G15
+Text Label 11900 8800 2    50   ~ 0
+B8
+Text Label 11900 9200 2    50   ~ 0
+B9
+Text Label 11900 9600 2    50   ~ 0
+B10
+Text Label 11900 10000 2    50   ~ 0
+B11
+Text Label 11900 10400 2    50   ~ 0
+B12
+Text Label 11900 10800 2    50   ~ 0
+B13
+Text Label 11900 11200 2    50   ~ 0
+B14
+Text Label 11900 11600 2    50   ~ 0
+B15
+Text Label 11900 11800 2    50   ~ 0
+C20
+Wire Wire Line
+	11600 11800 11900 11800
+$Sheet
+S 12500 8500 700  3400
+U 62B1856B
+F0 "sheet62B18245" 50
+F1 "LED_COL.sch" 50
+F2 "G0" I L 12500 8700 50 
+F3 "B0" I L 12500 8800 50 
+F4 "R1" I L 12500 9000 50 
+F5 "G1" I L 12500 9100 50 
+F6 "B1" I L 12500 9200 50 
+F7 "R2" I L 12500 9400 50 
+F8 "G2" I L 12500 9500 50 
+F9 "B2" I L 12500 9600 50 
+F10 "R4" I L 12500 10200 50 
+F11 "R5" I L 12500 10600 50 
+F12 "R6" I L 12500 11000 50 
+F13 "R7" I L 12500 11400 50 
+F14 "R8" I R 13200 8600 50 
+F15 "R9" I R 13200 9000 50 
+F16 "R10" I R 13200 9400 50 
+F17 "R11" I R 13200 9800 50 
+F18 "R12" I R 13200 10200 50 
+F19 "R13" I R 13200 10600 50 
+F20 "R14" I R 13200 11000 50 
+F21 "R15" I R 13200 11400 50 
+F22 "G4" I L 12500 10300 50 
+F23 "G5" I L 12500 10700 50 
+F24 "G6" I L 12500 11100 50 
+F25 "G7" I L 12500 11500 50 
+F26 "G8" I R 13200 8700 50 
+F27 "G9" I R 13200 9100 50 
+F28 "G10" I R 13200 9500 50 
+F29 "G11" I R 13200 9900 50 
+F30 "G12" I R 13200 10300 50 
+F31 "G13" I R 13200 10700 50 
+F32 "G14" I R 13200 11100 50 
+F33 "G15" I R 13200 11500 50 
+F34 "B4" I L 12500 10400 50 
+F35 "B5" I L 12500 10800 50 
+F36 "B6" I L 12500 11200 50 
+F37 "B7" I L 12500 11600 50 
+F38 "B8" I R 13200 8800 50 
+F39 "B9" I R 13200 9200 50 
+F40 "B10" I R 13200 9600 50 
+F41 "B11" I R 13200 10000 50 
+F42 "B12" I R 13200 10400 50 
+F43 "B13" I R 13200 10800 50 
+F44 "B14" I R 13200 11200 50 
+F45 "B3" I L 12500 10000 50 
+F46 "G3" I L 12500 9900 50 
+F47 "R3" I L 12500 9800 50 
+F48 "B15" I R 13200 11600 50 
+F49 "R0" I L 12500 8600 50 
+F50 "C" I R 13200 11800 50 
+$EndSheet
+Wire Wire Line
+	12500 8600 12200 8600
+Wire Wire Line
+	12500 8700 12200 8700
+Wire Wire Line
+	12500 8800 12200 8800
+Wire Wire Line
+	12500 9000 12200 9000
+Wire Wire Line
+	12500 9100 12200 9100
+Wire Wire Line
+	12500 9200 12200 9200
+Wire Wire Line
+	12500 9400 12200 9400
+Wire Wire Line
+	12500 9500 12200 9500
+Wire Wire Line
+	12500 9600 12200 9600
+Wire Wire Line
+	12500 9800 12200 9800
+Wire Wire Line
+	12500 9900 12200 9900
+Wire Wire Line
+	12500 10000 12200 10000
+Wire Wire Line
+	12500 10200 12200 10200
+Wire Wire Line
+	12500 10300 12200 10300
+Wire Wire Line
+	12500 10400 12200 10400
+Wire Wire Line
+	12500 10600 12200 10600
+Wire Wire Line
+	12500 10700 12200 10700
+Wire Wire Line
+	12500 10800 12200 10800
+Wire Wire Line
+	12500 11000 12200 11000
+Wire Wire Line
+	12500 11100 12200 11100
+Wire Wire Line
+	12500 11200 12200 11200
+Wire Wire Line
+	12500 11400 12200 11400
+Wire Wire Line
+	12500 11500 12200 11500
+Wire Wire Line
+	12500 11600 12200 11600
+Wire Wire Line
+	13500 8600 13200 8600
+Wire Wire Line
+	13500 8700 13200 8700
+Wire Wire Line
+	13500 8800 13200 8800
+Wire Wire Line
+	13500 9000 13200 9000
+Wire Wire Line
+	13500 9100 13200 9100
+Wire Wire Line
+	13500 9200 13200 9200
+Wire Wire Line
+	13500 9400 13200 9400
+Wire Wire Line
+	13500 9500 13200 9500
+Wire Wire Line
+	13500 9600 13200 9600
+Wire Wire Line
+	13500 9800 13200 9800
+Wire Wire Line
+	13500 9900 13200 9900
+Wire Wire Line
+	13500 10000 13200 10000
+Wire Wire Line
+	13500 10200 13200 10200
+Wire Wire Line
+	13500 10300 13200 10300
+Wire Wire Line
+	13500 10400 13200 10400
+Wire Wire Line
+	13500 10600 13200 10600
+Wire Wire Line
+	13500 10700 13200 10700
+Wire Wire Line
+	13500 10800 13200 10800
+Wire Wire Line
+	13500 11000 13200 11000
+Wire Wire Line
+	13500 11100 13200 11100
+Wire Wire Line
+	13500 11200 13200 11200
+Wire Wire Line
+	13500 11400 13200 11400
+Wire Wire Line
+	13500 11500 13200 11500
+Wire Wire Line
+	13500 11600 13200 11600
+Text Label 12200 8600 0    50   ~ 0
+R0
+Text Label 12200 8700 0    50   ~ 0
+G0
+Text Label 12200 8800 0    50   ~ 0
+B0
+Text Label 12200 9400 0    50   ~ 0
+R2
+Text Label 12200 9800 0    50   ~ 0
+R3
+Text Label 12200 10200 0    50   ~ 0
+R4
+Text Label 12200 10600 0    50   ~ 0
+R5
+Text Label 12200 11000 0    50   ~ 0
+R6
+Text Label 12200 11400 0    50   ~ 0
+R7
+Text Label 13500 8600 2    50   ~ 0
+R8
+Text Label 13500 9000 2    50   ~ 0
+R9
+Text Label 13500 9400 2    50   ~ 0
+R10
+Text Label 13500 9800 2    50   ~ 0
+R11
+Text Label 13500 10200 2    50   ~ 0
+R12
+Text Label 13500 10600 2    50   ~ 0
+R13
+Text Label 13500 11000 2    50   ~ 0
+R14
+Text Label 13500 11400 2    50   ~ 0
+R15
+Text Label 12200 9000 0    50   ~ 0
+R1
+Text Label 12200 9100 0    50   ~ 0
+G1
+Text Label 12200 9500 0    50   ~ 0
+G2
+Text Label 12200 9900 0    50   ~ 0
+G3
+Text Label 12200 10300 0    50   ~ 0
+G4
+Text Label 12200 10700 0    50   ~ 0
+G5
+Text Label 12200 11100 0    50   ~ 0
+G6
+Text Label 12200 11500 0    50   ~ 0
+G7
+Text Label 13500 8700 2    50   ~ 0
+G8
+Text Label 13500 9100 2    50   ~ 0
+G9
+Text Label 13500 9500 2    50   ~ 0
+G10
+Text Label 13500 9900 2    50   ~ 0
+G11
+Text Label 13500 10300 2    50   ~ 0
+G12
+Text Label 13500 10700 2    50   ~ 0
+G13
+Text Label 13500 11100 2    50   ~ 0
+G14
+Text Label 13500 11500 2    50   ~ 0
+G15
+Text Label 12200 9200 0    50   ~ 0
+B1
+Text Label 12200 9600 0    50   ~ 0
+B2
+Text Label 12200 10000 0    50   ~ 0
+B3
+Text Label 12200 10400 0    50   ~ 0
+B4
+Text Label 12200 10800 0    50   ~ 0
+B5
+Text Label 12200 11200 0    50   ~ 0
+B6
+Text Label 12200 11600 0    50   ~ 0
+B7
+Text Label 13500 8800 2    50   ~ 0
+B8
+Text Label 13500 9200 2    50   ~ 0
+B9
+Text Label 13500 9600 2    50   ~ 0
+B10
+Text Label 13500 10000 2    50   ~ 0
+B11
+Text Label 13500 10400 2    50   ~ 0
+B12
+Text Label 13500 10800 2    50   ~ 0
+B13
+Text Label 13500 11200 2    50   ~ 0
+B14
+Text Label 13500 11600 2    50   ~ 0
+B15
+Wire Wire Line
+	13200 11800 13500 11800
+Text Label 13500 11800 2    50   ~ 0
+C21
+$Sheet
+S 14100 8500 700  3400
+U 62B18600
+F0 "sheet62B18246" 50
+F1 "LED_COL.sch" 50
+F2 "G0" I L 14100 8700 50 
+F3 "B0" I L 14100 8800 50 
+F4 "R1" I L 14100 9000 50 
+F5 "G1" I L 14100 9100 50 
+F6 "B1" I L 14100 9200 50 
+F7 "R2" I L 14100 9400 50 
+F8 "G2" I L 14100 9500 50 
+F9 "B2" I L 14100 9600 50 
+F10 "R4" I L 14100 10200 50 
+F11 "R5" I L 14100 10600 50 
+F12 "R6" I L 14100 11000 50 
+F13 "R7" I L 14100 11400 50 
+F14 "R8" I R 14800 8600 50 
+F15 "R9" I R 14800 9000 50 
+F16 "R10" I R 14800 9400 50 
+F17 "R11" I R 14800 9800 50 
+F18 "R12" I R 14800 10200 50 
+F19 "R13" I R 14800 10600 50 
+F20 "R14" I R 14800 11000 50 
+F21 "R15" I R 14800 11400 50 
+F22 "G4" I L 14100 10300 50 
+F23 "G5" I L 14100 10700 50 
+F24 "G6" I L 14100 11100 50 
+F25 "G7" I L 14100 11500 50 
+F26 "G8" I R 14800 8700 50 
+F27 "G9" I R 14800 9100 50 
+F28 "G10" I R 14800 9500 50 
+F29 "G11" I R 14800 9900 50 
+F30 "G12" I R 14800 10300 50 
+F31 "G13" I R 14800 10700 50 
+F32 "G14" I R 14800 11100 50 
+F33 "G15" I R 14800 11500 50 
+F34 "B4" I L 14100 10400 50 
+F35 "B5" I L 14100 10800 50 
+F36 "B6" I L 14100 11200 50 
+F37 "B7" I L 14100 11600 50 
+F38 "B8" I R 14800 8800 50 
+F39 "B9" I R 14800 9200 50 
+F40 "B10" I R 14800 9600 50 
+F41 "B11" I R 14800 10000 50 
+F42 "B12" I R 14800 10400 50 
+F43 "B13" I R 14800 10800 50 
+F44 "B14" I R 14800 11200 50 
+F45 "B3" I L 14100 10000 50 
+F46 "G3" I L 14100 9900 50 
+F47 "R3" I L 14100 9800 50 
+F48 "B15" I R 14800 11600 50 
+F49 "R0" I L 14100 8600 50 
+F50 "C" I R 14800 11800 50 
+$EndSheet
+Wire Wire Line
+	14100 8600 13800 8600
+Wire Wire Line
+	14100 8700 13800 8700
+Wire Wire Line
+	14100 8800 13800 8800
+Wire Wire Line
+	14100 9000 13800 9000
+Wire Wire Line
+	14100 9100 13800 9100
+Wire Wire Line
+	14100 9200 13800 9200
+Wire Wire Line
+	14100 9400 13800 9400
+Wire Wire Line
+	14100 9500 13800 9500
+Wire Wire Line
+	14100 9600 13800 9600
+Wire Wire Line
+	14100 9800 13800 9800
+Wire Wire Line
+	14100 9900 13800 9900
+Wire Wire Line
+	14100 10000 13800 10000
+Wire Wire Line
+	14100 10200 13800 10200
+Wire Wire Line
+	14100 10300 13800 10300
+Wire Wire Line
+	14100 10400 13800 10400
+Wire Wire Line
+	14100 10600 13800 10600
+Wire Wire Line
+	14100 10700 13800 10700
+Wire Wire Line
+	14100 10800 13800 10800
+Wire Wire Line
+	14100 11000 13800 11000
+Wire Wire Line
+	14100 11100 13800 11100
+Wire Wire Line
+	14100 11200 13800 11200
+Wire Wire Line
+	14100 11400 13800 11400
+Wire Wire Line
+	14100 11500 13800 11500
+Wire Wire Line
+	14100 11600 13800 11600
+Wire Wire Line
+	15100 8600 14800 8600
+Wire Wire Line
+	15100 8700 14800 8700
+Wire Wire Line
+	15100 8800 14800 8800
+Wire Wire Line
+	15100 9000 14800 9000
+Wire Wire Line
+	15100 9100 14800 9100
+Wire Wire Line
+	15100 9200 14800 9200
+Wire Wire Line
+	15100 9400 14800 9400
+Wire Wire Line
+	15100 9500 14800 9500
+Wire Wire Line
+	15100 9600 14800 9600
+Wire Wire Line
+	15100 9800 14800 9800
+Wire Wire Line
+	15100 9900 14800 9900
+Wire Wire Line
+	15100 10000 14800 10000
+Wire Wire Line
+	15100 10200 14800 10200
+Wire Wire Line
+	15100 10300 14800 10300
+Wire Wire Line
+	15100 10400 14800 10400
+Wire Wire Line
+	15100 10600 14800 10600
+Wire Wire Line
+	15100 10700 14800 10700
+Wire Wire Line
+	15100 10800 14800 10800
+Wire Wire Line
+	15100 11000 14800 11000
+Wire Wire Line
+	15100 11100 14800 11100
+Wire Wire Line
+	15100 11200 14800 11200
+Wire Wire Line
+	15100 11400 14800 11400
+Wire Wire Line
+	15100 11500 14800 11500
+Wire Wire Line
+	15100 11600 14800 11600
+Text Label 13800 8600 0    50   ~ 0
+R0
+Text Label 13800 8700 0    50   ~ 0
+G0
+Text Label 13800 8800 0    50   ~ 0
+B0
+Text Label 13800 9400 0    50   ~ 0
+R2
+Text Label 13800 9800 0    50   ~ 0
+R3
+Text Label 13800 10200 0    50   ~ 0
+R4
+Text Label 13800 10600 0    50   ~ 0
+R5
+Text Label 13800 11000 0    50   ~ 0
+R6
+Text Label 13800 11400 0    50   ~ 0
+R7
+Text Label 15100 8600 2    50   ~ 0
+R8
+Text Label 15100 9000 2    50   ~ 0
+R9
+Text Label 15100 9400 2    50   ~ 0
+R10
+Text Label 15100 9800 2    50   ~ 0
+R11
+Text Label 15100 10200 2    50   ~ 0
+R12
+Text Label 15100 10600 2    50   ~ 0
+R13
+Text Label 15100 11000 2    50   ~ 0
+R14
+Text Label 15100 11400 2    50   ~ 0
+R15
+Text Label 13800 9000 0    50   ~ 0
+R1
+Text Label 13800 9100 0    50   ~ 0
+G1
+Text Label 13800 9500 0    50   ~ 0
+G2
+Text Label 13800 9900 0    50   ~ 0
+G3
+Text Label 13800 10300 0    50   ~ 0
+G4
+Text Label 13800 10700 0    50   ~ 0
+G5
+Text Label 13800 11100 0    50   ~ 0
+G6
+Text Label 13800 11500 0    50   ~ 0
+G7
+Text Label 15100 8700 2    50   ~ 0
+G8
+Text Label 15100 9100 2    50   ~ 0
+G9
+Text Label 15100 9500 2    50   ~ 0
+G10
+Text Label 15100 9900 2    50   ~ 0
+G11
+Text Label 15100 10300 2    50   ~ 0
+G12
+Text Label 15100 10700 2    50   ~ 0
+G13
+Text Label 15100 11100 2    50   ~ 0
+G14
+Text Label 15100 11500 2    50   ~ 0
+G15
+Text Label 13800 9200 0    50   ~ 0
+B1
+Text Label 13800 9600 0    50   ~ 0
+B2
+Text Label 13800 10000 0    50   ~ 0
+B3
+Text Label 13800 10400 0    50   ~ 0
+B4
+Text Label 13800 10800 0    50   ~ 0
+B5
+Text Label 13800 11200 0    50   ~ 0
+B6
+Text Label 13800 11600 0    50   ~ 0
+B7
+Text Label 15100 8800 2    50   ~ 0
+B8
+Text Label 15100 9200 2    50   ~ 0
+B9
+Text Label 15100 9600 2    50   ~ 0
+B10
+Text Label 15100 10000 2    50   ~ 0
+B11
+Text Label 15100 10400 2    50   ~ 0
+B12
+Text Label 15100 10800 2    50   ~ 0
+B13
+Text Label 15100 11200 2    50   ~ 0
+B14
+Text Label 15100 11600 2    50   ~ 0
+B15
+Wire Wire Line
+	14800 11800 15100 11800
+$Sheet
+S 15700 8500 700  3400
+U 62B18694
+F0 "sheet62B18247" 50
+F1 "LED_COL.sch" 50
+F2 "G0" I L 15700 8700 50 
+F3 "B0" I L 15700 8800 50 
+F4 "R1" I L 15700 9000 50 
+F5 "G1" I L 15700 9100 50 
+F6 "B1" I L 15700 9200 50 
+F7 "R2" I L 15700 9400 50 
+F8 "G2" I L 15700 9500 50 
+F9 "B2" I L 15700 9600 50 
+F10 "R4" I L 15700 10200 50 
+F11 "R5" I L 15700 10600 50 
+F12 "R6" I L 15700 11000 50 
+F13 "R7" I L 15700 11400 50 
+F14 "R8" I R 16400 8600 50 
+F15 "R9" I R 16400 9000 50 
+F16 "R10" I R 16400 9400 50 
+F17 "R11" I R 16400 9800 50 
+F18 "R12" I R 16400 10200 50 
+F19 "R13" I R 16400 10600 50 
+F20 "R14" I R 16400 11000 50 
+F21 "R15" I R 16400 11400 50 
+F22 "G4" I L 15700 10300 50 
+F23 "G5" I L 15700 10700 50 
+F24 "G6" I L 15700 11100 50 
+F25 "G7" I L 15700 11500 50 
+F26 "G8" I R 16400 8700 50 
+F27 "G9" I R 16400 9100 50 
+F28 "G10" I R 16400 9500 50 
+F29 "G11" I R 16400 9900 50 
+F30 "G12" I R 16400 10300 50 
+F31 "G13" I R 16400 10700 50 
+F32 "G14" I R 16400 11100 50 
+F33 "G15" I R 16400 11500 50 
+F34 "B4" I L 15700 10400 50 
+F35 "B5" I L 15700 10800 50 
+F36 "B6" I L 15700 11200 50 
+F37 "B7" I L 15700 11600 50 
+F38 "B8" I R 16400 8800 50 
+F39 "B9" I R 16400 9200 50 
+F40 "B10" I R 16400 9600 50 
+F41 "B11" I R 16400 10000 50 
+F42 "B12" I R 16400 10400 50 
+F43 "B13" I R 16400 10800 50 
+F44 "B14" I R 16400 11200 50 
+F45 "B3" I L 15700 10000 50 
+F46 "G3" I L 15700 9900 50 
+F47 "R3" I L 15700 9800 50 
+F48 "B15" I R 16400 11600 50 
+F49 "R0" I L 15700 8600 50 
+F50 "C" I R 16400 11800 50 
+$EndSheet
+Wire Wire Line
+	15700 8600 15400 8600
+Wire Wire Line
+	15700 8700 15400 8700
+Wire Wire Line
+	15700 8800 15400 8800
+Wire Wire Line
+	15700 9000 15400 9000
+Wire Wire Line
+	15700 9100 15400 9100
+Wire Wire Line
+	15700 9200 15400 9200
+Wire Wire Line
+	15700 9400 15400 9400
+Wire Wire Line
+	15700 9500 15400 9500
+Wire Wire Line
+	15700 9600 15400 9600
+Wire Wire Line
+	15700 9800 15400 9800
+Wire Wire Line
+	15700 9900 15400 9900
+Wire Wire Line
+	15700 10000 15400 10000
+Wire Wire Line
+	15700 10200 15400 10200
+Wire Wire Line
+	15700 10300 15400 10300
+Wire Wire Line
+	15700 10400 15400 10400
+Wire Wire Line
+	15700 10600 15400 10600
+Wire Wire Line
+	15700 10700 15400 10700
+Wire Wire Line
+	15700 10800 15400 10800
+Wire Wire Line
+	15700 11000 15400 11000
+Wire Wire Line
+	15700 11100 15400 11100
+Wire Wire Line
+	15700 11200 15400 11200
+Wire Wire Line
+	15700 11400 15400 11400
+Wire Wire Line
+	15700 11500 15400 11500
+Wire Wire Line
+	15700 11600 15400 11600
+Wire Wire Line
+	16700 8600 16400 8600
+Wire Wire Line
+	16700 8700 16400 8700
+Wire Wire Line
+	16700 8800 16400 8800
+Wire Wire Line
+	16700 9000 16400 9000
+Wire Wire Line
+	16700 9100 16400 9100
+Wire Wire Line
+	16700 9200 16400 9200
+Wire Wire Line
+	16700 9400 16400 9400
+Wire Wire Line
+	16700 9500 16400 9500
+Wire Wire Line
+	16700 9600 16400 9600
+Wire Wire Line
+	16700 9800 16400 9800
+Wire Wire Line
+	16700 9900 16400 9900
+Wire Wire Line
+	16700 10000 16400 10000
+Wire Wire Line
+	16700 10200 16400 10200
+Wire Wire Line
+	16700 10300 16400 10300
+Wire Wire Line
+	16700 10400 16400 10400
+Wire Wire Line
+	16700 10600 16400 10600
+Wire Wire Line
+	16700 10700 16400 10700
+Wire Wire Line
+	16700 10800 16400 10800
+Wire Wire Line
+	16700 11000 16400 11000
+Wire Wire Line
+	16700 11100 16400 11100
+Wire Wire Line
+	16700 11200 16400 11200
+Wire Wire Line
+	16700 11400 16400 11400
+Wire Wire Line
+	16700 11500 16400 11500
+Wire Wire Line
+	16700 11600 16400 11600
+Text Label 15400 8600 0    50   ~ 0
+R0
+Text Label 15400 8700 0    50   ~ 0
+G0
+Text Label 15400 8800 0    50   ~ 0
+B0
+Text Label 15400 9400 0    50   ~ 0
+R2
+Text Label 15400 9800 0    50   ~ 0
+R3
+Text Label 15400 10200 0    50   ~ 0
+R4
+Text Label 15400 10600 0    50   ~ 0
+R5
+Text Label 15400 11000 0    50   ~ 0
+R6
+Text Label 15400 11400 0    50   ~ 0
+R7
+Text Label 16700 8600 2    50   ~ 0
+R8
+Text Label 16700 9000 2    50   ~ 0
+R9
+Text Label 16700 9400 2    50   ~ 0
+R10
+Text Label 16700 9800 2    50   ~ 0
+R11
+Text Label 16700 10200 2    50   ~ 0
+R12
+Text Label 16700 10600 2    50   ~ 0
+R13
+Text Label 16700 11000 2    50   ~ 0
+R14
+Text Label 16700 11400 2    50   ~ 0
+R15
+Text Label 15400 9000 0    50   ~ 0
+R1
+Text Label 15400 9100 0    50   ~ 0
+G1
+Text Label 15400 9500 0    50   ~ 0
+G2
+Text Label 15400 9900 0    50   ~ 0
+G3
+Text Label 15400 10300 0    50   ~ 0
+G4
+Text Label 15400 10700 0    50   ~ 0
+G5
+Text Label 15400 11100 0    50   ~ 0
+G6
+Text Label 15400 11500 0    50   ~ 0
+G7
+Text Label 16700 8700 2    50   ~ 0
+G8
+Text Label 16700 9100 2    50   ~ 0
+G9
+Text Label 16700 9500 2    50   ~ 0
+G10
+Text Label 16700 9900 2    50   ~ 0
+G11
+Text Label 16700 10300 2    50   ~ 0
+G12
+Text Label 16700 10700 2    50   ~ 0
+G13
+Text Label 16700 11100 2    50   ~ 0
+G14
+Text Label 16700 11500 2    50   ~ 0
+G15
+Text Label 15400 9200 0    50   ~ 0
+B1
+Text Label 15400 9600 0    50   ~ 0
+B2
+Text Label 15400 10000 0    50   ~ 0
+B3
+Text Label 15400 10400 0    50   ~ 0
+B4
+Text Label 15400 10800 0    50   ~ 0
+B5
+Text Label 15400 11200 0    50   ~ 0
+B6
+Text Label 15400 11600 0    50   ~ 0
+B7
+Text Label 16700 8800 2    50   ~ 0
+B8
+Text Label 16700 9200 2    50   ~ 0
+B9
+Text Label 16700 9600 2    50   ~ 0
+B10
+Text Label 16700 10000 2    50   ~ 0
+B11
+Text Label 16700 10400 2    50   ~ 0
+B12
+Text Label 16700 10800 2    50   ~ 0
+B13
+Text Label 16700 11200 2    50   ~ 0
+B14
+Text Label 16700 11600 2    50   ~ 0
+B15
+Wire Wire Line
+	16400 11800 16700 11800
+Text Label 16700 11800 2    50   ~ 0
+C23
+Text Label 15100 11800 2    50   ~ 0
+C22
+Wire Wire Line
+	16400 15600 16700 15600
+Text Label 16700 15400 2    50   ~ 0
+B15
+Text Label 16700 15000 2    50   ~ 0
+B14
+Text Label 16700 14600 2    50   ~ 0
+B13
+Text Label 16700 14200 2    50   ~ 0
+B12
+Text Label 16700 13800 2    50   ~ 0
+B11
+Text Label 16700 13400 2    50   ~ 0
+B10
+Text Label 16700 13000 2    50   ~ 0
+B9
+Text Label 16700 12600 2    50   ~ 0
+B8
+Text Label 15400 15400 0    50   ~ 0
+B7
+Text Label 15400 15000 0    50   ~ 0
+B6
+Text Label 15400 14600 0    50   ~ 0
+B5
+Text Label 15400 14200 0    50   ~ 0
+B4
+Text Label 15400 13800 0    50   ~ 0
+B3
+Text Label 15400 13400 0    50   ~ 0
+B2
+Text Label 15400 13000 0    50   ~ 0
+B1
+Text Label 16700 15300 2    50   ~ 0
+G15
+Text Label 16700 14900 2    50   ~ 0
+G14
+Text Label 16700 14500 2    50   ~ 0
+G13
+Text Label 16700 14100 2    50   ~ 0
+G12
+Text Label 16700 13700 2    50   ~ 0
+G11
+Text Label 16700 13300 2    50   ~ 0
+G10
+Text Label 16700 12900 2    50   ~ 0
+G9
+Text Label 16700 12500 2    50   ~ 0
+G8
+Text Label 15400 15300 0    50   ~ 0
+G7
+Text Label 15400 14900 0    50   ~ 0
+G6
+Text Label 15400 14500 0    50   ~ 0
+G5
+Text Label 15400 14100 0    50   ~ 0
+G4
+Text Label 15400 13700 0    50   ~ 0
+G3
+Text Label 15400 13300 0    50   ~ 0
+G2
+Text Label 15400 12900 0    50   ~ 0
+G1
+Text Label 15400 12800 0    50   ~ 0
+R1
+Text Label 16700 15200 2    50   ~ 0
+R15
+Text Label 16700 14800 2    50   ~ 0
+R14
+Text Label 16700 14400 2    50   ~ 0
+R13
+Text Label 16700 14000 2    50   ~ 0
+R12
+Text Label 16700 13600 2    50   ~ 0
+R11
+Text Label 16700 13200 2    50   ~ 0
+R10
+Text Label 16700 12800 2    50   ~ 0
+R9
+Text Label 16700 12400 2    50   ~ 0
+R8
+Text Label 15400 15200 0    50   ~ 0
+R7
+Text Label 15400 14800 0    50   ~ 0
+R6
+Text Label 15400 14400 0    50   ~ 0
+R5
+Text Label 15400 14000 0    50   ~ 0
+R4
+Text Label 15400 13600 0    50   ~ 0
+R3
+Text Label 15400 13200 0    50   ~ 0
+R2
+Text Label 15400 12600 0    50   ~ 0
+B0
+Text Label 15400 12500 0    50   ~ 0
+G0
+Text Label 15400 12400 0    50   ~ 0
+R0
+Wire Wire Line
+	16700 15400 16400 15400
+Wire Wire Line
+	16700 15300 16400 15300
+Wire Wire Line
+	16700 15200 16400 15200
+Wire Wire Line
+	16700 15000 16400 15000
+Wire Wire Line
+	16700 14900 16400 14900
+Wire Wire Line
+	16700 14800 16400 14800
+Wire Wire Line
+	16700 14600 16400 14600
+Wire Wire Line
+	16700 14500 16400 14500
+Wire Wire Line
+	16700 14400 16400 14400
+Wire Wire Line
+	16700 14200 16400 14200
+Wire Wire Line
+	16700 14100 16400 14100
+Wire Wire Line
+	16700 14000 16400 14000
+Wire Wire Line
+	16700 13800 16400 13800
+Wire Wire Line
+	16700 13700 16400 13700
+Wire Wire Line
+	16700 13600 16400 13600
+Wire Wire Line
+	16700 13400 16400 13400
+Wire Wire Line
+	16700 13300 16400 13300
+Wire Wire Line
+	16700 13200 16400 13200
+Wire Wire Line
+	16700 13000 16400 13000
+Wire Wire Line
+	16700 12900 16400 12900
+Wire Wire Line
+	16700 12800 16400 12800
+Wire Wire Line
+	16700 12600 16400 12600
+Wire Wire Line
+	16700 12500 16400 12500
+Wire Wire Line
+	16700 12400 16400 12400
+Wire Wire Line
+	15700 15400 15400 15400
+Wire Wire Line
+	15700 15300 15400 15300
+Wire Wire Line
+	15700 15200 15400 15200
+Wire Wire Line
+	15700 15000 15400 15000
+Wire Wire Line
+	15700 14900 15400 14900
+Wire Wire Line
+	15700 14800 15400 14800
+Wire Wire Line
+	15700 14600 15400 14600
+Wire Wire Line
+	15700 14500 15400 14500
+Wire Wire Line
+	15700 14400 15400 14400
+Wire Wire Line
+	15700 14200 15400 14200
+Wire Wire Line
+	15700 14100 15400 14100
+Wire Wire Line
+	15700 14000 15400 14000
+Wire Wire Line
+	15700 13800 15400 13800
+Wire Wire Line
+	15700 13700 15400 13700
+Wire Wire Line
+	15700 13600 15400 13600
+Wire Wire Line
+	15700 13400 15400 13400
+Wire Wire Line
+	15700 13300 15400 13300
+Wire Wire Line
+	15700 13200 15400 13200
+Wire Wire Line
+	15700 13000 15400 13000
+Wire Wire Line
+	15700 12900 15400 12900
+Wire Wire Line
+	15700 12800 15400 12800
+Wire Wire Line
+	15700 12600 15400 12600
+Wire Wire Line
+	15700 12500 15400 12500
+Wire Wire Line
+	15700 12400 15400 12400
+$Sheet
+S 15700 12300 700  3400
+U 62B1878C
+F0 "sheet62B18248" 50
+F1 "LED_COL.sch" 50
+F2 "G0" I L 15700 12500 50 
+F3 "B0" I L 15700 12600 50 
+F4 "R1" I L 15700 12800 50 
+F5 "G1" I L 15700 12900 50 
+F6 "B1" I L 15700 13000 50 
+F7 "R2" I L 15700 13200 50 
+F8 "G2" I L 15700 13300 50 
+F9 "B2" I L 15700 13400 50 
+F10 "R4" I L 15700 14000 50 
+F11 "R5" I L 15700 14400 50 
+F12 "R6" I L 15700 14800 50 
+F13 "R7" I L 15700 15200 50 
+F14 "R8" I R 16400 12400 50 
+F15 "R9" I R 16400 12800 50 
+F16 "R10" I R 16400 13200 50 
+F17 "R11" I R 16400 13600 50 
+F18 "R12" I R 16400 14000 50 
+F19 "R13" I R 16400 14400 50 
+F20 "R14" I R 16400 14800 50 
+F21 "R15" I R 16400 15200 50 
+F22 "G4" I L 15700 14100 50 
+F23 "G5" I L 15700 14500 50 
+F24 "G6" I L 15700 14900 50 
+F25 "G7" I L 15700 15300 50 
+F26 "G8" I R 16400 12500 50 
+F27 "G9" I R 16400 12900 50 
+F28 "G10" I R 16400 13300 50 
+F29 "G11" I R 16400 13700 50 
+F30 "G12" I R 16400 14100 50 
+F31 "G13" I R 16400 14500 50 
+F32 "G14" I R 16400 14900 50 
+F33 "G15" I R 16400 15300 50 
+F34 "B4" I L 15700 14200 50 
+F35 "B5" I L 15700 14600 50 
+F36 "B6" I L 15700 15000 50 
+F37 "B7" I L 15700 15400 50 
+F38 "B8" I R 16400 12600 50 
+F39 "B9" I R 16400 13000 50 
+F40 "B10" I R 16400 13400 50 
+F41 "B11" I R 16400 13800 50 
+F42 "B12" I R 16400 14200 50 
+F43 "B13" I R 16400 14600 50 
+F44 "B14" I R 16400 15000 50 
+F45 "B3" I L 15700 13800 50 
+F46 "G3" I L 15700 13700 50 
+F47 "R3" I L 15700 13600 50 
+F48 "B15" I R 16400 15400 50 
+F49 "R0" I L 15700 12400 50 
+F50 "C" I R 16400 15600 50 
+$EndSheet
+Wire Wire Line
+	14800 15600 15100 15600
+Text Label 15100 15400 2    50   ~ 0
+B15
+Text Label 15100 15000 2    50   ~ 0
+B14
+Text Label 15100 14600 2    50   ~ 0
+B13
+Text Label 15100 14200 2    50   ~ 0
+B12
+Text Label 15100 13800 2    50   ~ 0
+B11
+Text Label 15100 13400 2    50   ~ 0
+B10
+Text Label 15100 13000 2    50   ~ 0
+B9
+Text Label 15100 12600 2    50   ~ 0
+B8
+Text Label 13800 15400 0    50   ~ 0
+B7
+Text Label 13800 15000 0    50   ~ 0
+B6
+Text Label 13800 14600 0    50   ~ 0
+B5
+Text Label 13800 14200 0    50   ~ 0
+B4
+Text Label 13800 13800 0    50   ~ 0
+B3
+Text Label 13800 13400 0    50   ~ 0
+B2
+Text Label 13800 13000 0    50   ~ 0
+B1
+Text Label 15100 15300 2    50   ~ 0
+G15
+Text Label 15100 14900 2    50   ~ 0
+G14
+Text Label 15100 14500 2    50   ~ 0
+G13
+Text Label 15100 14100 2    50   ~ 0
+G12
+Text Label 15100 13700 2    50   ~ 0
+G11
+Text Label 15100 13300 2    50   ~ 0
+G10
+Text Label 15100 12900 2    50   ~ 0
+G9
+Text Label 15100 12500 2    50   ~ 0
+G8
+Text Label 13800 15300 0    50   ~ 0
+G7
+Text Label 13800 14900 0    50   ~ 0
+G6
+Text Label 13800 14500 0    50   ~ 0
+G5
+Text Label 13800 14100 0    50   ~ 0
+G4
+Text Label 13800 13700 0    50   ~ 0
+G3
+Text Label 13800 13300 0    50   ~ 0
+G2
+Text Label 13800 12900 0    50   ~ 0
+G1
+Text Label 13800 12800 0    50   ~ 0
+R1
+Text Label 15100 15200 2    50   ~ 0
+R15
+Text Label 15100 14800 2    50   ~ 0
+R14
+Text Label 15100 14400 2    50   ~ 0
+R13
+Text Label 15100 14000 2    50   ~ 0
+R12
+Text Label 15100 13600 2    50   ~ 0
+R11
+Text Label 15100 13200 2    50   ~ 0
+R10
+Text Label 15100 12800 2    50   ~ 0
+R9
+Text Label 15100 12400 2    50   ~ 0
+R8
+Text Label 13800 15200 0    50   ~ 0
+R7
+Text Label 13800 14800 0    50   ~ 0
+R6
+Text Label 13800 14400 0    50   ~ 0
+R5
+Text Label 13800 14000 0    50   ~ 0
+R4
+Text Label 13800 13600 0    50   ~ 0
+R3
+Text Label 13800 13200 0    50   ~ 0
+R2
+Text Label 13800 12600 0    50   ~ 0
+B0
+Text Label 13800 12500 0    50   ~ 0
+G0
+Text Label 13800 12400 0    50   ~ 0
+R0
+Wire Wire Line
+	15100 15400 14800 15400
+Wire Wire Line
+	15100 15300 14800 15300
+Wire Wire Line
+	15100 15200 14800 15200
+Wire Wire Line
+	15100 15000 14800 15000
+Wire Wire Line
+	15100 14900 14800 14900
+Wire Wire Line
+	15100 14800 14800 14800
+Wire Wire Line
+	15100 14600 14800 14600
+Wire Wire Line
+	15100 14500 14800 14500
+Wire Wire Line
+	15100 14400 14800 14400
+Wire Wire Line
+	15100 14200 14800 14200
+Wire Wire Line
+	15100 14100 14800 14100
+Wire Wire Line
+	15100 14000 14800 14000
+Wire Wire Line
+	15100 13800 14800 13800
+Wire Wire Line
+	15100 13700 14800 13700
+Wire Wire Line
+	15100 13600 14800 13600
+Wire Wire Line
+	15100 13400 14800 13400
+Wire Wire Line
+	15100 13300 14800 13300
+Wire Wire Line
+	15100 13200 14800 13200
+Wire Wire Line
+	15100 13000 14800 13000
+Wire Wire Line
+	15100 12900 14800 12900
+Wire Wire Line
+	15100 12800 14800 12800
+Wire Wire Line
+	15100 12600 14800 12600
+Wire Wire Line
+	15100 12500 14800 12500
+Wire Wire Line
+	15100 12400 14800 12400
+Wire Wire Line
+	14100 15400 13800 15400
+Wire Wire Line
+	14100 15300 13800 15300
+Wire Wire Line
+	14100 15200 13800 15200
+Wire Wire Line
+	14100 15000 13800 15000
+Wire Wire Line
+	14100 14900 13800 14900
+Wire Wire Line
+	14100 14800 13800 14800
+Wire Wire Line
+	14100 14600 13800 14600
+Wire Wire Line
+	14100 14500 13800 14500
+Wire Wire Line
+	14100 14400 13800 14400
+Wire Wire Line
+	14100 14200 13800 14200
+Wire Wire Line
+	14100 14100 13800 14100
+Wire Wire Line
+	14100 14000 13800 14000
+Wire Wire Line
+	14100 13800 13800 13800
+Wire Wire Line
+	14100 13700 13800 13700
+Wire Wire Line
+	14100 13600 13800 13600
+Wire Wire Line
+	14100 13400 13800 13400
+Wire Wire Line
+	14100 13300 13800 13300
+Wire Wire Line
+	14100 13200 13800 13200
+Wire Wire Line
+	14100 13000 13800 13000
+Wire Wire Line
+	14100 12900 13800 12900
+Wire Wire Line
+	14100 12800 13800 12800
+Wire Wire Line
+	14100 12600 13800 12600
+Wire Wire Line
+	14100 12500 13800 12500
+Wire Wire Line
+	14100 12400 13800 12400
+$Sheet
+S 14100 12300 700  3400
+U 62B18821
+F0 "sheet62B18249" 50
+F1 "LED_COL.sch" 50
+F2 "G0" I L 14100 12500 50 
+F3 "B0" I L 14100 12600 50 
+F4 "R1" I L 14100 12800 50 
+F5 "G1" I L 14100 12900 50 
+F6 "B1" I L 14100 13000 50 
+F7 "R2" I L 14100 13200 50 
+F8 "G2" I L 14100 13300 50 
+F9 "B2" I L 14100 13400 50 
+F10 "R4" I L 14100 14000 50 
+F11 "R5" I L 14100 14400 50 
+F12 "R6" I L 14100 14800 50 
+F13 "R7" I L 14100 15200 50 
+F14 "R8" I R 14800 12400 50 
+F15 "R9" I R 14800 12800 50 
+F16 "R10" I R 14800 13200 50 
+F17 "R11" I R 14800 13600 50 
+F18 "R12" I R 14800 14000 50 
+F19 "R13" I R 14800 14400 50 
+F20 "R14" I R 14800 14800 50 
+F21 "R15" I R 14800 15200 50 
+F22 "G4" I L 14100 14100 50 
+F23 "G5" I L 14100 14500 50 
+F24 "G6" I L 14100 14900 50 
+F25 "G7" I L 14100 15300 50 
+F26 "G8" I R 14800 12500 50 
+F27 "G9" I R 14800 12900 50 
+F28 "G10" I R 14800 13300 50 
+F29 "G11" I R 14800 13700 50 
+F30 "G12" I R 14800 14100 50 
+F31 "G13" I R 14800 14500 50 
+F32 "G14" I R 14800 14900 50 
+F33 "G15" I R 14800 15300 50 
+F34 "B4" I L 14100 14200 50 
+F35 "B5" I L 14100 14600 50 
+F36 "B6" I L 14100 15000 50 
+F37 "B7" I L 14100 15400 50 
+F38 "B8" I R 14800 12600 50 
+F39 "B9" I R 14800 13000 50 
+F40 "B10" I R 14800 13400 50 
+F41 "B11" I R 14800 13800 50 
+F42 "B12" I R 14800 14200 50 
+F43 "B13" I R 14800 14600 50 
+F44 "B14" I R 14800 15000 50 
+F45 "B3" I L 14100 13800 50 
+F46 "G3" I L 14100 13700 50 
+F47 "R3" I L 14100 13600 50 
+F48 "B15" I R 14800 15400 50 
+F49 "R0" I L 14100 12400 50 
+F50 "C" I R 14800 15600 50 
+$EndSheet
+Text Label 13500 15600 2    50   ~ 0
+C29
+Wire Wire Line
+	13200 15600 13500 15600
+Text Label 13500 15400 2    50   ~ 0
+B15
+Text Label 13500 15000 2    50   ~ 0
+B14
+Text Label 13500 14600 2    50   ~ 0
+B13
+Text Label 13500 14200 2    50   ~ 0
+B12
+Text Label 13500 13800 2    50   ~ 0
+B11
+Text Label 13500 13400 2    50   ~ 0
+B10
+Text Label 13500 13000 2    50   ~ 0
+B9
+Text Label 13500 12600 2    50   ~ 0
+B8
+Text Label 12200 15400 0    50   ~ 0
+B7
+Text Label 12200 15000 0    50   ~ 0
+B6
+Text Label 12200 14600 0    50   ~ 0
+B5
+Text Label 12200 14200 0    50   ~ 0
+B4
+Text Label 12200 13800 0    50   ~ 0
+B3
+Text Label 12200 13400 0    50   ~ 0
+B2
+Text Label 12200 13000 0    50   ~ 0
+B1
+Text Label 13500 15300 2    50   ~ 0
+G15
+Text Label 13500 14900 2    50   ~ 0
+G14
+Text Label 13500 14500 2    50   ~ 0
+G13
+Text Label 13500 14100 2    50   ~ 0
+G12
+Text Label 13500 13700 2    50   ~ 0
+G11
+Text Label 13500 13300 2    50   ~ 0
+G10
+Text Label 13500 12900 2    50   ~ 0
+G9
+Text Label 13500 12500 2    50   ~ 0
+G8
+Text Label 12200 15300 0    50   ~ 0
+G7
+Text Label 12200 14900 0    50   ~ 0
+G6
+Text Label 12200 14500 0    50   ~ 0
+G5
+Text Label 12200 14100 0    50   ~ 0
+G4
+Text Label 12200 13700 0    50   ~ 0
+G3
+Text Label 12200 13300 0    50   ~ 0
+G2
+Text Label 12200 12900 0    50   ~ 0
+G1
+Text Label 12200 12800 0    50   ~ 0
+R1
+Text Label 13500 15200 2    50   ~ 0
+R15
+Text Label 13500 14800 2    50   ~ 0
+R14
+Text Label 13500 14400 2    50   ~ 0
+R13
+Text Label 13500 14000 2    50   ~ 0
+R12
+Text Label 13500 13600 2    50   ~ 0
+R11
+Text Label 13500 13200 2    50   ~ 0
+R10
+Text Label 13500 12800 2    50   ~ 0
+R9
+Text Label 13500 12400 2    50   ~ 0
+R8
+Text Label 12200 15200 0    50   ~ 0
+R7
+Text Label 12200 14800 0    50   ~ 0
+R6
+Text Label 12200 14400 0    50   ~ 0
+R5
+Text Label 12200 14000 0    50   ~ 0
+R4
+Text Label 12200 13600 0    50   ~ 0
+R3
+Text Label 12200 13200 0    50   ~ 0
+R2
+Text Label 12200 12600 0    50   ~ 0
+B0
+Text Label 12200 12500 0    50   ~ 0
+G0
+Text Label 12200 12400 0    50   ~ 0
+R0
+Wire Wire Line
+	13500 15400 13200 15400
+Wire Wire Line
+	13500 15300 13200 15300
+Wire Wire Line
+	13500 15200 13200 15200
+Wire Wire Line
+	13500 15000 13200 15000
+Wire Wire Line
+	13500 14900 13200 14900
+Wire Wire Line
+	13500 14800 13200 14800
+Wire Wire Line
+	13500 14600 13200 14600
+Wire Wire Line
+	13500 14500 13200 14500
+Wire Wire Line
+	13500 14400 13200 14400
+Wire Wire Line
+	13500 14200 13200 14200
+Wire Wire Line
+	13500 14100 13200 14100
+Wire Wire Line
+	13500 14000 13200 14000
+Wire Wire Line
+	13500 13800 13200 13800
+Wire Wire Line
+	13500 13700 13200 13700
+Wire Wire Line
+	13500 13600 13200 13600
+Wire Wire Line
+	13500 13400 13200 13400
+Wire Wire Line
+	13500 13300 13200 13300
+Wire Wire Line
+	13500 13200 13200 13200
+Wire Wire Line
+	13500 13000 13200 13000
+Wire Wire Line
+	13500 12900 13200 12900
+Wire Wire Line
+	13500 12800 13200 12800
+Wire Wire Line
+	13500 12600 13200 12600
+Wire Wire Line
+	13500 12500 13200 12500
+Wire Wire Line
+	13500 12400 13200 12400
+Wire Wire Line
+	12500 15400 12200 15400
+Wire Wire Line
+	12500 15300 12200 15300
+Wire Wire Line
+	12500 15200 12200 15200
+Wire Wire Line
+	12500 15000 12200 15000
+Wire Wire Line
+	12500 14900 12200 14900
+Wire Wire Line
+	12500 14800 12200 14800
+Wire Wire Line
+	12500 14600 12200 14600
+Wire Wire Line
+	12500 14500 12200 14500
+Wire Wire Line
+	12500 14400 12200 14400
+Wire Wire Line
+	12500 14200 12200 14200
+Wire Wire Line
+	12500 14100 12200 14100
+Wire Wire Line
+	12500 14000 12200 14000
+Wire Wire Line
+	12500 13800 12200 13800
+Wire Wire Line
+	12500 13700 12200 13700
+Wire Wire Line
+	12500 13600 12200 13600
+Wire Wire Line
+	12500 13400 12200 13400
+Wire Wire Line
+	12500 13300 12200 13300
+Wire Wire Line
+	12500 13200 12200 13200
+Wire Wire Line
+	12500 13000 12200 13000
+Wire Wire Line
+	12500 12900 12200 12900
+Wire Wire Line
+	12500 12800 12200 12800
+Wire Wire Line
+	12500 12600 12200 12600
+Wire Wire Line
+	12500 12500 12200 12500
+Wire Wire Line
+	12500 12400 12200 12400
+$Sheet
+S 12500 12300 700  3400
+U 62B188B6
+F0 "sheet62B1824A" 50
+F1 "LED_COL.sch" 50
+F2 "G0" I L 12500 12500 50 
+F3 "B0" I L 12500 12600 50 
+F4 "R1" I L 12500 12800 50 
+F5 "G1" I L 12500 12900 50 
+F6 "B1" I L 12500 13000 50 
+F7 "R2" I L 12500 13200 50 
+F8 "G2" I L 12500 13300 50 
+F9 "B2" I L 12500 13400 50 
+F10 "R4" I L 12500 14000 50 
+F11 "R5" I L 12500 14400 50 
+F12 "R6" I L 12500 14800 50 
+F13 "R7" I L 12500 15200 50 
+F14 "R8" I R 13200 12400 50 
+F15 "R9" I R 13200 12800 50 
+F16 "R10" I R 13200 13200 50 
+F17 "R11" I R 13200 13600 50 
+F18 "R12" I R 13200 14000 50 
+F19 "R13" I R 13200 14400 50 
+F20 "R14" I R 13200 14800 50 
+F21 "R15" I R 13200 15200 50 
+F22 "G4" I L 12500 14100 50 
+F23 "G5" I L 12500 14500 50 
+F24 "G6" I L 12500 14900 50 
+F25 "G7" I L 12500 15300 50 
+F26 "G8" I R 13200 12500 50 
+F27 "G9" I R 13200 12900 50 
+F28 "G10" I R 13200 13300 50 
+F29 "G11" I R 13200 13700 50 
+F30 "G12" I R 13200 14100 50 
+F31 "G13" I R 13200 14500 50 
+F32 "G14" I R 13200 14900 50 
+F33 "G15" I R 13200 15300 50 
+F34 "B4" I L 12500 14200 50 
+F35 "B5" I L 12500 14600 50 
+F36 "B6" I L 12500 15000 50 
+F37 "B7" I L 12500 15400 50 
+F38 "B8" I R 13200 12600 50 
+F39 "B9" I R 13200 13000 50 
+F40 "B10" I R 13200 13400 50 
+F41 "B11" I R 13200 13800 50 
+F42 "B12" I R 13200 14200 50 
+F43 "B13" I R 13200 14600 50 
+F44 "B14" I R 13200 15000 50 
+F45 "B3" I L 12500 13800 50 
+F46 "G3" I L 12500 13700 50 
+F47 "R3" I L 12500 13600 50 
+F48 "B15" I R 13200 15400 50 
+F49 "R0" I L 12500 12400 50 
+F50 "C" I R 13200 15600 50 
+$EndSheet
+Wire Wire Line
+	11600 15600 11900 15600
+Text Label 11900 15600 2    50   ~ 0
+C28
+Text Label 11900 15400 2    50   ~ 0
+B15
+Text Label 11900 15000 2    50   ~ 0
+B14
+Text Label 11900 14600 2    50   ~ 0
+B13
+Text Label 11900 14200 2    50   ~ 0
+B12
+Text Label 11900 13800 2    50   ~ 0
+B11
+Text Label 11900 13400 2    50   ~ 0
+B10
+Text Label 11900 13000 2    50   ~ 0
+B9
+Text Label 11900 12600 2    50   ~ 0
+B8
+Text Label 10600 15400 0    50   ~ 0
+B7
+Text Label 10600 15000 0    50   ~ 0
+B6
+Text Label 10600 14600 0    50   ~ 0
+B5
+Text Label 10600 14200 0    50   ~ 0
+B4
+Text Label 10600 13800 0    50   ~ 0
+B3
+Text Label 10600 13400 0    50   ~ 0
+B2
+Text Label 10600 13000 0    50   ~ 0
+B1
+Text Label 11900 15300 2    50   ~ 0
+G15
+Text Label 11900 14900 2    50   ~ 0
+G14
+Text Label 11900 14500 2    50   ~ 0
+G13
+Text Label 11900 14100 2    50   ~ 0
+G12
+Text Label 11900 13700 2    50   ~ 0
+G11
+Text Label 11900 13300 2    50   ~ 0
+G10
+Text Label 11900 12900 2    50   ~ 0
+G9
+Text Label 11900 12500 2    50   ~ 0
+G8
+Text Label 10600 15300 0    50   ~ 0
+G7
+Text Label 10600 14900 0    50   ~ 0
+G6
+Text Label 10600 14500 0    50   ~ 0
+G5
+Text Label 10600 14100 0    50   ~ 0
+G4
+Text Label 10600 13700 0    50   ~ 0
+G3
+Text Label 10600 13300 0    50   ~ 0
+G2
+Text Label 10600 12900 0    50   ~ 0
+G1
+Text Label 10600 12800 0    50   ~ 0
+R1
+Text Label 11900 15200 2    50   ~ 0
+R15
+Text Label 11900 14800 2    50   ~ 0
+R14
+Text Label 11900 14400 2    50   ~ 0
+R13
+Text Label 11900 14000 2    50   ~ 0
+R12
+Text Label 11900 13600 2    50   ~ 0
+R11
+Text Label 11900 13200 2    50   ~ 0
+R10
+Text Label 11900 12800 2    50   ~ 0
+R9
+Text Label 11900 12400 2    50   ~ 0
+R8
+Text Label 10600 15200 0    50   ~ 0
+R7
+Text Label 10600 14800 0    50   ~ 0
+R6
+Text Label 10600 14400 0    50   ~ 0
+R5
+Text Label 10600 14000 0    50   ~ 0
+R4
+Text Label 10600 13600 0    50   ~ 0
+R3
+Text Label 10600 13200 0    50   ~ 0
+R2
+Text Label 10600 12600 0    50   ~ 0
+B0
+Text Label 10600 12500 0    50   ~ 0
+G0
+Text Label 10600 12400 0    50   ~ 0
+R0
+Wire Wire Line
+	11900 15400 11600 15400
+Wire Wire Line
+	11900 15300 11600 15300
+Wire Wire Line
+	11900 15200 11600 15200
+Wire Wire Line
+	11900 15000 11600 15000
+Wire Wire Line
+	11900 14900 11600 14900
+Wire Wire Line
+	11900 14800 11600 14800
+Wire Wire Line
+	11900 14600 11600 14600
+Wire Wire Line
+	11900 14500 11600 14500
+Wire Wire Line
+	11900 14400 11600 14400
+Wire Wire Line
+	11900 14200 11600 14200
+Wire Wire Line
+	11900 14100 11600 14100
+Wire Wire Line
+	11900 14000 11600 14000
+Wire Wire Line
+	11900 13800 11600 13800
+Wire Wire Line
+	11900 13700 11600 13700
+Wire Wire Line
+	11900 13600 11600 13600
+Wire Wire Line
+	11900 13400 11600 13400
+Wire Wire Line
+	11900 13300 11600 13300
+Wire Wire Line
+	11900 13200 11600 13200
+Wire Wire Line
+	11900 13000 11600 13000
+Wire Wire Line
+	11900 12900 11600 12900
+Wire Wire Line
+	11900 12800 11600 12800
+Wire Wire Line
+	11900 12600 11600 12600
+Wire Wire Line
+	11900 12500 11600 12500
+Wire Wire Line
+	11900 12400 11600 12400
+Wire Wire Line
+	10900 15400 10600 15400
+Wire Wire Line
+	10900 15300 10600 15300
+Wire Wire Line
+	10900 15200 10600 15200
+Wire Wire Line
+	10900 15000 10600 15000
+Wire Wire Line
+	10900 14900 10600 14900
+Wire Wire Line
+	10900 14800 10600 14800
+Wire Wire Line
+	10900 14600 10600 14600
+Wire Wire Line
+	10900 14500 10600 14500
+Wire Wire Line
+	10900 14400 10600 14400
+Wire Wire Line
+	10900 14200 10600 14200
+Wire Wire Line
+	10900 14100 10600 14100
+Wire Wire Line
+	10900 14000 10600 14000
+Wire Wire Line
+	10900 13800 10600 13800
+Wire Wire Line
+	10900 13700 10600 13700
+Wire Wire Line
+	10900 13600 10600 13600
+Wire Wire Line
+	10900 13400 10600 13400
+Wire Wire Line
+	10900 13300 10600 13300
+Wire Wire Line
+	10900 13200 10600 13200
+Wire Wire Line
+	10900 13000 10600 13000
+Wire Wire Line
+	10900 12900 10600 12900
+Wire Wire Line
+	10900 12800 10600 12800
+Wire Wire Line
+	10900 12600 10600 12600
+Wire Wire Line
+	10900 12500 10600 12500
+Wire Wire Line
+	10900 12400 10600 12400
+$Sheet
+S 10900 12300 700  3400
+U 62B1894B
+F0 "sheet62B1824B" 50
+F1 "LED_COL.sch" 50
+F2 "G0" I L 10900 12500 50 
+F3 "B0" I L 10900 12600 50 
+F4 "R1" I L 10900 12800 50 
+F5 "G1" I L 10900 12900 50 
+F6 "B1" I L 10900 13000 50 
+F7 "R2" I L 10900 13200 50 
+F8 "G2" I L 10900 13300 50 
+F9 "B2" I L 10900 13400 50 
+F10 "R4" I L 10900 14000 50 
+F11 "R5" I L 10900 14400 50 
+F12 "R6" I L 10900 14800 50 
+F13 "R7" I L 10900 15200 50 
+F14 "R8" I R 11600 12400 50 
+F15 "R9" I R 11600 12800 50 
+F16 "R10" I R 11600 13200 50 
+F17 "R11" I R 11600 13600 50 
+F18 "R12" I R 11600 14000 50 
+F19 "R13" I R 11600 14400 50 
+F20 "R14" I R 11600 14800 50 
+F21 "R15" I R 11600 15200 50 
+F22 "G4" I L 10900 14100 50 
+F23 "G5" I L 10900 14500 50 
+F24 "G6" I L 10900 14900 50 
+F25 "G7" I L 10900 15300 50 
+F26 "G8" I R 11600 12500 50 
+F27 "G9" I R 11600 12900 50 
+F28 "G10" I R 11600 13300 50 
+F29 "G11" I R 11600 13700 50 
+F30 "G12" I R 11600 14100 50 
+F31 "G13" I R 11600 14500 50 
+F32 "G14" I R 11600 14900 50 
+F33 "G15" I R 11600 15300 50 
+F34 "B4" I L 10900 14200 50 
+F35 "B5" I L 10900 14600 50 
+F36 "B6" I L 10900 15000 50 
+F37 "B7" I L 10900 15400 50 
+F38 "B8" I R 11600 12600 50 
+F39 "B9" I R 11600 13000 50 
+F40 "B10" I R 11600 13400 50 
+F41 "B11" I R 11600 13800 50 
+F42 "B12" I R 11600 14200 50 
+F43 "B13" I R 11600 14600 50 
+F44 "B14" I R 11600 15000 50 
+F45 "B3" I L 10900 13800 50 
+F46 "G3" I L 10900 13700 50 
+F47 "R3" I L 10900 13600 50 
+F48 "B15" I R 11600 15400 50 
+F49 "R0" I L 10900 12400 50 
+F50 "C" I R 11600 15600 50 
+$EndSheet
+Text Label 10300 15600 2    50   ~ 0
+C27
+Wire Wire Line
+	10000 15600 10300 15600
+Text Label 10300 15400 2    50   ~ 0
+B15
+Text Label 10300 15000 2    50   ~ 0
+B14
+Text Label 10300 14600 2    50   ~ 0
+B13
+Text Label 10300 14200 2    50   ~ 0
+B12
+Text Label 10300 13800 2    50   ~ 0
+B11
+Text Label 10300 13400 2    50   ~ 0
+B10
+Text Label 10300 13000 2    50   ~ 0
+B9
+Text Label 10300 12600 2    50   ~ 0
+B8
+Text Label 9000 15400 0    50   ~ 0
+B7
+Text Label 9000 15000 0    50   ~ 0
+B6
+Text Label 9000 14600 0    50   ~ 0
+B5
+Text Label 9000 14200 0    50   ~ 0
+B4
+Text Label 9000 13800 0    50   ~ 0
+B3
+Text Label 9000 13400 0    50   ~ 0
+B2
+Text Label 9000 13000 0    50   ~ 0
+B1
+Text Label 10300 15300 2    50   ~ 0
+G15
+Text Label 10300 14900 2    50   ~ 0
+G14
+Text Label 10300 14500 2    50   ~ 0
+G13
+Text Label 10300 14100 2    50   ~ 0
+G12
+Text Label 10300 13700 2    50   ~ 0
+G11
+Text Label 10300 13300 2    50   ~ 0
+G10
+Text Label 10300 12900 2    50   ~ 0
+G9
+Text Label 10300 12500 2    50   ~ 0
+G8
+Text Label 9000 15300 0    50   ~ 0
+G7
+Text Label 9000 14900 0    50   ~ 0
+G6
+Text Label 9000 14500 0    50   ~ 0
+G5
+Text Label 9000 14100 0    50   ~ 0
+G4
+Text Label 9000 13700 0    50   ~ 0
+G3
+Text Label 9000 13300 0    50   ~ 0
+G2
+Text Label 9000 12900 0    50   ~ 0
+G1
+Text Label 9000 12800 0    50   ~ 0
+R1
+Text Label 10300 15200 2    50   ~ 0
+R15
+Text Label 10300 14800 2    50   ~ 0
+R14
+Text Label 10300 14400 2    50   ~ 0
+R13
+Text Label 10300 14000 2    50   ~ 0
+R12
+Text Label 10300 13600 2    50   ~ 0
+R11
+Text Label 10300 13200 2    50   ~ 0
+R10
+Text Label 10300 12800 2    50   ~ 0
+R9
+Text Label 10300 12400 2    50   ~ 0
+R8
+Text Label 9000 15200 0    50   ~ 0
+R7
+Text Label 9000 14800 0    50   ~ 0
+R6
+Text Label 9000 14400 0    50   ~ 0
+R5
+Text Label 9000 14000 0    50   ~ 0
+R4
+Text Label 9000 13600 0    50   ~ 0
+R3
+Text Label 9000 13200 0    50   ~ 0
+R2
+Text Label 9000 12600 0    50   ~ 0
+B0
+Text Label 9000 12500 0    50   ~ 0
+G0
+Text Label 9000 12400 0    50   ~ 0
+R0
+Wire Wire Line
+	10300 15400 10000 15400
+Wire Wire Line
+	10300 15300 10000 15300
+Wire Wire Line
+	10300 15200 10000 15200
+Wire Wire Line
+	10300 15000 10000 15000
+Wire Wire Line
+	10300 14900 10000 14900
+Wire Wire Line
+	10300 14800 10000 14800
+Wire Wire Line
+	10300 14600 10000 14600
+Wire Wire Line
+	10300 14500 10000 14500
+Wire Wire Line
+	10300 14400 10000 14400
+Wire Wire Line
+	10300 14200 10000 14200
+Wire Wire Line
+	10300 14100 10000 14100
+Wire Wire Line
+	10300 14000 10000 14000
+Wire Wire Line
+	10300 13800 10000 13800
+Wire Wire Line
+	10300 13700 10000 13700
+Wire Wire Line
+	10300 13600 10000 13600
+Wire Wire Line
+	10300 13400 10000 13400
+Wire Wire Line
+	10300 13300 10000 13300
+Wire Wire Line
+	10300 13200 10000 13200
+Wire Wire Line
+	10300 13000 10000 13000
+Wire Wire Line
+	10300 12900 10000 12900
+Wire Wire Line
+	10300 12800 10000 12800
+Wire Wire Line
+	10300 12600 10000 12600
+Wire Wire Line
+	10300 12500 10000 12500
+Wire Wire Line
+	10300 12400 10000 12400
+Wire Wire Line
+	9300 15400 9000 15400
+Wire Wire Line
+	9300 15300 9000 15300
+Wire Wire Line
+	9300 15200 9000 15200
+Wire Wire Line
+	9300 15000 9000 15000
+Wire Wire Line
+	9300 14900 9000 14900
+Wire Wire Line
+	9300 14800 9000 14800
+Wire Wire Line
+	9300 14600 9000 14600
+Wire Wire Line
+	9300 14500 9000 14500
+Wire Wire Line
+	9300 14400 9000 14400
+Wire Wire Line
+	9300 14200 9000 14200
+Wire Wire Line
+	9300 14100 9000 14100
+Wire Wire Line
+	9300 14000 9000 14000
+Wire Wire Line
+	9300 13800 9000 13800
+Wire Wire Line
+	9300 13700 9000 13700
+Wire Wire Line
+	9300 13600 9000 13600
+Wire Wire Line
+	9300 13400 9000 13400
+Wire Wire Line
+	9300 13300 9000 13300
+Wire Wire Line
+	9300 13200 9000 13200
+Wire Wire Line
+	9300 13000 9000 13000
+Wire Wire Line
+	9300 12900 9000 12900
+Wire Wire Line
+	9300 12800 9000 12800
+Wire Wire Line
+	9300 12600 9000 12600
+Wire Wire Line
+	9300 12500 9000 12500
+Wire Wire Line
+	9300 12400 9000 12400
+$Sheet
+S 9300 12300 700  3400
+U 62B189E0
+F0 "sheet62B1824C" 50
+F1 "LED_COL.sch" 50
+F2 "G0" I L 9300 12500 50 
+F3 "B0" I L 9300 12600 50 
+F4 "R1" I L 9300 12800 50 
+F5 "G1" I L 9300 12900 50 
+F6 "B1" I L 9300 13000 50 
+F7 "R2" I L 9300 13200 50 
+F8 "G2" I L 9300 13300 50 
+F9 "B2" I L 9300 13400 50 
+F10 "R4" I L 9300 14000 50 
+F11 "R5" I L 9300 14400 50 
+F12 "R6" I L 9300 14800 50 
+F13 "R7" I L 9300 15200 50 
+F14 "R8" I R 10000 12400 50 
+F15 "R9" I R 10000 12800 50 
+F16 "R10" I R 10000 13200 50 
+F17 "R11" I R 10000 13600 50 
+F18 "R12" I R 10000 14000 50 
+F19 "R13" I R 10000 14400 50 
+F20 "R14" I R 10000 14800 50 
+F21 "R15" I R 10000 15200 50 
+F22 "G4" I L 9300 14100 50 
+F23 "G5" I L 9300 14500 50 
+F24 "G6" I L 9300 14900 50 
+F25 "G7" I L 9300 15300 50 
+F26 "G8" I R 10000 12500 50 
+F27 "G9" I R 10000 12900 50 
+F28 "G10" I R 10000 13300 50 
+F29 "G11" I R 10000 13700 50 
+F30 "G12" I R 10000 14100 50 
+F31 "G13" I R 10000 14500 50 
+F32 "G14" I R 10000 14900 50 
+F33 "G15" I R 10000 15300 50 
+F34 "B4" I L 9300 14200 50 
+F35 "B5" I L 9300 14600 50 
+F36 "B6" I L 9300 15000 50 
+F37 "B7" I L 9300 15400 50 
+F38 "B8" I R 10000 12600 50 
+F39 "B9" I R 10000 13000 50 
+F40 "B10" I R 10000 13400 50 
+F41 "B11" I R 10000 13800 50 
+F42 "B12" I R 10000 14200 50 
+F43 "B13" I R 10000 14600 50 
+F44 "B14" I R 10000 15000 50 
+F45 "B3" I L 9300 13800 50 
+F46 "G3" I L 9300 13700 50 
+F47 "R3" I L 9300 13600 50 
+F48 "B15" I R 10000 15400 50 
+F49 "R0" I L 9300 12400 50 
+F50 "C" I R 10000 15600 50 
+$EndSheet
+Wire Wire Line
+	8400 15600 8700 15600
+Text Label 8700 15600 2    50   ~ 0
+C26
+Text Label 8700 15400 2    50   ~ 0
+B15
+Text Label 8700 15000 2    50   ~ 0
+B14
+Text Label 8700 14600 2    50   ~ 0
+B13
+Text Label 8700 14200 2    50   ~ 0
+B12
+Text Label 8700 13800 2    50   ~ 0
+B11
+Text Label 8700 13400 2    50   ~ 0
+B10
+Text Label 8700 13000 2    50   ~ 0
+B9
+Text Label 8700 12600 2    50   ~ 0
+B8
+Text Label 7400 15400 0    50   ~ 0
+B7
+Text Label 7400 15000 0    50   ~ 0
+B6
+Text Label 7400 14600 0    50   ~ 0
+B5
+Text Label 7400 14200 0    50   ~ 0
+B4
+Text Label 7400 13800 0    50   ~ 0
+B3
+Text Label 7400 13400 0    50   ~ 0
+B2
+Text Label 7400 13000 0    50   ~ 0
+B1
+Text Label 8700 15300 2    50   ~ 0
+G15
+Text Label 8700 14900 2    50   ~ 0
+G14
+Text Label 8700 14500 2    50   ~ 0
+G13
+Text Label 8700 14100 2    50   ~ 0
+G12
+Text Label 8700 13700 2    50   ~ 0
+G11
+Text Label 8700 13300 2    50   ~ 0
+G10
+Text Label 8700 12900 2    50   ~ 0
+G9
+Text Label 8700 12500 2    50   ~ 0
+G8
+Text Label 7400 15300 0    50   ~ 0
+G7
+Text Label 7400 14900 0    50   ~ 0
+G6
+Text Label 7400 14500 0    50   ~ 0
+G5
+Text Label 7400 14100 0    50   ~ 0
+G4
+Text Label 7400 13700 0    50   ~ 0
+G3
+Text Label 7400 13300 0    50   ~ 0
+G2
+Text Label 7400 12900 0    50   ~ 0
+G1
+Text Label 7400 12800 0    50   ~ 0
+R1
+Text Label 8700 15200 2    50   ~ 0
+R15
+Text Label 8700 14800 2    50   ~ 0
+R14
+Text Label 8700 14400 2    50   ~ 0
+R13
+Text Label 8700 14000 2    50   ~ 0
+R12
+Text Label 8700 13600 2    50   ~ 0
+R11
+Text Label 8700 13200 2    50   ~ 0
+R10
+Text Label 8700 12800 2    50   ~ 0
+R9
+Text Label 8700 12400 2    50   ~ 0
+R8
+Text Label 7400 15200 0    50   ~ 0
+R7
+Text Label 7400 14800 0    50   ~ 0
+R6
+Text Label 7400 14400 0    50   ~ 0
+R5
+Text Label 7400 14000 0    50   ~ 0
+R4
+Text Label 7400 13600 0    50   ~ 0
+R3
+Text Label 7400 13200 0    50   ~ 0
+R2
+Text Label 7400 12600 0    50   ~ 0
+B0
+Text Label 7400 12500 0    50   ~ 0
+G0
+Text Label 7400 12400 0    50   ~ 0
+R0
+Wire Wire Line
+	8700 15400 8400 15400
+Wire Wire Line
+	8700 15300 8400 15300
+Wire Wire Line
+	8700 15200 8400 15200
+Wire Wire Line
+	8700 15000 8400 15000
+Wire Wire Line
+	8700 14900 8400 14900
+Wire Wire Line
+	8700 14800 8400 14800
+Wire Wire Line
+	8700 14600 8400 14600
+Wire Wire Line
+	8700 14500 8400 14500
+Wire Wire Line
+	8700 14400 8400 14400
+Wire Wire Line
+	8700 14200 8400 14200
+Wire Wire Line
+	8700 14100 8400 14100
+Wire Wire Line
+	8700 14000 8400 14000
+Wire Wire Line
+	8700 13800 8400 13800
+Wire Wire Line
+	8700 13700 8400 13700
+Wire Wire Line
+	8700 13600 8400 13600
+Wire Wire Line
+	8700 13400 8400 13400
+Wire Wire Line
+	8700 13300 8400 13300
+Wire Wire Line
+	8700 13200 8400 13200
+Wire Wire Line
+	8700 13000 8400 13000
+Wire Wire Line
+	8700 12900 8400 12900
+Wire Wire Line
+	8700 12800 8400 12800
+Wire Wire Line
+	8700 12600 8400 12600
+Wire Wire Line
+	8700 12500 8400 12500
+Wire Wire Line
+	8700 12400 8400 12400
+Wire Wire Line
+	7700 15400 7400 15400
+Wire Wire Line
+	7700 15300 7400 15300
+Wire Wire Line
+	7700 15200 7400 15200
+Wire Wire Line
+	7700 15000 7400 15000
+Wire Wire Line
+	7700 14900 7400 14900
+Wire Wire Line
+	7700 14800 7400 14800
+Wire Wire Line
+	7700 14600 7400 14600
+Wire Wire Line
+	7700 14500 7400 14500
+Wire Wire Line
+	7700 14400 7400 14400
+Wire Wire Line
+	7700 14200 7400 14200
+Wire Wire Line
+	7700 14100 7400 14100
+Wire Wire Line
+	7700 14000 7400 14000
+Wire Wire Line
+	7700 13800 7400 13800
+Wire Wire Line
+	7700 13700 7400 13700
+Wire Wire Line
+	7700 13600 7400 13600
+Wire Wire Line
+	7700 13400 7400 13400
+Wire Wire Line
+	7700 13300 7400 13300
+Wire Wire Line
+	7700 13200 7400 13200
+Wire Wire Line
+	7700 13000 7400 13000
+Wire Wire Line
+	7700 12900 7400 12900
+Wire Wire Line
+	7700 12800 7400 12800
+Wire Wire Line
+	7700 12600 7400 12600
+Wire Wire Line
+	7700 12500 7400 12500
+Wire Wire Line
+	7700 12400 7400 12400
+$Sheet
+S 7700 12300 700  3400
+U 62B18A75
+F0 "sheet62B1824D" 50
+F1 "LED_COL.sch" 50
+F2 "G0" I L 7700 12500 50 
+F3 "B0" I L 7700 12600 50 
+F4 "R1" I L 7700 12800 50 
+F5 "G1" I L 7700 12900 50 
+F6 "B1" I L 7700 13000 50 
+F7 "R2" I L 7700 13200 50 
+F8 "G2" I L 7700 13300 50 
+F9 "B2" I L 7700 13400 50 
+F10 "R4" I L 7700 14000 50 
+F11 "R5" I L 7700 14400 50 
+F12 "R6" I L 7700 14800 50 
+F13 "R7" I L 7700 15200 50 
+F14 "R8" I R 8400 12400 50 
+F15 "R9" I R 8400 12800 50 
+F16 "R10" I R 8400 13200 50 
+F17 "R11" I R 8400 13600 50 
+F18 "R12" I R 8400 14000 50 
+F19 "R13" I R 8400 14400 50 
+F20 "R14" I R 8400 14800 50 
+F21 "R15" I R 8400 15200 50 
+F22 "G4" I L 7700 14100 50 
+F23 "G5" I L 7700 14500 50 
+F24 "G6" I L 7700 14900 50 
+F25 "G7" I L 7700 15300 50 
+F26 "G8" I R 8400 12500 50 
+F27 "G9" I R 8400 12900 50 
+F28 "G10" I R 8400 13300 50 
+F29 "G11" I R 8400 13700 50 
+F30 "G12" I R 8400 14100 50 
+F31 "G13" I R 8400 14500 50 
+F32 "G14" I R 8400 14900 50 
+F33 "G15" I R 8400 15300 50 
+F34 "B4" I L 7700 14200 50 
+F35 "B5" I L 7700 14600 50 
+F36 "B6" I L 7700 15000 50 
+F37 "B7" I L 7700 15400 50 
+F38 "B8" I R 8400 12600 50 
+F39 "B9" I R 8400 13000 50 
+F40 "B10" I R 8400 13400 50 
+F41 "B11" I R 8400 13800 50 
+F42 "B12" I R 8400 14200 50 
+F43 "B13" I R 8400 14600 50 
+F44 "B14" I R 8400 15000 50 
+F45 "B3" I L 7700 13800 50 
+F46 "G3" I L 7700 13700 50 
+F47 "R3" I L 7700 13600 50 
+F48 "B15" I R 8400 15400 50 
+F49 "R0" I L 7700 12400 50 
+F50 "C" I R 8400 15600 50 
+$EndSheet
+Text Label 7100 15600 2    50   ~ 0
+C25
+Wire Wire Line
+	6800 15600 7100 15600
+Text Label 7100 15400 2    50   ~ 0
+B15
+Text Label 7100 15000 2    50   ~ 0
+B14
+Text Label 7100 14600 2    50   ~ 0
+B13
+Text Label 7100 14200 2    50   ~ 0
+B12
+Text Label 7100 13800 2    50   ~ 0
+B11
+Text Label 7100 13400 2    50   ~ 0
+B10
+Text Label 7100 13000 2    50   ~ 0
+B9
+Text Label 7100 12600 2    50   ~ 0
+B8
+Text Label 5800 15400 0    50   ~ 0
+B7
+Text Label 5800 15000 0    50   ~ 0
+B6
+Text Label 5800 14600 0    50   ~ 0
+B5
+Text Label 5800 14200 0    50   ~ 0
+B4
+Text Label 5800 13800 0    50   ~ 0
+B3
+Text Label 5800 13400 0    50   ~ 0
+B2
+Text Label 5800 13000 0    50   ~ 0
+B1
+Text Label 7100 15300 2    50   ~ 0
+G15
+Text Label 7100 14900 2    50   ~ 0
+G14
+Text Label 7100 14500 2    50   ~ 0
+G13
+Text Label 7100 14100 2    50   ~ 0
+G12
+Text Label 7100 13700 2    50   ~ 0
+G11
+Text Label 7100 13300 2    50   ~ 0
+G10
+Text Label 7100 12900 2    50   ~ 0
+G9
+Text Label 7100 12500 2    50   ~ 0
+G8
+Text Label 5800 15300 0    50   ~ 0
+G7
+Text Label 5800 14900 0    50   ~ 0
+G6
+Text Label 5800 14500 0    50   ~ 0
+G5
+Text Label 5800 14100 0    50   ~ 0
+G4
+Text Label 5800 13700 0    50   ~ 0
+G3
+Text Label 5800 13300 0    50   ~ 0
+G2
+Text Label 5800 12900 0    50   ~ 0
+G1
+Text Label 5800 12800 0    50   ~ 0
+R1
+Text Label 7100 15200 2    50   ~ 0
+R15
+Text Label 7100 14800 2    50   ~ 0
+R14
+Text Label 7100 14400 2    50   ~ 0
+R13
+Text Label 7100 14000 2    50   ~ 0
+R12
+Text Label 7100 13600 2    50   ~ 0
+R11
+Text Label 7100 13200 2    50   ~ 0
+R10
+Text Label 7100 12800 2    50   ~ 0
+R9
+Text Label 7100 12400 2    50   ~ 0
+R8
+Text Label 5800 15200 0    50   ~ 0
+R7
+Text Label 5800 14800 0    50   ~ 0
+R6
+Text Label 5800 14400 0    50   ~ 0
+R5
+Text Label 5800 14000 0    50   ~ 0
+R4
+Text Label 5800 13600 0    50   ~ 0
+R3
+Text Label 5800 13200 0    50   ~ 0
+R2
+Text Label 5800 12600 0    50   ~ 0
+B0
+Text Label 5800 12500 0    50   ~ 0
+G0
+Text Label 5800 12400 0    50   ~ 0
+R0
+Wire Wire Line
+	7100 15400 6800 15400
+Wire Wire Line
+	7100 15300 6800 15300
+Wire Wire Line
+	7100 15200 6800 15200
+Wire Wire Line
+	7100 15000 6800 15000
+Wire Wire Line
+	7100 14900 6800 14900
+Wire Wire Line
+	7100 14800 6800 14800
+Wire Wire Line
+	7100 14600 6800 14600
+Wire Wire Line
+	7100 14500 6800 14500
+Wire Wire Line
+	7100 14400 6800 14400
+Wire Wire Line
+	7100 14200 6800 14200
+Wire Wire Line
+	7100 14100 6800 14100
+Wire Wire Line
+	7100 14000 6800 14000
+Wire Wire Line
+	7100 13800 6800 13800
+Wire Wire Line
+	7100 13700 6800 13700
+Wire Wire Line
+	7100 13600 6800 13600
+Wire Wire Line
+	7100 13400 6800 13400
+Wire Wire Line
+	7100 13300 6800 13300
+Wire Wire Line
+	7100 13200 6800 13200
+Wire Wire Line
+	7100 13000 6800 13000
+Wire Wire Line
+	7100 12900 6800 12900
+Wire Wire Line
+	7100 12800 6800 12800
+Wire Wire Line
+	7100 12600 6800 12600
+Wire Wire Line
+	7100 12500 6800 12500
+Wire Wire Line
+	7100 12400 6800 12400
+Wire Wire Line
+	6100 15400 5800 15400
+Wire Wire Line
+	6100 15300 5800 15300
+Wire Wire Line
+	6100 15200 5800 15200
+Wire Wire Line
+	6100 15000 5800 15000
+Wire Wire Line
+	6100 14900 5800 14900
+Wire Wire Line
+	6100 14800 5800 14800
+Wire Wire Line
+	6100 14600 5800 14600
+Wire Wire Line
+	6100 14500 5800 14500
+Wire Wire Line
+	6100 14400 5800 14400
+Wire Wire Line
+	6100 14200 5800 14200
+Wire Wire Line
+	6100 14100 5800 14100
+Wire Wire Line
+	6100 14000 5800 14000
+Wire Wire Line
+	6100 13800 5800 13800
+Wire Wire Line
+	6100 13700 5800 13700
+Wire Wire Line
+	6100 13600 5800 13600
+Wire Wire Line
+	6100 13400 5800 13400
+Wire Wire Line
+	6100 13300 5800 13300
+Wire Wire Line
+	6100 13200 5800 13200
+Wire Wire Line
+	6100 13000 5800 13000
+Wire Wire Line
+	6100 12900 5800 12900
+Wire Wire Line
+	6100 12800 5800 12800
+Wire Wire Line
+	6100 12600 5800 12600
+Wire Wire Line
+	6100 12500 5800 12500
+Wire Wire Line
+	6100 12400 5800 12400
+$Sheet
+S 6100 12300 700  3400
+U 62B18B0A
+F0 "sheet62B1824E" 50
+F1 "LED_COL.sch" 50
+F2 "G0" I L 6100 12500 50 
+F3 "B0" I L 6100 12600 50 
+F4 "R1" I L 6100 12800 50 
+F5 "G1" I L 6100 12900 50 
+F6 "B1" I L 6100 13000 50 
+F7 "R2" I L 6100 13200 50 
+F8 "G2" I L 6100 13300 50 
+F9 "B2" I L 6100 13400 50 
+F10 "R4" I L 6100 14000 50 
+F11 "R5" I L 6100 14400 50 
+F12 "R6" I L 6100 14800 50 
+F13 "R7" I L 6100 15200 50 
+F14 "R8" I R 6800 12400 50 
+F15 "R9" I R 6800 12800 50 
+F16 "R10" I R 6800 13200 50 
+F17 "R11" I R 6800 13600 50 
+F18 "R12" I R 6800 14000 50 
+F19 "R13" I R 6800 14400 50 
+F20 "R14" I R 6800 14800 50 
+F21 "R15" I R 6800 15200 50 
+F22 "G4" I L 6100 14100 50 
+F23 "G5" I L 6100 14500 50 
+F24 "G6" I L 6100 14900 50 
+F25 "G7" I L 6100 15300 50 
+F26 "G8" I R 6800 12500 50 
+F27 "G9" I R 6800 12900 50 
+F28 "G10" I R 6800 13300 50 
+F29 "G11" I R 6800 13700 50 
+F30 "G12" I R 6800 14100 50 
+F31 "G13" I R 6800 14500 50 
+F32 "G14" I R 6800 14900 50 
+F33 "G15" I R 6800 15300 50 
+F34 "B4" I L 6100 14200 50 
+F35 "B5" I L 6100 14600 50 
+F36 "B6" I L 6100 15000 50 
+F37 "B7" I L 6100 15400 50 
+F38 "B8" I R 6800 12600 50 
+F39 "B9" I R 6800 13000 50 
+F40 "B10" I R 6800 13400 50 
+F41 "B11" I R 6800 13800 50 
+F42 "B12" I R 6800 14200 50 
+F43 "B13" I R 6800 14600 50 
+F44 "B14" I R 6800 15000 50 
+F45 "B3" I L 6100 13800 50 
+F46 "G3" I L 6100 13700 50 
+F47 "R3" I L 6100 13600 50 
+F48 "B15" I R 6800 15400 50 
+F49 "R0" I L 6100 12400 50 
+F50 "C" I R 6800 15600 50 
+$EndSheet
+Wire Wire Line
+	5200 15600 5500 15600
+Text Label 5500 15600 2    50   ~ 0
+C24
+Text Label 5500 15400 2    50   ~ 0
+B15
+Text Label 5500 15000 2    50   ~ 0
+B14
+Text Label 5500 14600 2    50   ~ 0
+B13
+Text Label 5500 14200 2    50   ~ 0
+B12
+Text Label 5500 13800 2    50   ~ 0
+B11
+Text Label 5500 13400 2    50   ~ 0
+B10
+Text Label 5500 13000 2    50   ~ 0
+B9
+Text Label 5500 12600 2    50   ~ 0
+B8
+Text Label 4200 15400 0    50   ~ 0
+B7
+Text Label 4200 15000 0    50   ~ 0
+B6
+Text Label 4200 14600 0    50   ~ 0
+B5
+Text Label 4200 14200 0    50   ~ 0
+B4
+Text Label 4200 13800 0    50   ~ 0
+B3
+Text Label 4200 13400 0    50   ~ 0
+B2
+Text Label 4200 13000 0    50   ~ 0
+B1
+Text Label 5500 15300 2    50   ~ 0
+G15
+Text Label 5500 14900 2    50   ~ 0
+G14
+Text Label 5500 14500 2    50   ~ 0
+G13
+Text Label 5500 14100 2    50   ~ 0
+G12
+Text Label 5500 13700 2    50   ~ 0
+G11
+Text Label 5500 13300 2    50   ~ 0
+G10
+Text Label 5500 12900 2    50   ~ 0
+G9
+Text Label 5500 12500 2    50   ~ 0
+G8
+Text Label 4200 15300 0    50   ~ 0
+G7
+Text Label 4200 14900 0    50   ~ 0
+G6
+Text Label 4200 14500 0    50   ~ 0
+G5
+Text Label 4200 14100 0    50   ~ 0
+G4
+Text Label 4200 13700 0    50   ~ 0
+G3
+Text Label 4200 13300 0    50   ~ 0
+G2
+Text Label 4200 12900 0    50   ~ 0
+G1
+Text Label 4200 12800 0    50   ~ 0
+R1
+Text Label 5500 15200 2    50   ~ 0
+R15
+Text Label 5500 14800 2    50   ~ 0
+R14
+Text Label 5500 14400 2    50   ~ 0
+R13
+Text Label 5500 14000 2    50   ~ 0
+R12
+Text Label 5500 13600 2    50   ~ 0
+R11
+Text Label 5500 13200 2    50   ~ 0
+R10
+Text Label 5500 12800 2    50   ~ 0
+R9
+Text Label 5500 12400 2    50   ~ 0
+R8
+Text Label 4200 15200 0    50   ~ 0
+R7
+Text Label 4200 14800 0    50   ~ 0
+R6
+Text Label 4200 14400 0    50   ~ 0
+R5
+Text Label 4200 14000 0    50   ~ 0
+R4
+Text Label 4200 13600 0    50   ~ 0
+R3
+Text Label 4200 13200 0    50   ~ 0
+R2
+Text Label 4200 12600 0    50   ~ 0
+B0
+Text Label 4200 12500 0    50   ~ 0
+G0
+Text Label 4200 12400 0    50   ~ 0
+R0
+Wire Wire Line
+	5500 15400 5200 15400
+Wire Wire Line
+	5500 15300 5200 15300
+Wire Wire Line
+	5500 15200 5200 15200
+Wire Wire Line
+	5500 15000 5200 15000
+Wire Wire Line
+	5500 14900 5200 14900
+Wire Wire Line
+	5500 14800 5200 14800
+Wire Wire Line
+	5500 14600 5200 14600
+Wire Wire Line
+	5500 14500 5200 14500
+Wire Wire Line
+	5500 14400 5200 14400
+Wire Wire Line
+	5500 14200 5200 14200
+Wire Wire Line
+	5500 14100 5200 14100
+Wire Wire Line
+	5500 14000 5200 14000
+Wire Wire Line
+	5500 13800 5200 13800
+Wire Wire Line
+	5500 13700 5200 13700
+Wire Wire Line
+	5500 13600 5200 13600
+Wire Wire Line
+	5500 13400 5200 13400
+Wire Wire Line
+	5500 13300 5200 13300
+Wire Wire Line
+	5500 13200 5200 13200
+Wire Wire Line
+	5500 13000 5200 13000
+Wire Wire Line
+	5500 12900 5200 12900
+Wire Wire Line
+	5500 12800 5200 12800
+Wire Wire Line
+	5500 12600 5200 12600
+Wire Wire Line
+	5500 12500 5200 12500
+Wire Wire Line
+	5500 12400 5200 12400
+Wire Wire Line
+	4500 15400 4200 15400
+Wire Wire Line
+	4500 15300 4200 15300
+Wire Wire Line
+	4500 15200 4200 15200
+Wire Wire Line
+	4500 15000 4200 15000
+Wire Wire Line
+	4500 14900 4200 14900
+Wire Wire Line
+	4500 14800 4200 14800
+Wire Wire Line
+	4500 14600 4200 14600
+Wire Wire Line
+	4500 14500 4200 14500
+Wire Wire Line
+	4500 14400 4200 14400
+Wire Wire Line
+	4500 14200 4200 14200
+Wire Wire Line
+	4500 14100 4200 14100
+Wire Wire Line
+	4500 14000 4200 14000
+Wire Wire Line
+	4500 13800 4200 13800
+Wire Wire Line
+	4500 13700 4200 13700
+Wire Wire Line
+	4500 13600 4200 13600
+Wire Wire Line
+	4500 13400 4200 13400
+Wire Wire Line
+	4500 13300 4200 13300
+Wire Wire Line
+	4500 13200 4200 13200
+Wire Wire Line
+	4500 13000 4200 13000
+Wire Wire Line
+	4500 12900 4200 12900
+Wire Wire Line
+	4500 12800 4200 12800
+Wire Wire Line
+	4500 12600 4200 12600
+Wire Wire Line
+	4500 12500 4200 12500
+Wire Wire Line
+	4500 12400 4200 12400
+$Sheet
+S 4500 12300 700  3400
+U 62B18B9F
+F0 "sheet62B1824F" 50
+F1 "LED_COL.sch" 50
+F2 "G0" I L 4500 12500 50 
+F3 "B0" I L 4500 12600 50 
+F4 "R1" I L 4500 12800 50 
+F5 "G1" I L 4500 12900 50 
+F6 "B1" I L 4500 13000 50 
+F7 "R2" I L 4500 13200 50 
+F8 "G2" I L 4500 13300 50 
+F9 "B2" I L 4500 13400 50 
+F10 "R4" I L 4500 14000 50 
+F11 "R5" I L 4500 14400 50 
+F12 "R6" I L 4500 14800 50 
+F13 "R7" I L 4500 15200 50 
+F14 "R8" I R 5200 12400 50 
+F15 "R9" I R 5200 12800 50 
+F16 "R10" I R 5200 13200 50 
+F17 "R11" I R 5200 13600 50 
+F18 "R12" I R 5200 14000 50 
+F19 "R13" I R 5200 14400 50 
+F20 "R14" I R 5200 14800 50 
+F21 "R15" I R 5200 15200 50 
+F22 "G4" I L 4500 14100 50 
+F23 "G5" I L 4500 14500 50 
+F24 "G6" I L 4500 14900 50 
+F25 "G7" I L 4500 15300 50 
+F26 "G8" I R 5200 12500 50 
+F27 "G9" I R 5200 12900 50 
+F28 "G10" I R 5200 13300 50 
+F29 "G11" I R 5200 13700 50 
+F30 "G12" I R 5200 14100 50 
+F31 "G13" I R 5200 14500 50 
+F32 "G14" I R 5200 14900 50 
+F33 "G15" I R 5200 15300 50 
+F34 "B4" I L 4500 14200 50 
+F35 "B5" I L 4500 14600 50 
+F36 "B6" I L 4500 15000 50 
+F37 "B7" I L 4500 15400 50 
+F38 "B8" I R 5200 12600 50 
+F39 "B9" I R 5200 13000 50 
+F40 "B10" I R 5200 13400 50 
+F41 "B11" I R 5200 13800 50 
+F42 "B12" I R 5200 14200 50 
+F43 "B13" I R 5200 14600 50 
+F44 "B14" I R 5200 15000 50 
+F45 "B3" I L 4500 13800 50 
+F46 "G3" I L 4500 13700 50 
+F47 "R3" I L 4500 13600 50 
+F48 "B15" I R 5200 15400 50 
+F49 "R0" I L 4500 12400 50 
+F50 "C" I R 5200 15600 50 
+$EndSheet
+Text Label 15100 15600 2    50   ~ 0
+C30
+Text Label 16700 15600 2    50   ~ 0
+C31
 $EndSCHEMATC
