@@ -1,0 +1,21 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP LED_RGB
+D RGB LED, 4 pin package
+K LED RGB diode N-B101FCH
+F https://www.mouser.fr/datasheet/2/180/IN-B101FCH-1488525.pdf
+$ENDCMP
+#
+$CMP SN74HC595B
+D 8-Bit Shift Registers With 3-State Output
+K 8b shift register 3-state
+F http://www.ti.com/lit/gpn/sn74hc595b
+$ENDCMP
+#
+$CMP TLC59581
+D 48-Channel, 16-Bit ESPWM LED Driver with Pre-Charge FET, LOD Caterpillar and Support 32-Multiplexing
+K led driver
+F http://www.ti.com/lit/ds/symlink/tlc59581.pdf
+$ENDCMP
+#
+#End Doc Library
