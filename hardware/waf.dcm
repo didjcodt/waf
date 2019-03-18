@@ -6,6 +6,12 @@ K LED RGB diode N-B101FCH
 F https://www.mouser.fr/datasheet/2/180/IN-B101FCH-1488525.pdf
 $ENDCMP
 #
+$CMP NTJD4152PT1GOSCT-ND
+D Trench Small Signal MOSFET 20 V, 0.88 A, Dual P−Channel, ESD Protected SC−8
+K P channel mos fet mosfet
+F https://www.onsemi.com/pub/Collateral/NTJD4152P-D.PDF
+$ENDCMP
+#
 $CMP SN74HC595B
 D 8-Bit Shift Registers With 3-State Output
 K 8b shift register 3-state
