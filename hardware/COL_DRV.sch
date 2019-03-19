@@ -1,0 +1,556 @@
+EESchema Schematic File Version 4
+LIBS:waf-cache
+EELAYER 29 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 42 44
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L waf:SN74HC595B U?
+U 1 1 5D4CD971
+P 4500 2900
+AR Path="/5CC10402/5D4CD971" Ref="U?"  Part="1" 
+AR Path="/5CC10402/5D4C59DD/5D4CD971" Ref="U?"  Part="1" 
+AR Path="/5CC10402/63C61482/5D4CD971" Ref="U?"  Part="1" 
+AR Path="/5CC10402/64215E83/5D4CD971" Ref="U?"  Part="1" 
+AR Path="/5CC10402/647DA0F2/5D4CD971" Ref="U?"  Part="1" 
+F 0 "U?" H 4100 3500 50  0000 C CNN
+F 1 "SN74HC595B" H 4800 3500 50  0000 C CNN
+F 2 "" H 4050 3450 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74hc595b" H 4050 3450 50  0001 C CNN
+	1    4500 2900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5D4CD977
+P 4000 1550
+AR Path="/5CC10402/5D4CD977" Ref="C?"  Part="1" 
+AR Path="/5CC10402/5D4C59DD/5D4CD977" Ref="C?"  Part="1" 
+AR Path="/5CC10402/63C61482/5D4CD977" Ref="C?"  Part="1" 
+AR Path="/5CC10402/64215E83/5D4CD977" Ref="C?"  Part="1" 
+AR Path="/5CC10402/647DA0F2/5D4CD977" Ref="C?"  Part="1" 
+F 0 "C?" H 4115 1596 50  0000 L CNN
+F 1 "100n" H 4115 1505 50  0000 L CNN
+F 2 "" H 4038 1400 50  0001 C CNN
+F 3 "~" H 4000 1550 50  0001 C CNN
+	1    4000 1550
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5D4CD97D
+P 4000 1800
+AR Path="/5CC10402/5D4CD97D" Ref="#PWR?"  Part="1" 
+AR Path="/5CC10402/5D4C59DD/5D4CD97D" Ref="#PWR?"  Part="1" 
+AR Path="/5CC10402/63C61482/5D4CD97D" Ref="#PWR?"  Part="1" 
+AR Path="/5CC10402/64215E83/5D4CD97D" Ref="#PWR?"  Part="1" 
+AR Path="/5CC10402/647DA0F2/5D4CD97D" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 4000 1550 50  0001 C CNN
+F 1 "GND" H 4005 1627 50  0000 C CNN
+F 2 "" H 4000 1800 50  0001 C CNN
+F 3 "" H 4000 1800 50  0001 C CNN
+	1    4000 1800
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+BATT #PWR?
+U 1 1 5D4CD983
+P 4000 1200
+AR Path="/5CC10402/5D4CD983" Ref="#PWR?"  Part="1" 
+AR Path="/5CC10402/5D4C59DD/5D4CD983" Ref="#PWR?"  Part="1" 
+AR Path="/5CC10402/63C61482/5D4CD983" Ref="#PWR?"  Part="1" 
+AR Path="/5CC10402/64215E83/5D4CD983" Ref="#PWR?"  Part="1" 
+AR Path="/5CC10402/647DA0F2/5D4CD983" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 4000 1050 50  0001 C CNN
+F 1 "+BATT" H 4015 1373 50  0000 C CNN
+F 2 "" H 4000 1200 50  0001 C CNN
+F 3 "" H 4000 1200 50  0001 C CNN
+	1    4000 1200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4000 1200 4000 1300
+Wire Wire Line
+	4000 1700 4000 1800
+Wire Wire Line
+	4000 1300 4500 1300
+Wire Wire Line
+	4500 1300 4500 2300
+Connection ~ 4000 1300
+Wire Wire Line
+	4000 1300 4000 1400
+$Comp
+L power:GND #PWR?
+U 1 1 5D4CD98F
+P 4500 3600
+AR Path="/5CC10402/5D4CD98F" Ref="#PWR?"  Part="1" 
+AR Path="/5CC10402/5D4C59DD/5D4CD98F" Ref="#PWR?"  Part="1" 
+AR Path="/5CC10402/63C61482/5D4CD98F" Ref="#PWR?"  Part="1" 
+AR Path="/5CC10402/64215E83/5D4CD98F" Ref="#PWR?"  Part="1" 
+AR Path="/5CC10402/647DA0F2/5D4CD98F" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 4500 3350 50  0001 C CNN
+F 1 "GND" H 4505 3427 50  0000 C CNN
+F 2 "" H 4500 3600 50  0001 C CNN
+F 3 "" H 4500 3600 50  0001 C CNN
+	1    4500 3600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4500 3500 4500 3600
+Wire Wire Line
+	5100 2500 5800 2500
+Wire Wire Line
+	5100 2600 5800 2600
+Wire Wire Line
+	5100 2700 5800 2700
+Wire Wire Line
+	5100 2800 5800 2800
+Wire Wire Line
+	5100 2900 5800 2900
+Wire Wire Line
+	5100 3000 5800 3000
+Wire Wire Line
+	5100 3100 5800 3100
+Wire Wire Line
+	5100 3200 5800 3200
+Wire Wire Line
+	3900 2500 3300 2500
+Wire Wire Line
+	3900 2700 3300 2700
+Wire Wire Line
+	3900 2900 3300 2900
+Wire Wire Line
+	3900 3100 3300 3100
+Wire Wire Line
+	3900 3300 3300 3300
+Text Label 5800 2500 2    50   ~ 0
+DRV_COL0
+Text Label 5800 2600 2    50   ~ 0
+DRV_COL1
+Text Label 5800 2700 2    50   ~ 0
+DRV_COL2
+Text Label 5800 2800 2    50   ~ 0
+DRV_COL3
+Text Label 5800 2900 2    50   ~ 0
+DRV_COL4
+Text Label 5800 3000 2    50   ~ 0
+DRV_COL5
+Text Label 5800 3100 2    50   ~ 0
+DRV_COL6
+Text Label 5800 3200 2    50   ~ 0
+DRV_COL7
+Text Label 3300 2500 0    50   ~ 0
+COL_nSRCLR
+Text Label 3300 2700 0    50   ~ 0
+COL_nOE
+Text Label 3300 2900 0    50   ~ 0
+COL_SRCLK
+Text Label 3300 3100 0    50   ~ 0
+COL_SER
+Text Label 3300 3300 0    50   ~ 0
+COL_RCLK
+Wire Wire Line
+	5100 3300 6100 3300
+$Comp
+L waf:NTJD4152PT1GOSCT-ND Q?
+U 1 1 5DA9D273
+P 8900 1700
+AR Path="/5CC10402/5D4C59DD/5DA9D273" Ref="Q?"  Part="1" 
+AR Path="/5CC10402/63C61482/5DA9D273" Ref="Q?"  Part="1" 
+AR Path="/5CC10402/64215E83/5DA9D273" Ref="Q?"  Part="1" 
+AR Path="/5CC10402/647DA0F2/5DA9D273" Ref="Q?"  Part="1" 
+F 0 "Q?" H 8900 2215 50  0000 C CNN
+F 1 "NTJD4152PT1GOSCT-ND" H 8900 2124 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-363_SC-70-6" H 8900 1050 50  0001 C CNN
+F 3 "https://www.onsemi.com/pub/Collateral/NTJD4152P-D.PDF" H 8700 2150 50  0001 C CNN
+	1    8900 1700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1100 800  1900 800 
+Wire Wire Line
+	1100 1000 1900 1000
+Wire Wire Line
+	1100 1200 1900 1200
+Wire Wire Line
+	1100 1400 1900 1400
+Wire Wire Line
+	1100 1600 1900 1600
+Text Label 1900 800  2    50   ~ 0
+COL_nSRCLR
+Text Label 1900 1000 2    50   ~ 0
+COL_nOE
+Text Label 1900 1200 2    50   ~ 0
+COL_SRCLK
+Text Label 1900 1400 2    50   ~ 0
+COL_SER
+Text Label 1900 1600 2    50   ~ 0
+COL_RCLK
+Text HLabel 1100 800  0    50   Input ~ 0
+COL_nSRCLR
+Text HLabel 1100 1000 0    50   Input ~ 0
+COL_nOE
+Text HLabel 1100 1200 0    50   Input ~ 0
+COL_SRCLK
+Text HLabel 1100 1400 0    50   Input ~ 0
+COL_SER
+Text HLabel 1100 1600 0    50   Input ~ 0
+COL_RCLK
+Wire Wire Line
+	1100 1800 1900 1800
+Text Label 1900 1800 2    50   ~ 0
+COL_SER_OUT
+Text HLabel 1100 1800 0    50   Output ~ 0
+COL_SER_OUT
+Text Label 6100 3300 2    50   ~ 0
+COL_SER_OUT
+Wire Wire Line
+	9400 1500 9900 1500
+Wire Wire Line
+	9400 1700 9900 1700
+Wire Wire Line
+	8400 1700 7900 1700
+Wire Wire Line
+	8400 1900 7900 1900
+Text Label 7900 1700 0    50   ~ 0
+DRV_COL0
+Text Label 9900 1700 2    50   ~ 0
+DRV_COL1
+Text Label 7900 2900 0    50   ~ 0
+DRV_COL2
+Text Label 9900 2900 2    50   ~ 0
+DRV_COL3
+Text Label 7900 4100 0    50   ~ 0
+DRV_COL4
+Text Label 9900 4100 2    50   ~ 0
+DRV_COL5
+Text Label 7900 5300 0    50   ~ 0
+DRV_COL6
+Text Label 9900 5300 2    50   ~ 0
+DRV_COL7
+Text Label 1900 2100 2    50   ~ 0
+COL0
+Text Label 1900 2300 2    50   ~ 0
+COL1
+Text Label 1900 2500 2    50   ~ 0
+COL2
+Text Label 1900 2700 2    50   ~ 0
+COL3
+Text Label 1900 2900 2    50   ~ 0
+COL4
+Text Label 1900 3100 2    50   ~ 0
+COL5
+Text Label 1900 3300 2    50   ~ 0
+COL6
+Text Label 1900 3500 2    50   ~ 0
+COL7
+$Comp
+L power:+BATT #PWR?
+U 1 1 5E09784A
+P 8200 1300
+AR Path="/5CC10402/5E09784A" Ref="#PWR?"  Part="1" 
+AR Path="/5CC10402/5D4C59DD/5E09784A" Ref="#PWR?"  Part="1" 
+AR Path="/5CC10402/63C61482/5E09784A" Ref="#PWR?"  Part="1" 
+AR Path="/5CC10402/64215E83/5E09784A" Ref="#PWR?"  Part="1" 
+AR Path="/5CC10402/647DA0F2/5E09784A" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 8200 1150 50  0001 C CNN
+F 1 "+BATT" H 8215 1473 50  0000 C CNN
+F 2 "" H 8200 1300 50  0001 C CNN
+F 3 "" H 8200 1300 50  0001 C CNN
+	1    8200 1300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8400 1500 8200 1500
+Wire Wire Line
+	8200 1300 8200 1500
+Wire Wire Line
+	9400 1900 9500 1900
+Wire Wire Line
+	9500 1900 9500 2100
+Wire Wire Line
+	9500 2100 9800 2100
+Wire Wire Line
+	9800 2100 9800 2000
+$Comp
+L power:+BATT #PWR?
+U 1 1 5E09D225
+P 9800 2000
+AR Path="/5CC10402/5E09D225" Ref="#PWR?"  Part="1" 
+AR Path="/5CC10402/5D4C59DD/5E09D225" Ref="#PWR?"  Part="1" 
+AR Path="/5CC10402/63C61482/5E09D225" Ref="#PWR?"  Part="1" 
+AR Path="/5CC10402/64215E83/5E09D225" Ref="#PWR?"  Part="1" 
+AR Path="/5CC10402/647DA0F2/5E09D225" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 9800 1850 50  0001 C CNN
+F 1 "+BATT" H 9815 2173 50  0000 C CNN
+F 2 "" H 9800 2000 50  0001 C CNN
+F 3 "" H 9800 2000 50  0001 C CNN
+	1    9800 2000
+	1    0    0    -1  
+$EndComp
+$Comp
+L waf:NTJD4152PT1GOSCT-ND Q?
+U 1 1 5E0A73DB
+P 8900 2900
+AR Path="/5CC10402/5D4C59DD/5E0A73DB" Ref="Q?"  Part="1" 
+AR Path="/5CC10402/63C61482/5E0A73DB" Ref="Q?"  Part="1" 
+AR Path="/5CC10402/64215E83/5E0A73DB" Ref="Q?"  Part="1" 
+AR Path="/5CC10402/647DA0F2/5E0A73DB" Ref="Q?"  Part="1" 
+F 0 "Q?" H 8900 3415 50  0000 C CNN
+F 1 "NTJD4152PT1GOSCT-ND" H 8900 3324 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-363_SC-70-6" H 8900 2250 50  0001 C CNN
+F 3 "https://www.onsemi.com/pub/Collateral/NTJD4152P-D.PDF" H 8700 3350 50  0001 C CNN
+	1    8900 2900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9400 2700 9900 2700
+Wire Wire Line
+	9400 2900 9900 2900
+Wire Wire Line
+	8400 2900 7900 2900
+Wire Wire Line
+	8400 3100 7900 3100
+$Comp
+L power:+BATT #PWR?
+U 1 1 5E0A73E9
+P 8200 2500
+AR Path="/5CC10402/5E0A73E9" Ref="#PWR?"  Part="1" 
+AR Path="/5CC10402/5D4C59DD/5E0A73E9" Ref="#PWR?"  Part="1" 
+AR Path="/5CC10402/63C61482/5E0A73E9" Ref="#PWR?"  Part="1" 
+AR Path="/5CC10402/64215E83/5E0A73E9" Ref="#PWR?"  Part="1" 
+AR Path="/5CC10402/647DA0F2/5E0A73E9" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 8200 2350 50  0001 C CNN
+F 1 "+BATT" H 8215 2673 50  0000 C CNN
+F 2 "" H 8200 2500 50  0001 C CNN
+F 3 "" H 8200 2500 50  0001 C CNN
+	1    8200 2500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8400 2700 8200 2700
+Wire Wire Line
+	8200 2500 8200 2700
+Wire Wire Line
+	9400 3100 9500 3100
+Wire Wire Line
+	9500 3100 9500 3300
+Wire Wire Line
+	9500 3300 9800 3300
+Wire Wire Line
+	9800 3300 9800 3200
+$Comp
+L power:+BATT #PWR?
+U 1 1 5E0A73F9
+P 9800 3200
+AR Path="/5CC10402/5E0A73F9" Ref="#PWR?"  Part="1" 
+AR Path="/5CC10402/5D4C59DD/5E0A73F9" Ref="#PWR?"  Part="1" 
+AR Path="/5CC10402/63C61482/5E0A73F9" Ref="#PWR?"  Part="1" 
+AR Path="/5CC10402/64215E83/5E0A73F9" Ref="#PWR?"  Part="1" 
+AR Path="/5CC10402/647DA0F2/5E0A73F9" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 9800 3050 50  0001 C CNN
+F 1 "+BATT" H 9815 3373 50  0000 C CNN
+F 2 "" H 9800 3200 50  0001 C CNN
+F 3 "" H 9800 3200 50  0001 C CNN
+	1    9800 3200
+	1    0    0    -1  
+$EndComp
+$Comp
+L waf:NTJD4152PT1GOSCT-ND Q?
+U 1 1 5E0AD306
+P 8900 4100
+AR Path="/5CC10402/5D4C59DD/5E0AD306" Ref="Q?"  Part="1" 
+AR Path="/5CC10402/63C61482/5E0AD306" Ref="Q?"  Part="1" 
+AR Path="/5CC10402/64215E83/5E0AD306" Ref="Q?"  Part="1" 
+AR Path="/5CC10402/647DA0F2/5E0AD306" Ref="Q?"  Part="1" 
+F 0 "Q?" H 8900 4615 50  0000 C CNN
+F 1 "NTJD4152PT1GOSCT-ND" H 8900 4524 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-363_SC-70-6" H 8900 3450 50  0001 C CNN
+F 3 "https://www.onsemi.com/pub/Collateral/NTJD4152P-D.PDF" H 8700 4550 50  0001 C CNN
+	1    8900 4100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9400 3900 9900 3900
+Wire Wire Line
+	9400 4100 9900 4100
+Wire Wire Line
+	8400 4100 7900 4100
+Wire Wire Line
+	8400 4300 7900 4300
+$Comp
+L power:+BATT #PWR?
+U 1 1 5E0AD314
+P 8200 3700
+AR Path="/5CC10402/5E0AD314" Ref="#PWR?"  Part="1" 
+AR Path="/5CC10402/5D4C59DD/5E0AD314" Ref="#PWR?"  Part="1" 
+AR Path="/5CC10402/63C61482/5E0AD314" Ref="#PWR?"  Part="1" 
+AR Path="/5CC10402/64215E83/5E0AD314" Ref="#PWR?"  Part="1" 
+AR Path="/5CC10402/647DA0F2/5E0AD314" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 8200 3550 50  0001 C CNN
+F 1 "+BATT" H 8215 3873 50  0000 C CNN
+F 2 "" H 8200 3700 50  0001 C CNN
+F 3 "" H 8200 3700 50  0001 C CNN
+	1    8200 3700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8400 3900 8200 3900
+Wire Wire Line
+	8200 3700 8200 3900
+Wire Wire Line
+	9400 4300 9500 4300
+Wire Wire Line
+	9500 4300 9500 4500
+Wire Wire Line
+	9500 4500 9800 4500
+Wire Wire Line
+	9800 4500 9800 4400
+$Comp
+L power:+BATT #PWR?
+U 1 1 5E0AD324
+P 9800 4400
+AR Path="/5CC10402/5E0AD324" Ref="#PWR?"  Part="1" 
+AR Path="/5CC10402/5D4C59DD/5E0AD324" Ref="#PWR?"  Part="1" 
+AR Path="/5CC10402/63C61482/5E0AD324" Ref="#PWR?"  Part="1" 
+AR Path="/5CC10402/64215E83/5E0AD324" Ref="#PWR?"  Part="1" 
+AR Path="/5CC10402/647DA0F2/5E0AD324" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 9800 4250 50  0001 C CNN
+F 1 "+BATT" H 9815 4573 50  0000 C CNN
+F 2 "" H 9800 4400 50  0001 C CNN
+F 3 "" H 9800 4400 50  0001 C CNN
+	1    9800 4400
+	1    0    0    -1  
+$EndComp
+$Comp
+L waf:NTJD4152PT1GOSCT-ND Q?
+U 1 1 5E0AD32E
+P 8900 5300
+AR Path="/5CC10402/5D4C59DD/5E0AD32E" Ref="Q?"  Part="1" 
+AR Path="/5CC10402/63C61482/5E0AD32E" Ref="Q?"  Part="1" 
+AR Path="/5CC10402/64215E83/5E0AD32E" Ref="Q?"  Part="1" 
+AR Path="/5CC10402/647DA0F2/5E0AD32E" Ref="Q?"  Part="1" 
+F 0 "Q?" H 8900 5815 50  0000 C CNN
+F 1 "NTJD4152PT1GOSCT-ND" H 8900 5724 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-363_SC-70-6" H 8900 4650 50  0001 C CNN
+F 3 "https://www.onsemi.com/pub/Collateral/NTJD4152P-D.PDF" H 8700 5750 50  0001 C CNN
+	1    8900 5300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9400 5100 9900 5100
+Wire Wire Line
+	9400 5300 9900 5300
+Wire Wire Line
+	8400 5300 7900 5300
+Wire Wire Line
+	8400 5500 7900 5500
+$Comp
+L power:+BATT #PWR?
+U 1 1 5E0AD33C
+P 8200 4900
+AR Path="/5CC10402/5E0AD33C" Ref="#PWR?"  Part="1" 
+AR Path="/5CC10402/5D4C59DD/5E0AD33C" Ref="#PWR?"  Part="1" 
+AR Path="/5CC10402/63C61482/5E0AD33C" Ref="#PWR?"  Part="1" 
+AR Path="/5CC10402/64215E83/5E0AD33C" Ref="#PWR?"  Part="1" 
+AR Path="/5CC10402/647DA0F2/5E0AD33C" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 8200 4750 50  0001 C CNN
+F 1 "+BATT" H 8215 5073 50  0000 C CNN
+F 2 "" H 8200 4900 50  0001 C CNN
+F 3 "" H 8200 4900 50  0001 C CNN
+	1    8200 4900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8400 5100 8200 5100
+Wire Wire Line
+	8200 4900 8200 5100
+Wire Wire Line
+	9400 5500 9500 5500
+Wire Wire Line
+	9500 5500 9500 5700
+Wire Wire Line
+	9500 5700 9800 5700
+Wire Wire Line
+	9800 5700 9800 5600
+$Comp
+L power:+BATT #PWR?
+U 1 1 5E0AD34C
+P 9800 5600
+AR Path="/5CC10402/5E0AD34C" Ref="#PWR?"  Part="1" 
+AR Path="/5CC10402/5D4C59DD/5E0AD34C" Ref="#PWR?"  Part="1" 
+AR Path="/5CC10402/63C61482/5E0AD34C" Ref="#PWR?"  Part="1" 
+AR Path="/5CC10402/64215E83/5E0AD34C" Ref="#PWR?"  Part="1" 
+AR Path="/5CC10402/647DA0F2/5E0AD34C" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 9800 5450 50  0001 C CNN
+F 1 "+BATT" H 9815 5773 50  0000 C CNN
+F 2 "" H 9800 5600 50  0001 C CNN
+F 3 "" H 9800 5600 50  0001 C CNN
+	1    9800 5600
+	1    0    0    -1  
+$EndComp
+Text Label 9900 1500 2    50   ~ 0
+COL0
+Text Label 7900 1900 0    50   ~ 0
+COL1
+Text Label 9900 2700 2    50   ~ 0
+COL2
+Text Label 7900 3100 0    50   ~ 0
+COL3
+Text Label 9900 3900 2    50   ~ 0
+COL4
+Text Label 7900 4300 0    50   ~ 0
+COL5
+Text Label 9900 5100 2    50   ~ 0
+COL6
+Text Label 7900 5500 0    50   ~ 0
+COL7
+Text HLabel 1100 2100 0    50   Output ~ 0
+COL0
+Text HLabel 1100 2300 0    50   Output ~ 0
+COL1
+Text HLabel 1100 2500 0    50   Output ~ 0
+COL2
+Text HLabel 1100 2700 0    50   Output ~ 0
+COL3
+Text HLabel 1100 2900 0    50   Output ~ 0
+COL4
+Text HLabel 1100 3100 0    50   Output ~ 0
+COL5
+Text HLabel 1100 3300 0    50   Output ~ 0
+COL6
+Text HLabel 1100 3500 0    50   Output ~ 0
+COL7
+Wire Wire Line
+	1100 2100 1900 2100
+Wire Wire Line
+	1100 2300 1900 2300
+Wire Wire Line
+	1100 2500 1900 2500
+Wire Wire Line
+	1100 2700 1900 2700
+Wire Wire Line
+	1100 2900 1900 2900
+Wire Wire Line
+	1100 3100 1900 3100
+Wire Wire Line
+	1100 3300 1900 3300
+Wire Wire Line
+	1100 3500 1900 3500
+Wire Notes Line style solid
+	473  4331 2361 4331
+Wire Notes Line style solid
+	6969 6536 6970 473 
+Wire Notes Line style solid
+	2362 4330 2362 473 
+$EndSCHEMATC
