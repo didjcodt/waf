@@ -1,5 +1,9 @@
 EESchema-DOCLIB  Version 2.0
 #
+$CMP BQ25892
+F http://www.ti.com/lit/ds/symlink/bq25892.pdf
+$ENDCMP
+#
 $CMP LED_RGB
 D RGB LED, 4 pin package
 K LED RGB diode N-B101FCH
