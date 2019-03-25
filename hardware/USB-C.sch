@@ -177,9 +177,6 @@ Text Label 6600 3200 2    50   ~ 10
 USB_PROG_SCL
 Text Label 6600 3100 2    50   ~ 10
 USB_PROG_SDA
-Connection ~ 8100 2300
-Wire Wire Line
-	8100 2300 8100 2200
 Wire Wire Line
 	7000 3400 7500 3400
 Connection ~ 7000 3400
@@ -189,40 +186,8 @@ Wire Wire Line
 	7000 2500 7000 2400
 Wire Wire Line
 	6600 3400 7000 3400
-$Comp
-L power:GND #PWR0120
-U 1 1 5C76B269
-P 8400 2700
-F 0 "#PWR0120" H 8400 2450 50  0001 C CNN
-F 1 "GND" H 8400 2550 50  0000 C CNN
-F 2 "" H 8400 2700 50  0001 C CNN
-F 3 "" H 8400 2700 50  0001 C CNN
-	1    8400 2700
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	8100 2300 8100 2900
-Wire Wire Line
-	8400 2300 8400 2400
-Wire Wire Line
-	8100 2300 8400 2300
-$Comp
-L Device:C C?
-U 1 1 5C75B18F
-P 8400 2550
-F 0 "C?" H 8425 2650 50  0000 L CNN
-F 1 "100n" H 8425 2450 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0402_1005Metric" H 8438 2400 50  0001 C CNN
-F 3 "~" H 8400 2550 50  0001 C CNN
-	1    8400 2550
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	9200 3100 9300 3100
-Wire Wire Line
-	8700 3400 9300 3400
-Wire Wire Line
-	8700 3300 9300 3300
 Wire Wire Line
 	8900 3700 8700 3700
 Wire Wire Line
@@ -339,8 +304,6 @@ Wire Wire Line
 	7500 3200 6600 3200
 Wire Wire Line
 	7500 3100 6600 3100
-Wire Wire Line
-	8700 3100 8900 3100
 $Comp
 L Device:R R?
 U 1 1 5C70BF66
@@ -367,6 +330,13 @@ F 3 "" H 7400 3800 50  0001 C CNN
 	1    7400 3800
 	1    0    0    -1  
 $EndComp
+Wire Notes Line
+	5400 500  5400 7800
+Wire Wire Line
+	8100 2300 8100 2900
+Wire Wire Line
+	8100 2300 8100 2200
+Connection ~ 8100 2300
 $Comp
 L Interface_USB:TUSB320 U?
 U 1 1 5C6D577D
@@ -378,6 +348,36 @@ F 3 "http://www.ti.com/lit/ds/symlink/tusb320.pdf" H 8100 3400 50  0001 C CNN
 	1    8100 3400
 	1    0    0    -1  
 $EndComp
-Wire Notes Line
-	5400 500  5400 7800
+Wire Wire Line
+	8700 3100 8900 3100
+Wire Wire Line
+	8700 3300 9300 3300
+Wire Wire Line
+	8700 3400 9300 3400
+$Comp
+L Device:C C?
+U 1 1 5C75B18F
+P 8400 2550
+F 0 "C?" H 8425 2650 50  0000 L CNN
+F 1 "100n" H 8425 2450 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 8438 2400 50  0001 C CNN
+F 3 "~" H 8400 2550 50  0001 C CNN
+	1    8400 2550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8100 2300 8400 2300
+Wire Wire Line
+	8400 2300 8400 2400
+$Comp
+L power:GND #PWR0120
+U 1 1 5C76B269
+P 8400 2700
+F 0 "#PWR0120" H 8400 2450 50  0001 C CNN
+F 1 "GND" H 8400 2550 50  0000 C CNN
+F 2 "" H 8400 2700 50  0001 C CNN
+F 3 "" H 8400 2700 50  0001 C CNN
+	1    8400 2700
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC

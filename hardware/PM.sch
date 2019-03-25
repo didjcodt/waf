@@ -14,8 +14,6 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-Text Notes 5200 3900 0    50   ~ 10
-http://www.ti.com/product/BQ25703A
 Text Notes 8325 7525 0    93   ~ 19
 WAF WAF Awoooing badge
 $Comp
@@ -109,8 +107,6 @@ Wire Wire Line
 Connection ~ 3600 5700
 Text HLabel 1400 1700 0    50   Input ~ 10
 POWER_IN
-Text HLabel 1400 2000 0    50   Output ~ 10
-+3V3
 Text HLabel 1400 2300 0    50   BiDi ~ 10
 PM_SDA
 Text HLabel 1400 2600 0    50   Input ~ 10
@@ -123,4 +119,15 @@ Text HLabel 1400 3500 0    50   Input ~ 10
 EN_OTG
 Text HLabel 1400 3800 0    50   Output ~ 10
 CMPOUT
+$Comp
+L waf:BQ25892 U?
+U 1 1 5CF67ADF
+P 5800 3200
+F 0 "U?" H 5800 4265 50  0000 C CNN
+F 1 "BQ25892" H 5800 4174 50  0000 C CNN
+F 2 "Package_DFN_QFN:Texas_S-PVQFN-N24_EP2.1x2.1mm_ThermalVias" H 5850 4250 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/bq25892.pdf" H 5750 4150 50  0001 C CNN
+	1    5800 3200
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
